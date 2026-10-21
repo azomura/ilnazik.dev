@@ -1,5 +1,3 @@
-@import '@fontsource-variable/inter';
-
 @font-face {
   font-family: 'Artegra Sans';
   src: url('../fonts/artegra-sans/artegra-sans-regular.woff2') format('woff2');
@@ -81,7 +79,7 @@
 }
 
 @theme inline {
-  --font-sans: 'Inter Variable', sans-serif;
+  --font-sans: 'Artegra Sans', Arial, sans-serif;
   --font-heading: var(--font-sans);
   --font-artegra: 'Artegra Sans', sans-serif;
   --font-artegra-alt: 'Artegra Sans Alt', sans-serif;

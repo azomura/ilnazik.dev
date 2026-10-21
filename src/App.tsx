@@ -1,17 +1,10 @@
 const fonts = [
   {
-    "family": "Inter",
+    "family": "Artegra Sans",
     "variant": "Regular · По умолчанию",
     "weight": 400,
     "style": "normal",
     "className": "font-sans font-normal"
-  },
-  {
-    "family": "Artegra Sans",
-    "variant": "Regular",
-    "weight": 400,
-    "style": "normal",
-    "className": "font-artegra font-normal"
   },
   {
     "family": "Artegra Sans",
@@ -85,7 +78,7 @@ export function App() {
         <p className='mb-3 text-sm font-medium tracking-widest text-primary uppercase'>Portfolio / Typography</p>
         <h1 className='text-4xl font-semibold tracking-tight sm:text-6xl'>Шрифты проекта</h1>
         <p className='mt-5 text-base leading-relaxed text-muted-foreground'>
-          Все подключённые начертания на одном экране. Inter — шрифт по умолчанию.
+          Все подключённые начертания на одном экране. Artegra Sans — шрифт по умолчанию.
         </p>
       </header>
 
