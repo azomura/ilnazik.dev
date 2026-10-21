@@ -1,0 +1,77 @@
+.dark {
+  /* Фон и основной текст */
+  --background: #0f1113;
+  --foreground: #edeef0;
+
+  /* Поверхности */
+  --card: #171a1e;
+  --card-foreground: #edeef0;
+
+  --popover: #1e2227;
+  --popover-foreground: #edeef0;
+
+  --surface-overlay: rgb(23 26 30 / 70%);
+  --surface-subtle: #1c2127;
+  --surface-subtle-overlay: rgb(28 33 39 / 70%);
+  --surface-warm: #12100c;
+
+  /* Акцент и действия */
+  --primary: #e83d40;
+  --primary-foreground: #ffffff;
+
+  --secondary: #22262c;
+  --secondary-foreground: #edeef0;
+
+  --accent: #e83d40;
+  --accent-foreground: #ffffff;
+
+  --destructive: #e83d40;
+
+  /* Второстепенный текст */
+  --muted: #1c2127;
+  --muted-foreground: #9ca3ad;
+  --text-dim: #5b6067;
+  --text-soft: #e5e5e5;
+
+  /* Границы и фокус */
+  --border: rgb(62 63 66 / 62%);
+  --input: #22262c;
+  --ring: #e83d40;
+
+  /* Белый цвет с прозрачностью из макета */
+  --white: #ffffff;
+  --white-90: rgb(255 255 255 / 90%);
+  --white-95: rgb(255 255 255 / 95%);
+  --white-20: rgb(255 255 255 / 20%);
+  --transparent: rgb(0 0 0 / 0%);
+
+  /* Графики: оттенки палитры макета */
+  --chart-1: #e83d40;
+  --chart-2: #e05254;
+  --chart-3: #edeef0;
+  --chart-4: #9ca3ad;
+  --chart-5: #5b6067;
+
+  /* Боковая панель */
+  --sidebar: #171a1e;
+  --sidebar-foreground: #edeef0;
+
+  --sidebar-primary: #e83d40;
+  --sidebar-primary-foreground: #ffffff;
+
+  --sidebar-accent: #22262c;
+  --sidebar-accent-foreground: #edeef0;
+
+  --sidebar-border: rgb(62 63 66 / 62%);
+  --sidebar-ring: #e83d40;
+
+  /* Радиальные заливки.*/
+  --gradient: radial-gradient(ellipse at center, rgb(232 61 64 / 56%) 0%, rgb(232 61 64 / 7%) 100%);
+  --stroke: radial-gradient(ellipse at center, rgb(232 61 64 / 80%) 0%, rgb(232 61 64 / 0%) 100%);
+  --big-stroke-back: radial-gradient(
+    ellipse at center,
+    rgb(255 255 255 / 16%) 0%,
+    rgb(255 255 255 / 0%) 100%
+  );
+  --logo-accent: radial-gradient(ellipse at center, #e83d40 6%, #e05254 39%, #e83d40 75%);
+}

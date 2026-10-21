@@ -1,0 +1,88 @@
+:root {
+  /* Фон и основной текст */
+  --background: #ffffff;
+  --foreground: #000000;
+
+  /* Поверхности */
+  --card: #f6f6f6;
+  --card-foreground: #000000;
+
+  --popover: #ffffff;
+  --popover-foreground: #000000;
+
+  --surface-overlay: rgb(255 255 255 / 70%);
+  --surface-subtle: #e8e8e8;
+  --surface-subtle-overlay: rgb(230 230 230 / 70%);
+  --surface-warm: #12100c;
+  --surface-dark: #22262c;
+  --surface-dark-overlay: rgb(28 33 39 / 70%);
+  --surface-neutral: #edeef0;
+
+  /* Акцент и действия */
+  --primary: #e83d40;
+  --primary-foreground: #ffffff;
+
+  --secondary: #e8e8e8;
+  --secondary-foreground: #000000;
+
+  --accent: #e83d40;
+  --accent-foreground: #ffffff;
+
+  --destructive: #e83d40;
+
+  /* Второстепенный текст */
+  --muted: #e8e8e8;
+  --muted-foreground: #5b6067;
+
+  --text-dim: #505357;
+  --text-soft: #484848;
+
+  /* Границы и фокус */
+  --border: rgb(62 63 66 / 62%);
+  --input: #e8e8e8;
+  --ring: #e83d40;
+
+  /* Чёрный и белый с прозрачностью из макета */
+  --black: #000000;
+  --black-90: rgb(0 0 0 / 90%);
+  --black-95: rgb(0 0 0 / 95%);
+
+  --white: #ffffff;
+  --white-90: rgb(255 255 255 / 90%);
+  --white-95: rgb(255 255 255 / 95%);
+  --white-70: rgb(255 255 255 / 70%);
+  --white-20: rgb(255 255 255 / 20%);
+
+  --transparent: rgb(0 0 0 / 0%);
+
+  /* Графики: оттенки палитры макета */
+  --chart-1: #e83d40;
+  --chart-2: #e05254;
+  --chart-3: #484848;
+  --chart-4: #505357;
+  --chart-5: #5b6067;
+
+  /* Боковая панель */
+  --sidebar: #f6f6f6;
+  --sidebar-foreground: #000000;
+
+  --sidebar-primary: #e83d40;
+  --sidebar-primary-foreground: #ffffff;
+
+  --sidebar-accent: #e8e8e8;
+  --sidebar-accent-foreground: #000000;
+
+  --sidebar-border: rgb(62 63 66 / 62%);
+  --sidebar-ring: #e83d40;
+
+  /* Радиальные заливки.*/
+  --gradient: radial-gradient(ellipse at center, rgb(232 61 64 / 56%) 0%, rgb(232 61 64 / 7%) 100%);
+  --stroke: radial-gradient(ellipse at center, rgb(232 61 64 / 80%) 0%, rgb(232 61 64 / 0%) 100%);
+  --big-stroke-back: radial-gradient(ellipse at center, rgb(0 0 0 / 16%) 0%, rgb(0 0 0 / 0%) 100%);
+  --big-stroke-back-white: radial-gradient(
+    ellipse at center,
+    rgb(255 255 255 / 16%) 0%,
+    rgb(255 255 255 / 0%) 100%
+  );
+  --logo-accent: radial-gradient(ellipse at center, #e83d40 6%, #e05254 39%, #e83d40 75%);
+}
