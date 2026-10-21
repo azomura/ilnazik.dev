@@ -1,0 +1,12 @@
+@import '@fontsource-variable/inter';
+
+@theme inline {
+  --font-heading: var(--font-sans);
+  --font-sans: 'Inter Variable', sans-serif;
+}
+
+@layer base {
+  html {
+    @apply font-sans;
+  }
+}
