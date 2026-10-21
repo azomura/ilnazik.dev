@@ -1,8 +1,95 @@
 @import '@fontsource-variable/inter';
 
+@font-face {
+  font-family: 'Artegra Sans';
+  src: url('../fonts/artegra-sans/artegra-sans-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Artegra Sans';
+  src: url('../fonts/artegra-sans/artegra-sans-medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Artegra Sans';
+  src: url('../fonts/artegra-sans/artegra-sans-semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Artegra Sans';
+  src: url('../fonts/artegra-sans/artegra-sans-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Artegra Sans Alt';
+  src: url('../fonts/artegra-sans/artegra-sans-alt-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Artegra Sans Extended';
+  src: url('../fonts/artegra-sans/artegra-sans-extended-bold-italic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Artegra Sans Extended SC';
+  src: url('../fonts/artegra-sans/artegra-sans-extended-sc-semibold-italic.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Artegra Sans Extended Alt';
+  src: url('../fonts/artegra-sans/artegra-sans-extended-alt-extrabold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NT Somic';
+  src: url('../fonts/nt-somic/nt-somic-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('../fonts/space-grotesk/space-grotesk-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme inline {
-  --font-heading: var(--font-sans);
   --font-sans: 'Inter Variable', sans-serif;
+  --font-heading: var(--font-sans);
+  --font-artegra: 'Artegra Sans', sans-serif;
+  --font-artegra-alt: 'Artegra Sans Alt', sans-serif;
+  --font-artegra-extended: 'Artegra Sans Extended', sans-serif;
+  --font-artegra-extended-sc: 'Artegra Sans Extended SC', sans-serif;
+  --font-artegra-extended-alt: 'Artegra Sans Extended Alt', sans-serif;
+  --font-nt-somic: 'NT Somic', sans-serif;
+  --font-space-grotesk: 'Space Grotesk', sans-serif;
 }
 
 @layer base {
