@@ -18,5 +18,5 @@ export interface IIconGradient {
 export interface IIconProps extends Omit<SVGProps<SVGSVGElement>, 'children'> {
   size?: number | string
   title?: string
-  gradient?: IIconGradient
+  gradient?: IIconGradient | boolean
 }
