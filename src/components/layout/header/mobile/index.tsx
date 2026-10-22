@@ -17,7 +17,7 @@ export function HeaderMobile() {
       ref={headerRef}
       className={cn(
         'fixed top-4 left-1/2 z-50 -translate-x-1/2',
-        'max-h-[calc(100dvh-2rem)] w-[calc(100%-2rem)] max-w-87 sm:max-w-xl md:max-w-2xl',
+        'max-h-[calc(100dvh-2rem)] w-[calc(100%-2rem)] max-w-275',
         'overflow-y-auto rounded-[20px] bg-card/70 p-1.5 backdrop-blur-[12.3px] sm:hidden'
       )}
     >
