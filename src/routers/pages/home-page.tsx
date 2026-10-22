@@ -1,9 +1,11 @@
-import { Logo } from '@/components/icons/logo'
+import { About, Hero, Stack } from '@/components/sections'
 
 export function HomePage() {
   return (
-    <div className='items-center justify-center flex'>
-      <Logo className='mb-10 size-80 from-red-500 to-orange-400' />
-    </div>
+    <>
+      <Hero />
+      <About />
+      <Stack />
+    </>
   )
 }
