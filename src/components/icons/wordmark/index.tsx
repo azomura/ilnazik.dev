@@ -1,6 +1,7 @@
 import type { IIconProps } from '@/interfaces/icon'
 
 import { IconSvg } from '../shared/icon-svg'
+
 import {
   wordmarkPath0,
   wordmarkPath1,
