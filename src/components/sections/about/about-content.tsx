@@ -8,7 +8,7 @@ import { AboutStatistics } from './about-statistics'
 export function AboutContent() {
   return (
     <div className='min-w-0'>
-      <SectionHeading label='обо мне'>
+      <SectionHeading label='обо мне' showDot={false}>
         <span data-preview='developer' tabIndex={0} className='cursor-pointer'>
           {developerProfile.name}
         </span>

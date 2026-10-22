@@ -8,9 +8,15 @@ interface ISectionHeadingProps {
   label: string
   children: ReactNode
   className?: string
+  showDot?: boolean
 }
 
-export function SectionHeading({ label, children, className }: ISectionHeadingProps) {
+export function SectionHeading({
+  label,
+  children,
+  className,
+  showDot = true
+}: ISectionHeadingProps) {
   return (
     <div className={className}>
       <p
@@ -22,14 +28,17 @@ export function SectionHeading({ label, children, className }: ISectionHeadingPr
         <SectionArrow className='size-2.75 shrink-0' />
         {label}
       </p>
-      <h2
-        className={cn(
-          'mt-2 font-artegra text-[28px] font-semibold leading-tight text-foreground',
-          'sm:text-[36px] lg:text-[42px]'
-        )}
-      >
-        {children}
-      </h2>
+      <div className='mt-2 flex items-end justify-between gap-4'>
+        <h2
+          className={cn(
+            'min-w-0 font-artegra text-[28px] font-semibold leading-tight text-foreground',
+            'sm:text-[36px] lg:text-[42px]'
+          )}
+        >
+          {children}
+        </h2>
+        {showDot && <span className='mb-1.5 size-1.5 shrink-0 rounded-full bg-foreground' />}
+      </div>
     </div>
   )
 }
