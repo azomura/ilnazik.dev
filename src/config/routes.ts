@@ -7,5 +7,22 @@ export const routes = {
   home: {
     main,
     ...createSectionRoutes(main, home_sections)
+  },
+
+  projects: '/projects',
+  pricing: '/pricing',
+  about: '/about',
+  rewards: '/rewards',
+  blog: '/blog',
+
+  legal: {
+    privacy: '/privacy',
+    terms: '/terms'
+  },
+
+  customers: {
+    cooperation: '/cooperation',
+    payment: '/payment',
+    support: '/support'
   }
 } as const
