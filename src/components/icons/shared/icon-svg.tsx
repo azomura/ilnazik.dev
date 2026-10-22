@@ -27,8 +27,6 @@ export function IconSvg({
       style={{ aspectRatio, ...icon.svgProps.style }}
       fillOpacity={fillOpacity}
       role={title ? 'img' : undefined}
-      aria-labelledby={title ? icon.titleId : undefined}
-      aria-hidden={title ? undefined : true}
       focusable='false'
       {...props}
     >
