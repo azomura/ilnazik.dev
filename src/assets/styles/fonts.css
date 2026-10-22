@@ -81,12 +81,16 @@
 @theme inline {
   --font-sans: 'Artegra Sans', Arial, sans-serif;
   --font-heading: var(--font-sans);
+
   --font-artegra: 'Artegra Sans', sans-serif;
   --font-artegra-alt: 'Artegra Sans Alt', sans-serif;
+
   --font-artegra-extended: 'Artegra Sans Extended', sans-serif;
   --font-artegra-extended-sc: 'Artegra Sans Extended SC', sans-serif;
   --font-artegra-extended-alt: 'Artegra Sans Extended Alt', sans-serif;
+
   --font-nt-somic: 'NT Somic', sans-serif;
+
   --font-space-grotesk: 'Space Grotesk', sans-serif;
 }
 

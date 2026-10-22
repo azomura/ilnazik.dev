@@ -1,4 +1,4 @@
-import type { SVGProps } from 'react'
+import type { CSSProperties, ReactNode, SVGProps } from 'react'
 
 export interface IIconGradientStop {
   offset: string | number
@@ -19,4 +19,27 @@ export interface IIconProps extends Omit<SVGProps<SVGSVGElement>, 'children'> {
   size?: number | string
   title?: string
   gradient?: IIconGradient | boolean
+}
+
+export interface IIconStyle extends CSSProperties {
+  '--icon-gradient-from'?: string
+  '--icon-gradient-via'?: string
+  '--icon-gradient-to'?: string
+}
+
+export interface IIconOptions {
+  className?: string
+  gradient?: IIconGradient | boolean
+  fill?: string
+  style?: IIconStyle
+}
+
+export interface IIconGradientProps {
+  id: string
+  gradient?: IIconGradient
+}
+
+export interface IIconSvgProps extends IIconProps {
+  children: ReactNode
+  aspectRatio?: number
 }
