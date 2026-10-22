@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 import { cn } from '@/lib/utils'
 
 import { headerLinks } from './header-links'
@@ -8,8 +10,8 @@ export function HeaderNav() {
       <ul className='flex h-full items-stretch gap-1 p-1'>
         {headerLinks.map(link => (
           <li key={link.href} className='flex min-w-0 flex-1'>
-            <a
-              href={link.href}
+            <Link
+              to={link.href}
               className={cn(
                 'flex h-full w-full items-center justify-center rounded-[6px] px-2 xl:px-4',
                 'whitespace-nowrap font-nt-somic text-[14px] font-normal leading-[normal]',
@@ -18,7 +20,7 @@ export function HeaderNav() {
               )}
             >
               {link.label}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>

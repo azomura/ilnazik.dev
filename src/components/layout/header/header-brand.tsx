@@ -1,12 +1,16 @@
+import { Link } from 'react-router-dom'
+
 import { Logo, Wordmark } from '@/components/icons'
+
 import { routes } from '@/config/routes'
 
 import { cn } from '@/lib/utils'
 
 export function HeaderBrand() {
   return (
-    <a
-      href={routes.home.main}
+    <Link
+      to={routes.home.main}
+      data-preview='developer'
       className={cn(
         'relative isolate flex h-12 w-12 lg:w-33 shrink-0 items-center justify-center gap-1.5',
         'rounded-l-[16px] rounded-r-[8px] overflow-hidden text-white bg-primary',
@@ -18,6 +22,6 @@ export function HeaderBrand() {
     >
       <Logo className='relative h-5.5 w-5.25 text-white/90' />
       <Wordmark className='hidden lg:block relative h-2.25 w-21 text-white/90' />
-    </a>
+    </Link>
   )
 }

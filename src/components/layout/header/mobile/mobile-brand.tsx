@@ -1,4 +1,6 @@
-import { Logo } from '@/components/icons'
+import { Link } from 'react-router-dom'
+
+import { Logo } from '@/components/icons/logo'
 
 import { routes } from '@/config/routes'
 
@@ -6,8 +8,9 @@ import { cn } from '@/lib/utils'
 
 export function MobileBrand() {
   return (
-    <a
-      href={routes.home.main}
+    <Link
+      to={routes.home.main}
+      data-preview='developer'
       className={cn(
         'relative isolate flex size-12 shrink-0 items-center justify-center overflow-hidden',
         'rounded-[16px] bg-primary text-white border border-white/20',
@@ -18,6 +21,6 @@ export function MobileBrand() {
       )}
     >
       <Logo className='relative h-5.5 w-5.25 text-white/90' />
-    </a>
+    </Link>
   )
 }

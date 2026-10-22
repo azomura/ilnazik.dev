@@ -27,8 +27,6 @@ export function HeaderMobile() {
           <HeaderSearch />
         </div>
         <div
-          inert={!open}
-          aria-hidden={!open}
           className={cn(
             'flex h-12 shrink-0 overflow-hidden transition-[width,opacity,transform] duration-300',
             'ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none',

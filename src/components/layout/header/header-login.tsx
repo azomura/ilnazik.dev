@@ -1,4 +1,4 @@
-import { User } from '@/components/icons'
+import { User } from '@/components/icons/user'
 import { Button } from '@/components/ui/button'
 
 import { cn } from '@/lib/utils'
@@ -7,7 +7,6 @@ export function HeaderLogin() {
   return (
     <Button
       variant='secondary'
-      aria-label='Войти'
       className={cn(
         'h-12 min-h-12 w-24 sm:w-12 md:w-24 gap-2.5 border-0 bg-clip-border p-0',
         'rounded-l-[8px] rounded-r-[14px] bg-muted/70 text-white',
