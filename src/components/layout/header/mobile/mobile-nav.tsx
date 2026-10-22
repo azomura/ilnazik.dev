@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 import { cn } from '@/lib/utils'
 
 import { headerLinks } from '../header-links'
@@ -12,8 +14,8 @@ export function MobileNav({ onNavigate }: IMobileNavProps) {
       <ul className='flex flex-col gap-1'>
         {headerLinks.map(link => (
           <li key={link.href} className='first:[&_a]:rounded-t-[16px] last:[&_a]:rounded-b-[16px]'>
-            <a
-              href={link.href}
+            <Link
+              to={link.href}
               onClick={onNavigate}
               className={cn(
                 'flex h-12 items-center justify-center rounded-[8px] bg-muted/70',
@@ -23,7 +25,7 @@ export function MobileNav({ onNavigate }: IMobileNavProps) {
               )}
             >
               {link.label}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
