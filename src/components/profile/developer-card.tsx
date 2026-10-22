@@ -1,12 +1,16 @@
 import { ArrowUpRight } from 'lucide-react'
+import { Avatar, AvatarImage, AvatarFallback, Skeleton } from '@/components/ui'
 
 import { developerProfile } from '@/config/profile'
 
 import { socialLinks } from '@/data/socials'
 
 import { cn } from '@/lib/utils'
+import { useImage } from '@/hooks/use-image'
 
 export function DeveloperCard() {
+  const { loading, imageProps } = useImage(developerProfile.avatar)
+
   return (
     <div
       className={cn(
@@ -15,17 +19,23 @@ export function DeveloperCard() {
       )}
     >
       <div className='flex items-center gap-3 rounded-[14px] bg-muted/70 p-3'>
-        <img
-          src={developerProfile.avatar}
-          alt={developerProfile.name}
-          width={48}
-          height={48}
-          loading='eager'
-          decoding='async'
-          fetchPriority='low'
-          referrerPolicy='no-referrer'
-          className='size-12 shrink-0 rounded-[16px] object-cover'
-        />
+        <Avatar className='size-12 rounded-[16px] after:rounded-[inherit]'>
+          <AvatarImage
+            {...imageProps}
+            keepMounted
+            src={developerProfile.avatar}
+            alt={developerProfile.name}
+            width={48}
+            height={48}
+            loading='eager'
+            decoding='async'
+            fetchPriority='low'
+            referrerPolicy='no-referrer'
+            className={cn('size-12 rounded-[16px] object-cover', loading && 'invisible')}
+          />
+          <AvatarFallback className='rounded-[16px]'>ИМ</AvatarFallback>
+          {loading && <Skeleton className='absolute inset-0 size-full rounded-[16px]' />}
+        </Avatar>
         <div className='min-w-0'>
           <p className='font-artegra text-[14px] font-semibold leading-5'>
             {developerProfile.name}

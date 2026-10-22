@@ -1,6 +1,5 @@
-import { useState } from 'react'
-
-import { ExternalLink, Globe, LoaderCircle } from 'lucide-react'
+import { ExternalLink, Globe } from 'lucide-react'
+import { Image, Skeleton } from '@/components/ui'
 
 import { cn } from '@/lib/utils'
 import type { LinkPreviewV1Dto } from '@/services/api/models'
@@ -12,8 +11,6 @@ interface IExternalLinkPreviewProps {
 }
 
 export function ExternalLinkPreview({ url, data, loading }: IExternalLinkPreviewProps) {
-  const [failedImage, setFailedImage] = useState<string | null>(null)
-
   const address = new URL(url)
 
   const hostname = address.hostname
@@ -26,35 +23,45 @@ export function ExternalLinkPreview({ url, data, loading }: IExternalLinkPreview
         'border border-border/50 bg-card text-card-foreground shadow-lg'
       )}
     >
-      {image && image !== failedImage && (
-        <img
+      {image && (
+        <Image
           src={image}
           alt=''
           loading='lazy'
           referrerPolicy='no-referrer'
-          onError={() => setFailedImage(image)}
-          className='aspect-[1.91/1] w-full object-cover'
+          containerClassName='w-full'
+          loadingClassName='min-h-40'
+          className='block h-auto w-full'
         />
       )}
 
       <div className='p-3'>
         <div className='mb-2 flex items-center gap-2 text-muted-foreground'>
           <Globe className='size-3.5 shrink-0' />
-          <span className='truncate font-nt-somic text-xs'>{data?.siteName || hostname}</span>
+          {loading ? <Skeleton className='h-4 w-24 rounded' /> : (
+            <span className='truncate font-nt-somic text-xs'>{data?.siteName || hostname}</span>
+          )}
           <ExternalLink className='ml-auto size-3.5 shrink-0' />
         </div>
-        <p className='line-clamp-2 font-artegra text-sm font-semibold'>{data?.title || hostname}</p>
-
-        {data?.description && (
-          <p className='mt-2 line-clamp-3 font-nt-somic text-xs leading-5 text-muted-foreground'>
-            {data.description}
-          </p>
+        {loading ? (
+          <>
+            <div className='flex flex-col gap-1.5'>
+              <Skeleton className='h-5 w-full rounded' />
+              <Skeleton className='h-5 w-2/3 rounded' />
+            </div>
+            <div className='mt-2 flex flex-col gap-2'>
+              <Skeleton className='h-3 w-full rounded' />
+              <Skeleton className='h-3 w-full rounded' />
+              <Skeleton className='h-3 w-4/5 rounded' />
+            </div>
+          </>
+        ) : (
+          <p className='line-clamp-2 font-artegra text-sm font-semibold'>{data?.title || hostname}</p>
         )}
 
-        {loading && (
-          <p className='mt-3 flex items-center gap-2 font-nt-somic text-xs text-muted-foreground'>
-            <LoaderCircle className='size-3 animate-spin motion-reduce:animate-none' />
-            Загружаем информацию…
+        {!loading && data?.description && (
+          <p className='mt-2 line-clamp-3 font-nt-somic text-xs leading-5 text-muted-foreground'>
+            {data.description}
           </p>
         )}
 
@@ -64,10 +71,12 @@ export function ExternalLinkPreview({ url, data, loading }: IExternalLinkPreview
           </p>
         )}
 
-        <p className='mt-3 truncate font-nt-somic text-[11px] text-muted-foreground'>
+        {loading ? <Skeleton className='mt-3 h-4 w-3/5 rounded' /> : (
+          <p className='mt-3 truncate font-nt-somic text-[11px] text-muted-foreground'>
           {hostname}
           {address.pathname === '/' ? '' : address.pathname}
-        </p>
+          </p>
+        )}
       </div>
     </div>
   )
