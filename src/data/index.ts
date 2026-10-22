@@ -1,3 +1,6 @@
+export * from './about'
+export * from './hero'
 export * from './information-pages'
 export * from './navigation'
 export * from './socials'
+export * from './stack'
