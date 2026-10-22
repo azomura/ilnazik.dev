@@ -9,7 +9,7 @@ export function HeaderLogin() {
       variant='secondary'
       aria-label='Войти'
       className={cn(
-        'h-12 w-24 sm:w-12 md:w-24 gap-2.5 p-0',
+        'h-12 min-h-12 w-24 sm:w-12 md:w-24 gap-2.5 border-0 bg-clip-border p-0',
         'rounded-l-[8px] rounded-r-[14px] bg-muted/70 text-white',
         'font-artegra text-[13px] font-semibold leading-[normal] tracking-normal'
       )}

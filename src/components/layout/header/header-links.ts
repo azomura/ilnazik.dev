@@ -1,4 +1,5 @@
 import { routes } from '@/config/routes'
+
 import type { IHeaderLink } from '@/interfaces/header'
 
 export const headerLinks: readonly IHeaderLink[] = [
