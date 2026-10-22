@@ -7,7 +7,7 @@ export const socials = {
 
     telegram: 'https://t.me/azomura',
     telegramChannel: '',
-    discord: 'https://discord.com/kitty_ilnazik',
+    discord: 'https://discord.com/users/1319210379330719744',
 
     youtube: '',
     twitch: 'https://twitch.tv/kitty_ilnazik'
