@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="185.334 268 174 110" fill="none"><defs
+    ><radialGradient
+            id="paint91_radial_226_66"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientTransform="matrix(5.47438 56.0533 41.7287 -5.32161 340.927 360.986)"
+            gradientUnits="userSpaceOnUse"
+        >
+<stop stop-color="#E83D40" stop-opacity="0.8" />
+<stop offset="1" stop-color="#E83D40" stop-opacity="0.1" />
+</radialGradient>
+<radialGradient
+            id="paint92_radial_226_66"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientTransform="matrix(5.47438 56.0533 41.7287 -5.32161 340.927 360.986)"
+            gradientUnits="userSpaceOnUse"
+        >
+<stop stop-color="#E83D40" stop-opacity="0.8" />
+<stop offset="1" stop-color="#E83D40" stop-opacity="0.1" />
+</radialGradient>
+<radialGradient
+            id="paint93_radial_226_66"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientTransform="matrix(-4.72582 -42.691 -56.4638 7.96985 331.962 361.398)"
+            gradientUnits="userSpaceOnUse"
+        >
+<stop stop-color="#E83D40" stop-opacity="0.8" />
+<stop offset="1" stop-color="#E83D40" stop-opacity="0" />
+</radialGradient>
+</defs><g opacity="0.5">
+<path
+            d="M375 398.984L305.198 315H289V392.989H301.98V331.681L364.809 407C368.349 404.509 371.782 401.909 375 398.984Z"
+            fill="url(#paint91_radial_226_66)"
+            fill-opacity="0.7"
+        />
+<path
+            d="M354.434 315H367.307V392.989H354.434V315Z"
+            fill="url(#paint92_radial_226_66)"
+            fill-opacity="0.7"
+        />
+<mask id="stroke7_226_66" fill="white">
+<path
+                d="M375 398.984L305.198 315H289V392.989H301.98V331.681L364.809 407C368.349 404.509 371.782 401.909 375 398.984Z"
+            />
+<path d="M354.434 315H367.307V392.989H354.434V315Z" />
+</mask>
+<path
+            d="M375 398.984L305.198 315H289V392.989H301.98V331.681L364.809 407C368.349 404.509 371.782 401.909 375 398.984ZM354.434 315H367.307V392.989H354.434V315Z"
+            stroke-width="0.4"
+            stroke="url(#paint93_radial_226_66)"
+            mask="url(#stroke7_226_66)"
+        />
+</g>
+</svg>

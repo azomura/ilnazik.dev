@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="741.334 146 174 110" fill="none"><defs
+    ><radialGradient
+            id="paint10_radial_226_66"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientTransform="matrix(-3.8466 -57.076 -45.9589 10.6553 889.703 255.032)"
+            gradientUnits="userSpaceOnUse"
+        >
+<stop stop-color="#E83D40" stop-opacity="0.8" />
+<stop offset="1" stop-color="#E83D40" stop-opacity="0" />
+</radialGradient>
+<radialGradient
+            id="paint8_radial_226_66"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientTransform="matrix(4.45589 74.9408 33.9652 -7.11476 897.001 254.481)"
+            gradientUnits="userSpaceOnUse"
+        >
+<stop stop-color="#E83D40" stop-opacity="0.8" />
+<stop offset="1" stop-color="#E83D40" stop-opacity="0.1" />
+</radialGradient>
+<radialGradient
+            id="paint9_radial_226_66"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientTransform="matrix(4.45589 74.9408 33.9652 -7.11476 897.001 254.481)"
+            gradientUnits="userSpaceOnUse"
+        >
+<stop stop-color="#E83D40" stop-opacity="0.8" />
+<stop offset="1" stop-color="#E83D40" stop-opacity="0.1" />
+</radialGradient>
+</defs><g opacity="0.5">
+<path
+            d="M873.788 233.16H854.734L885.11 207.57V304.58L873.788 316V233.16Z"
+            fill="url(#paint8_radial_226_66)"
+            fill-opacity="0.7"
+        />
+<path
+            d="M905.129 273.461H924.734L893.808 299.348V200.938L905.129 193V273.461Z"
+            fill="url(#paint9_radial_226_66)"
+            fill-opacity="0.7"
+        />
+<mask id="stroke4_226_66" fill="white">
+<path d="M873.788 233.16H854.734L885.11 207.57V304.58L873.788 316V233.16Z" />
+<path d="M905.129 273.461H924.734L893.808 299.348V200.938L905.129 193V273.461Z" />
+</mask>
+<path
+            d="M873.788 233.16H854.734L885.11 207.57V304.58L873.788 316V233.16ZM905.129 273.461H924.734L893.808 299.348V200.938L905.129 193V273.461Z"
+            stroke-width="0.4"
+            stroke="url(#paint10_radial_226_66)"
+            mask="url(#stroke4_226_66)"
+        />
+</g>
+</svg>

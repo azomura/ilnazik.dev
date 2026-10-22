@@ -1,0 +1,44 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="185.334 146 174 110"
+    fill="none"
+><defs><radialGradient
+            id="paint2_radial_226_66"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientTransform="matrix(10.2485 35.3379 78.12 -3.35493 351.146 229.991)"
+            gradientUnits="userSpaceOnUse"
+        >
+<stop stop-color="#E83D40" stop-opacity="0.8" />
+<stop offset="1" stop-color="#E83D40" stop-opacity="0.1" />
+</radialGradient>
+<radialGradient
+            id="paint3_radial_226_66"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientTransform="matrix(-8.84717 -26.9139 -105.705 5.02447 334.362 230.251)"
+            gradientUnits="userSpaceOnUse"
+        >
+<stop stop-color="#E83D40" stop-opacity="0.8" />
+<stop offset="1" stop-color="#E83D40" stop-opacity="0" />
+</radialGradient>
+<path
+            id="stroke0_226_66"
+            d="M314.788 201L282.942 259H253.934L278.797 213.708C282.65 206.69 292.267 201 300.277 201H314.788ZM385.925 215.5C385.925 207.49 392.419 201 400.429 201C408.44 201 414.934 207.49 414.934 215.5C414.934 223.51 408.44 230 400.429 230C392.419 230 385.925 223.51 385.925 215.5ZM320.221 201H349.23L317.39 259H288.382L320.221 201ZM354.486 201H383.494L358.631 246.292C354.778 253.31 345.161 259 337.15 259H322.646L354.486 201Z"
+        />
+</defs><g opacity="0.5">
+<use xlink:href="#stroke0_226_66" fill="url(#paint2_radial_226_66)" fill-opacity="0.7" />
+<mask id="stroke1_226_66" fill="white">
+<use xlink:href="#stroke0_226_66" />
+</mask>
+<path
+            d="M314.788 201L282.942 259H253.934L278.797 213.708C282.65 206.69 292.267 201 300.277 201H314.788ZM385.925 215.5C385.925 207.49 392.419 201 400.429 201C408.44 201 414.934 207.49 414.934 215.5C414.934 223.51 408.44 230 400.429 230C392.419 230 385.925 223.51 385.925 215.5ZM320.221 201H349.23L317.39 259H288.382L320.221 201ZM354.486 201H383.494L358.631 246.292C354.778 253.31 345.161 259 337.15 259H322.646L354.486 201Z"
+            stroke-width="0.4"
+            stroke="url(#paint3_radial_226_66)"
+            mask="url(#stroke1_226_66)"
+        />
+</g>
+</svg>
