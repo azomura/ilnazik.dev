@@ -4,6 +4,7 @@
 @import 'shadcn/tailwind.css';
 
 @import './fonts.css';
+@import './typography.css';
 @import './tokens.css';
 @import './base.css';
 @import './background.css';
