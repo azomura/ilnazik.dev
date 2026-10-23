@@ -1,5 +1,5 @@
-import aromaForgeOutline from '@/assets/projects/aroma-forge-outline.svg'
 import AromaForgeLogo from '@/assets/projects/aroma-forge-logo.svg'
+import aromaForgeOutline from '@/assets/projects/aroma-forge-outline.svg'
 import aromaForgeScreen from '@/assets/projects/aroma-forge-screen.png'
 
 import type { IProject, ProjectCategory } from '@/interfaces/project'
@@ -42,3 +42,8 @@ export const projects: readonly IProject[] = [
     screenshot: 'https://i.pinimg.com/736x/4f/da/ac/4fdaac01ce8e4867d88785b753d8165b.jpg'
   }
 ]
+
+export const recentProjectGroups = projectCategories.map(category => ({
+  category,
+  projects: projects.filter(project => project.category === category).slice(0, 3)
+}))
