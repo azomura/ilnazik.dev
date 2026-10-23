@@ -10,6 +10,7 @@ export const routes = {
   },
 
   projects: '/projects',
+  reviews: '/reviews',
   pricing: '/pricing',
   about: '/about',
   rewards: '/rewards',
