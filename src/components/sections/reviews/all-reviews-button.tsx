@@ -5,25 +5,16 @@ import { Button } from '@/components/ui/button'
 
 import { routes } from '@/config/routes'
 
-import { cn } from '@/lib/utils'
-
-interface IAllReviewsButtonProps {
-  compact?: boolean
-}
-
-export function AllReviewsButton({ compact = false }: IAllReviewsButtonProps) {
+export function AllReviewsButton() {
   return (
     <Button
       render={<Link to={routes.reviews} />}
       nativeButton={false}
       variant='secondary'
-      className={cn(
-        'gap-2 font-artegra text-[14px]',
-        compact ? 'h-8 rounded-[8px] px-3' : 'h-12 rounded-[16px] px-5'
-      )}
+      className='h-8.5 gap-2 rounded-[16px] bg-card px-3 font-artegra font-normal text-[13px]'
     >
       Все отзывы
-      <ArrowUpRight className='size-4' />
+      <ArrowUpRight className='size-3.5' />
     </Button>
   )
 }

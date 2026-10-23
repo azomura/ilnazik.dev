@@ -2,6 +2,7 @@ import { HorizontalSlider } from '@/components/horizontal-slider'
 
 import { reviews } from '@/data/reviews'
 
+import { Section } from '../section'
 import { SectionHeading } from '../section-heading'
 
 import { AllReviewsButton } from './all-reviews-button'
@@ -11,10 +12,7 @@ export function Reviews() {
   const visibleReviews = reviews.slice(0, 5)
 
   return (
-    <section
-      id='reviews'
-      className='mx-auto w-[calc(100%-2rem)] max-w-275 scroll-mt-28 py-16 lg:scroll-mt-36 lg:py-20'
-    >
+    <Section id='reviews'>
       <HorizontalSlider
         renderHeader={controls => (
           <SectionHeading label='отзывы' actions={controls} className='mb-6' showDot={false}>
@@ -23,7 +21,7 @@ export function Reviews() {
         )}
         hideActionsAtEnd
         actionsClassName='hidden sm:flex'
-        actions={reviews.length > 3 ? <AllReviewsButton compact /> : undefined}
+        actions={reviews.length > 3 && <AllReviewsButton />}
       >
         {visibleReviews.map((review, index) => (
           <ReviewCard
@@ -37,6 +35,6 @@ export function Reviews() {
           <AllReviewsButton />
         </li>
       </HorizontalSlider>
-    </section>
+    </Section>
   )
 }

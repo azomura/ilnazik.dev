@@ -39,12 +39,12 @@ export function HorizontalSlider({
         <div
           inert={actionsHidden}
           className={cn(
-            'flex h-8 shrink-0 overflow-hidden *:w-36',
-            'transition-[width,opacity,transform] duration-300',
+            'flex h-8.5 shrink-0 overflow-hidden *:shrink-0',
+            'transition-[max-width,opacity,transform] duration-300',
             'ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none',
             actionsHidden
-              ? 'pointer-events-none w-0 translate-x-6 opacity-0'
-              : 'w-36 translate-x-0 opacity-100',
+              ? 'pointer-events-none max-w-0 translate-x-6 opacity-0'
+              : 'max-w-36 translate-x-0 opacity-100',
             actionsClassName
           )}
         >
@@ -52,16 +52,16 @@ export function HorizontalSlider({
         </div>
       )}
       {overflow && (
-        <>
+        <div className='flex h-8.5 items-center gap-0.5 rounded-[16px] bg-card p-0.75'>
           <Button
             variant='secondary'
             size='icon-sm'
             title='Прокрутить влево'
             disabled={!canScrollLeft}
             onClick={() => scrollBy(-1)}
-            className='rounded-[8px]'
+            className='size-7 rounded-[13px] bg-transparent hover:bg-secondary'
           >
-            <ArrowLeft className='size-4' />
+            <ArrowLeft className='size-3.5' />
           </Button>
           <Button
             variant='secondary'
@@ -69,11 +69,11 @@ export function HorizontalSlider({
             title='Прокрутить вправо'
             disabled={!canScrollRight}
             onClick={() => scrollBy(1)}
-            className='rounded-[8px]'
+            className='size-7 rounded-[13px] bg-transparent hover:bg-secondary'
           >
-            <ArrowRight className='size-4' />
+            <ArrowRight className='size-3.5' />
           </Button>
-        </>
+        </div>
       )}
     </div>
   )
@@ -101,13 +101,23 @@ export function HorizontalSlider({
           {children}
         </ul>
 
-        {canScrollLeft && (
-          <div className='pointer-events-none absolute inset-y-0 left-0 w-8 bg-linear-to-r from-background to-transparent' />
-        )}
+        <div
+          className={cn(
+            'pointer-events-none absolute inset-y-0 left-0 w-12',
+            'bg-linear-to-r from-background to-transparent',
+            'transition-opacity ease-out motion-reduce:transition-none',
+            canScrollLeft ? 'opacity-100 duration-0' : 'opacity-0 duration-500'
+          )}
+        />
 
-        {canScrollRight && (
-          <div className='pointer-events-none absolute inset-y-0 right-0 w-8 bg-linear-to-l from-background to-transparent' />
-        )}
+        <div
+          className={cn(
+            'pointer-events-none absolute inset-y-0 right-0 w-12',
+            'bg-linear-to-l from-background to-transparent',
+            'transition-opacity ease-out motion-reduce:transition-none',
+            canScrollRight ? 'opacity-100 duration-0' : 'opacity-0 duration-500'
+          )}
+        />
       </div>
     </div>
   )

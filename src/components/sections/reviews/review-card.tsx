@@ -49,8 +49,8 @@ export function ReviewCard({ review, className }: IReviewCardProps) {
           </Avatar>
 
           <div className='min-w-0 font-artegra text-[14px] leading-5'>
-            <h3 className='truncate text-foreground'>{review.author}</h3>
-            <p className='mt-0.5 text-text-dim'>{review.projectType}</p>
+            <h3 className='truncate font-medium text-foreground'>{review.author}</h3>
+            <p className='mt-px font-normal text-text-dim'>{review.projectType}</p>
           </div>
 
           <div className='ml-auto flex shrink-0 items-center gap-2 self-start pt-1.5'>
@@ -66,7 +66,7 @@ export function ReviewCard({ review, className }: IReviewCardProps) {
           </div>
         </figcaption>
 
-        <blockquote className='mt-2 font-artegra text-[14px] leading-5 text-foreground'>
+        <blockquote className='mt-2 font-artegra font-medium text-[14px] leading-5 text-foreground'>
           {review.text}
         </blockquote>
       </figure>

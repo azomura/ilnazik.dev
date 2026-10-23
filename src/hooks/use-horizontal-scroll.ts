@@ -16,8 +16,10 @@ export function useHorizontalScroll<T extends HTMLElement>(observeEnd = false) {
     let wheelTimer: ReturnType<typeof setTimeout> | undefined
 
     const updateEdges = () => {
-      const left = element.scrollLeft > 1
-      const right = element.scrollLeft < element.scrollWidth - element.clientWidth - 1
+      const leftDistance = Math.max(0, element.scrollLeft)
+      const rightDistance = Math.max(0, element.scrollWidth - element.clientWidth - leftDistance)
+      const left = leftDistance > 1
+      const right = rightDistance > 1
 
       setEdges(previous =>
         previous.left === left && previous.right === right ? previous : { left, right }
