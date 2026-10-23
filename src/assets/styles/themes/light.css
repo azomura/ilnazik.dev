@@ -84,5 +84,12 @@
     rgb(255 255 255 / 16%) 0%,
     rgb(255 255 255 / 0%) 100%
   );
+  --project-overlay: linear-gradient(
+    180deg,
+    #171a1e00 0%,
+    #171a1eb3 19%,
+    #171a1ef2 40%,
+    #171a1e 56%
+  );
   --logo-accent: radial-gradient(ellipse at center, #e83d40 6%, #e05254 39%, #e83d40 75%);
 }
