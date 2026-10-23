@@ -1,19 +1,16 @@
-import { cn } from '@/lib/utils'
+import { Section } from '../section'
 
 import { AboutContent } from './about-content'
 import { AboutPortrait } from './about-portrait'
 
 export function About() {
   return (
-    <section
+    <Section
       id='about'
-      className={cn(
-        'mx-auto grid w-[calc(100%-2rem)] max-w-275 scroll-mt-28 items-center gap-8 py-16',
-        'lg:grid-cols-[367px_minmax(0,1fr)] lg:gap-5 lg:py-20 lg:scroll-mt-36'
-      )}
+      className='grid items-center gap-8 lg:grid-cols-[367px_minmax(0,1fr)] lg:gap-5'
     >
       <AboutPortrait />
       <AboutContent />
-    </section>
+    </Section>
   )
 }
