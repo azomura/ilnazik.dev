@@ -17,9 +17,11 @@ export function AboutStatistics() {
               'select-none text-primary'
             )}
           />
+
           <p className='text-[34px] font-space-grotesk font-semibold leading-10 text-primary'>
             {value}
           </p>
+
           <p className='mt-0.75 font-artegra font-normal max-w-24 text-[13px] leading-4.25 text-foreground/90'>
             {label}
           </p>

@@ -21,8 +21,8 @@ export function StackCategory({ category }: IStackCategoryProps) {
         </>
       }
     >
-      {category.technologies.map(technology => (
-        <StackCard key={technology.name} technology={technology} />
+      {category.technologies.map((technology, index) => (
+        <StackCard key={`${technology.name}-${index}`} technology={technology} />
       ))}
     </HorizontalSlider>
   )

@@ -13,11 +13,13 @@ export function AboutContent() {
           {developerProfile.name}
         </span>
       </SectionHeading>
+
       <p className='mt-4 max-w-145 font-artegra text-[16px] font-normal leading-6 text-muted-foreground'>
         Привет! Я Ильназ — fullstack-разработчик с более чем 5-летним опытом. Здесь делюсь своими
         проектами, рассказываю о стеке и помогаю воплощать идеи в удобные сайты, приложения и
         сервисы.
       </p>
+
       <HeroSpecializations />
       <AboutStatistics />
     </div>

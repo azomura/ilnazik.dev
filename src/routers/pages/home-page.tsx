@@ -1,4 +1,4 @@
-import { About, Hero, Reviews, Services, Stack } from '@/components/sections'
+import { About, Hero, Projects, Reviews, Services, Stack } from '@/components/sections'
 
 export function HomePage() {
   return (
@@ -7,6 +7,7 @@ export function HomePage() {
       <About />
       <Stack />
       <Services />
+      <Projects />
       <Reviews />
     </>
   )
