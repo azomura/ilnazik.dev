@@ -1,12 +1,10 @@
 import { useEffect, useState } from 'react'
 
-import { useLinkPreview } from './use-link-preview'
+import type { IPreviewTarget } from '@/interfaces/preview'
 
-interface IPreviewTarget {
-  anchor: HTMLElement
-  url: string
-  developer: boolean
-}
+import { getPreviewTarget } from '@/lib/get-preview-target'
+
+import { useLinkPreview } from './use-link-preview'
 
 export function usePreview() {
   const [target, setTarget] = useState<IPreviewTarget | null>(null)
@@ -39,16 +37,7 @@ export function usePreview() {
 
       clearTimeout(timer)
 
-      let next: IPreviewTarget | null = null
-      if (anchor?.dataset.preview === 'developer') {
-        next = { anchor, developer: true, url: '' }
-      } else if (anchor instanceof HTMLAnchorElement) {
-        const url = new URL(anchor.href, location.href)
-
-        if (['http:', 'https:'].includes(url.protocol) && url.origin !== location.origin) {
-          next = { anchor, developer: false, url: url.href }
-        }
-      }
+      const next = getPreviewTarget(anchor)
 
       if (next) {
         active = anchor
