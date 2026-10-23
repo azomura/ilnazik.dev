@@ -11,13 +11,20 @@ interface IImageProps extends Omit<ComponentProps<'img'>, 'ref' | 'onLoad' | 'on
 }
 
 export function Image({
-  src, alt = '', className, containerClassName, loadingClassName, ...props
+  src,
+  alt = '',
+  className,
+  containerClassName,
+  loadingClassName,
+  ...props
 }: IImageProps) {
   const { status, loading, imageProps } = useImage(src)
   if (!src || status === 'error') return null
 
   return (
-    <div className={cn('relative overflow-hidden', containerClassName, loading && loadingClassName)}>
+    <div
+      className={cn('relative overflow-hidden', containerClassName, loading && loadingClassName)}
+    >
       <img
         {...props}
         {...imageProps}

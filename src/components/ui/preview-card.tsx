@@ -12,7 +12,13 @@ interface IPreviewCardContentProps {
 function PreviewCardContent({ children, anchor, keepMounted = false }: IPreviewCardContentProps) {
   return (
     <PreviewCardPrimitive.Portal keepMounted={keepMounted}>
-      <PreviewCardPrimitive.Positioner anchor={anchor} sideOffset={10} side='top' align='start' className='z-100'>
+      <PreviewCardPrimitive.Positioner
+        anchor={anchor}
+        sideOffset={10}
+        side='top'
+        align='start'
+        className='z-100'
+      >
         <PreviewCardPrimitive.Popup
           className={cn(
             'outline-none transition-opacity duration-100',
