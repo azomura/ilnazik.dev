@@ -1,12 +1,10 @@
 import type { ReactNode } from 'react'
 
-import { ArrowLeft, ArrowRight } from 'lucide-react'
-
-import { Button } from '@/components/ui/button'
-
 import { useHorizontalScroll } from '@/hooks/use-horizontal-scroll'
 
 import { cn } from '@/lib/utils'
+
+import { SliderControls } from './slider-controls'
 
 interface IHorizontalSliderProps {
   children: ReactNode
@@ -34,48 +32,14 @@ export function HorizontalSlider({
   const actionsHidden = hideActionsAtEnd && (endVisible || !canScrollRight)
 
   const controls = (actions || overflow) && (
-    <div className='ml-auto flex items-center gap-2'>
-      {actions && (
-        <div
-          inert={actionsHidden}
-          className={cn(
-            'flex h-8.5 shrink-0 overflow-hidden *:shrink-0',
-            'transition-[max-width,opacity,transform] duration-300',
-            'ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none',
-            actionsHidden
-              ? 'pointer-events-none max-w-0 translate-x-6 opacity-0'
-              : 'max-w-36 translate-x-0 opacity-100',
-            actionsClassName
-          )}
-        >
-          {actions}
-        </div>
-      )}
-      {overflow && (
-        <div className='flex h-8.5 items-center gap-0.5 rounded-[16px] bg-card p-0.75'>
-          <Button
-            variant='secondary'
-            size='icon-sm'
-            title='Прокрутить влево'
-            disabled={!canScrollLeft}
-            onClick={() => scrollBy(-1)}
-            className='size-7 rounded-[13px] bg-transparent hover:bg-secondary'
-          >
-            <ArrowLeft className='size-3.5' />
-          </Button>
-          <Button
-            variant='secondary'
-            size='icon-sm'
-            title='Прокрутить вправо'
-            disabled={!canScrollRight}
-            onClick={() => scrollBy(1)}
-            className='size-7 rounded-[13px] bg-transparent hover:bg-secondary'
-          >
-            <ArrowRight className='size-3.5' />
-          </Button>
-        </div>
-      )}
-    </div>
+    <SliderControls
+      actions={actions}
+      className={actionsClassName}
+      hidden={actionsHidden}
+      canScrollLeft={canScrollLeft}
+      canScrollRight={canScrollRight}
+      scrollBy={scrollBy}
+    />
   )
 
   return (
