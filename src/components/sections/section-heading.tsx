@@ -9,12 +9,14 @@ interface ISectionHeadingProps {
   children: ReactNode
   className?: string
   showDot?: boolean
+  actions?: ReactNode
 }
 
 export function SectionHeading({
   label,
   children,
   className,
+  actions,
   showDot = true
 }: ISectionHeadingProps) {
   return (
@@ -28,7 +30,7 @@ export function SectionHeading({
         <SectionArrow className='size-2.75 shrink-0' />
         {label}
       </p>
-      <div className='mt-2 flex items-end justify-between gap-4'>
+      <div className='mt-2 flex flex-wrap items-end justify-between gap-4'>
         <h2
           className={cn(
             'min-w-0 font-artegra text-[28px] font-semibold leading-tight text-foreground',
@@ -37,7 +39,10 @@ export function SectionHeading({
         >
           {children}
         </h2>
-        {showDot && <span className='mb-1.5 size-1.5 shrink-0 rounded-full bg-foreground' />}
+        <div className='ml-auto flex shrink-0 items-end gap-4'>
+          {actions}
+          {showDot && <span className='mb-1.5 size-1.5 shrink-0 rounded-full bg-foreground' />}
+        </div>
       </div>
     </div>
   )

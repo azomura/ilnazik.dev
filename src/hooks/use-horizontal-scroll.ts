@@ -1,11 +1,12 @@
 import { useEffect, useRef, useState, type PointerEvent } from 'react'
 
-export function useHorizontalScroll<T extends HTMLElement>() {
+export function useHorizontalScroll<T extends HTMLElement>(observeEnd = false) {
   const ref = useRef<T | null>(null)
   const drag = useRef<{ id: number; x: number; left: number } | null>(null)
 
   const [dragging, setDragging] = useState(false)
   const [edges, setEdges] = useState({ left: false, right: false })
+  const [endVisible, setEndVisible] = useState(false)
 
   useEffect(() => {
     const element = ref.current
@@ -67,12 +68,23 @@ export function useHorizontalScroll<T extends HTMLElement>() {
     observer.observe(element)
     updateEdges()
 
+    const endObserver = observeEnd
+      ? new IntersectionObserver(
+          ([entry]) => {
+            setEndVisible(entry.isIntersecting && entry.intersectionRatio >= 0.5)
+          },
+          { root: element, threshold: 0.5 }
+        )
+      : undefined
+    if (element.lastElementChild) endObserver?.observe(element.lastElementChild)
+
     return () => {
       controller.abort()
       observer.disconnect()
+      endObserver?.disconnect()
       clearTimeout(wheelTimer)
     }
-  }, [])
+  }, [observeEnd])
 
   const onPointerDown = (event: PointerEvent<T>) => {
     const element = event.currentTarget
@@ -109,6 +121,7 @@ export function useHorizontalScroll<T extends HTMLElement>() {
     dragging,
     canScrollLeft: edges.left,
     canScrollRight: edges.right,
+    endVisible,
     scrollBy: (direction: number) => {
       const element = ref.current
       if (!element) return
