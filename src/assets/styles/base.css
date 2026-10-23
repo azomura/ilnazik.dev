@@ -1,5 +1,41 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
+    scrollbar-width: none;
+  }
+
+  *::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@property --button-scroll-progress {
+  syntax: '<number>';
+  inherits: false;
+  initial-value: 0;
+}
+
+@property --button-hover {
+  syntax: '<number>';
+  inherits: false;
+  initial-value: 0;
+}
+
+@keyframes page-scroll-fill {
+  from { --button-scroll-progress: 0; }
+  to { --button-scroll-progress: 1; }
+}
+
+@utility page-scroll-fill {
+  --button-scroll-progress: var(--page-scroll-progress, 0);
+  --button-fill-level: calc(
+    var(--button-scroll-progress) + (1 - var(--button-scroll-progress)) * var(--button-hover)
+  );
+  translate: 0 calc(40px * (1 - var(--button-fill-level)));
+  transition: --button-hover 700ms ease-in-out;
+
+  @supports (animation-timeline: scroll(root block)) {
+    animation: page-scroll-fill 1s linear both;
+    animation-timeline: scroll(root block);
   }
 }
