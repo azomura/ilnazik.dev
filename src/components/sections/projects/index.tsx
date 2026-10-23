@@ -25,8 +25,10 @@ export function Projects({ catalog = false }: IProjectsProps) {
         <SectionHeading
           label='проекты'
           showDot={false}
+          className='max-sm:[&_h2]:flex-1 max-sm:[&_h2]:text-[20px]'
+          actionsClassName='max-sm:contents'
           actions={
-            <div className='flex flex-wrap items-center gap-2'>
+            <div className='contents sm:flex sm:flex-wrap sm:items-center sm:gap-2'>
               <ProjectFilters />
 
               {!catalog && (

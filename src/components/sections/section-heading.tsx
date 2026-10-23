@@ -10,6 +10,7 @@ interface ISectionHeadingProps {
   className?: string
   showDot?: boolean
   actions?: ReactNode
+  actionsClassName?: string
 }
 
 export function SectionHeading({
@@ -17,6 +18,7 @@ export function SectionHeading({
   children,
   className,
   actions,
+  actionsClassName,
   showDot = true
 }: ISectionHeadingProps) {
   return (
@@ -39,7 +41,7 @@ export function SectionHeading({
         >
           {children}
         </h2>
-        <div className='ml-auto flex shrink-0 items-end gap-4'>
+        <div className={cn('ml-auto flex shrink-0 items-end gap-4', actionsClassName)}>
           {actions}
           {showDot && <span className='mb-1.5 size-1.5 shrink-0 rounded-full bg-foreground' />}
         </div>

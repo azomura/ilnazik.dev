@@ -10,6 +10,12 @@ import { HeaderMobile } from './mobile'
 export function Header() {
   return (
     <>
+      <div
+        className={cn(
+          'pointer-events-none fixed inset-x-0 top-0 z-40 h-36 sm:h-52',
+          'bg-linear-to-b from-background/95 to-background/0 to-85%'
+        )}
+      />
       <HeaderMobile />
       <header
         className={cn(
