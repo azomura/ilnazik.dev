@@ -1,9 +1,13 @@
+import { useI18n } from '@/hooks/providers/use-i18n'
+
 import { User } from '@/components/icons/user'
 import { Button } from '@/components/ui/button'
 
 import { cn } from '@/lib/utils'
 
 export function HeaderLogin() {
+  const { t } = useI18n()
+
   return (
     <Button
       variant='secondary'
@@ -14,7 +18,7 @@ export function HeaderLogin() {
       )}
     >
       <User className='size-auto h-3.5 w-3 text-white' />
-      <span className='sm:max-md:hidden'>Войти</span>
+      <span className='sm:max-md:hidden'>{t('nav.login')}</span>
     </Button>
   )
 }

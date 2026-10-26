@@ -1,4 +1,4 @@
-import { useHeaderMenu } from '@/hooks/use-header-menu'
+import { useHeaderMenu } from '@/hooks/navigation/use-header-menu'
 
 import { cn } from '@/lib/utils'
 

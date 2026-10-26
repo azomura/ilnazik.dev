@@ -1,3 +1,5 @@
+import { useI18n } from '@/hooks/providers/use-i18n'
+
 import { Link } from 'react-router-dom'
 
 import { cn } from '@/lib/utils'
@@ -9,6 +11,8 @@ interface IMobileNavProps {
 }
 
 export function MobileNav({ onNavigate }: IMobileNavProps) {
+  const { t } = useI18n()
+
   return (
     <nav>
       <ul className='flex flex-col gap-1'>
@@ -24,7 +28,7 @@ export function MobileNav({ onNavigate }: IMobileNavProps) {
                 'focus-visible:outline-2 focus-visible:outline-ring'
               )}
             >
-              {link.label}
+              {t(link.label)}
             </Link>
           </li>
         ))}
