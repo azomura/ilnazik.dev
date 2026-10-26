@@ -1,35 +1,40 @@
-import type { PropsWithChildren } from 'react'
-
-import { ExternalLinkPreview } from '@/components/links/external-link-preview'
-import { DeveloperCard } from '@/components/profile/developer-card'
-import { PreviewCard } from '@/components/ui/preview-card'
+import { lazy, Suspense, useEffect, type PropsWithChildren } from 'react'
 
 import { usePreview } from '@/hooks/preview/use-preview'
 
+const loadPreview = () =>
+  import('./preview-popup').then(module => ({ default: module.PreviewPopup }))
+
+const PreviewPopup = lazy(loadPreview)
+
 export function PreviewProvider({ children }: PropsWithChildren) {
-  const { target, open, setOpen, data, loading } = usePreview()
+  const { target, open, setOpen } = usePreview()
+
+  useEffect(() => {
+    if (!matchMedia('(any-hover: hover)').matches) return
+
+    const warmup = () => {
+      void loadPreview().catch(() => {})
+    }
+
+    if ('requestIdleCallback' in window) {
+      const id = requestIdleCallback(warmup, { timeout: 1500 })
+      return () => cancelIdleCallback(id)
+    }
+
+    const id = setTimeout(warmup, 1000)
+
+    return () => clearTimeout(id)
+  }, [])
 
   return (
     <>
       {children}
-      <PreviewCard.Root open={open} onOpenChange={setOpen}>
-        {target && (
-          <PreviewCard.Content anchor={target.anchor}>
-            <div data-preview-popup>
-              {target.developer ? (
-                <DeveloperCard />
-              ) : (
-                <ExternalLinkPreview
-                  key={target.url}
-                  url={target.url}
-                  data={data}
-                  loading={loading}
-                />
-              )}
-            </div>
-          </PreviewCard.Content>
-        )}
-      </PreviewCard.Root>
+      {target && (
+        <Suspense fallback={null}>
+          <PreviewPopup target={target} open={open} setOpen={setOpen} />
+        </Suspense>
+      )}
     </>
   )
 }

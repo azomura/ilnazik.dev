@@ -4,19 +4,16 @@ import type { IPreviewTarget } from '@/interfaces/ui/preview'
 
 import { getPreviewTarget } from '@/lib/get-preview-target'
 
-import { useLinkPreview } from './use-link-preview'
-
 export function usePreview() {
   const [target, setTarget] = useState<IPreviewTarget | null>(null)
   const [open, setOpen] = useState(false)
-
-  const { data, loading } = useLinkPreview(target?.url ?? '', open && !target?.developer)
 
   useEffect(() => {
     let timer: ReturnType<typeof setTimeout> | undefined
     let active: HTMLElement | null = null
 
     const inspect = (event: Event) => {
+      if (event instanceof PointerEvent && event.pointerType !== 'mouse') return
       const element = event.type === 'focusout' ? (event as FocusEvent).relatedTarget : event.target
       if (!(element instanceof Element)) {
         clearTimeout(timer)
@@ -43,13 +40,13 @@ export function usePreview() {
         active = anchor
 
         setOpen(false)
+        setTarget(next)
 
         timer = setTimeout(
           () => {
-            setTarget(next)
             setOpen(true)
           },
-          next.developer ? 150 : 350
+          next.developer ? 80 : 120
         )
       } else {
         active = null
@@ -95,5 +92,5 @@ export function usePreview() {
     }
   }, [])
 
-  return { target, open, setOpen, data, loading }
+  return { target, open, setOpen }
 }
