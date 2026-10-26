@@ -1,52 +1,52 @@
-import type { IService } from '@/interfaces/service'
+import type { IService } from '@/interfaces/sections/service'
 
 export const services: readonly IService[] = [
   {
     id: 'frontend',
     category: 'frontend',
-    title: 'Frontend-разработка',
-    description: 'Быстрые адаптивные интерфейсы, дизайн-системы и сложные клиентские сценарии.',
+    title: "services.frontend",
+    description: "services.frontendDescription",
     priceFrom: 90000,
-    duration: '4–5 недель'
+    duration: "services.weeks"
   },
   {
     id: 'backend',
     category: 'backend',
-    title: 'Backend-разработка',
-    description: 'Архитектура сервисов, интеграции, базы данных и безопасные API.',
+    title: "services.backend",
+    description: "services.backendDescription",
     priceFrom: 90000,
-    duration: '4–5 недель'
+    duration: "services.weeks"
   },
   {
     id: 'mobile',
     category: 'mobile',
-    title: 'Мобильные приложения',
-    description: 'Кроссплатформенные приложения, разработка под ключ.',
+    title: "services.mobile",
+    description: "services.appDescription",
     priceFrom: 90000,
-    duration: '4–5 недель'
+    duration: "services.weeks"
   },
   {
     id: 'desktop',
     category: 'desktop',
-    title: 'Приложения для ПК',
-    description: 'Кроссплатформенные приложения, разработка под ключ.',
+    title: "services.desktop",
+    description: "services.appDescription",
     priceFrom: 90000,
-    duration: '4–5 недель'
+    duration: "services.weeks"
   },
   {
     id: 'chatbots',
     category: 'chatbots',
-    title: 'Чат-боты для TG, MAX, Discord',
-    description: 'Кроссплатформенные боты, разработка полного цикла.',
+    title: "services.bots",
+    description: "services.botsDescription",
     priceFrom: 90000,
-    duration: '4–5 недель'
+    duration: "services.weeks"
   },
   {
     id: 'mini-apps',
     category: 'mini-apps',
-    title: 'Мини-приложения MAX, Telegram',
-    description: 'Кроссплатформенные мини-приложения, разработка полного цикла.',
+    title: "services.miniApps",
+    description: "services.miniAppsDescription",
     priceFrom: 90000,
-    duration: '4–5 недель'
+    duration: "services.weeks"
   }
 ]

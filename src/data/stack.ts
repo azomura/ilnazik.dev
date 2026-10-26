@@ -15,123 +15,123 @@ import tailwind from '@/assets/images/stack/tailwind.svg'
 import typescriptDecoration from '@/assets/images/stack/typescript-decoration.svg'
 import typescript from '@/assets/images/stack/typescript.svg'
 
-import type { IStackCategory } from '@/interfaces/stack'
+import type { IStackCategory } from '@/interfaces/sections/stack'
 
 export const stackCategories: readonly IStackCategory[] = [
   {
     title: 'Frontend',
-    description: 'интерфейсы',
+    description: "stack.interfaces",
     technologies: [
-      { name: 'React', description: 'Дизайн системы', icon: react, decoration: reactDecoration },
+      { name: 'React', description: "stack.designSystems", icon: react, decoration: reactDecoration },
       {
         name: 'Framer Motion',
-        description: 'Анимации',
+        description: "stack.animations",
         icon: motion,
         decoration: motionDecoration
       },
       {
         name: 'Tailwind CSS',
-        description: 'Интерфейс',
+        description: "stack.interface",
         icon: tailwind,
         decoration: tailwindDecoration
       },
-      { name: 'Shadcn ui', description: 'Интерфейс', icon: shadcn, decoration: shadcnDecoration },
-      { name: 'Axios', description: 'Анимации', icon: axios, decoration: axiosDecoration },
-      { name: 'Rust', description: 'Язык П.', icon: rust, decoration: rustDecoration },
+      { name: 'Shadcn ui', description: "stack.interface", icon: shadcn, decoration: shadcnDecoration },
+      { name: 'Axios', description: "stack.animations", icon: axios, decoration: axiosDecoration },
+      { name: 'Rust', description: "stack.language", icon: rust, decoration: rustDecoration },
       {
         name: 'TypeScript',
-        description: 'Язык П.',
+        description: "stack.language",
         icon: typescript,
         decoration: typescriptDecoration
       },
-      { name: 'Next.js', description: 'Фреймворк', icon: nextjs, decoration: nextjsDecoration }
+      { name: 'Next.js', description: "stack.framework", icon: nextjs, decoration: nextjsDecoration }
     ]
   },
   {
     title: 'Frontend',
-    description: 'интерфейсы',
+    description: "stack.interfaces",
     technologies: [
-      { name: 'React', description: 'Дизайн системы', icon: react, decoration: reactDecoration },
+      { name: 'React', description: "stack.designSystems", icon: react, decoration: reactDecoration },
       {
         name: 'Framer Motion',
-        description: 'Анимации',
+        description: "stack.animations",
         icon: motion,
         decoration: motionDecoration
       },
       {
         name: 'Tailwind CSS',
-        description: 'Интерфейс',
+        description: "stack.interface",
         icon: tailwind,
         decoration: tailwindDecoration
       },
-      { name: 'Shadcn ui', description: 'Интерфейс', icon: shadcn, decoration: shadcnDecoration },
-      { name: 'Axios', description: 'Анимации', icon: axios, decoration: axiosDecoration },
-      { name: 'Rust', description: 'Язык П.', icon: rust, decoration: rustDecoration },
+      { name: 'Shadcn ui', description: "stack.interface", icon: shadcn, decoration: shadcnDecoration },
+      { name: 'Axios', description: "stack.animations", icon: axios, decoration: axiosDecoration },
+      { name: 'Rust', description: "stack.language", icon: rust, decoration: rustDecoration },
       {
         name: 'TypeScript',
-        description: 'Язык П.',
+        description: "stack.language",
         icon: typescript,
         decoration: typescriptDecoration
       },
-      { name: 'Next.js', description: 'Фреймворк', icon: nextjs, decoration: nextjsDecoration }
+      { name: 'Next.js', description: "stack.framework", icon: nextjs, decoration: nextjsDecoration }
     ]
   },
   {
     title: 'Frontend',
-    description: 'интерфейсы',
+    description: "stack.interfaces",
     technologies: [
-      { name: 'React', description: 'Дизайн системы', icon: react, decoration: reactDecoration },
+      { name: 'React', description: "stack.designSystems", icon: react, decoration: reactDecoration },
       {
         name: 'Framer Motion',
-        description: 'Анимации',
+        description: "stack.animations",
         icon: motion,
         decoration: motionDecoration
       },
       {
         name: 'Tailwind CSS',
-        description: 'Интерфейс',
+        description: "stack.interface",
         icon: tailwind,
         decoration: tailwindDecoration
       },
-      { name: 'Shadcn ui', description: 'Интерфейс', icon: shadcn, decoration: shadcnDecoration },
-      { name: 'Axios', description: 'Анимации', icon: axios, decoration: axiosDecoration },
-      { name: 'Rust', description: 'Язык П.', icon: rust, decoration: rustDecoration },
+      { name: 'Shadcn ui', description: "stack.interface", icon: shadcn, decoration: shadcnDecoration },
+      { name: 'Axios', description: "stack.animations", icon: axios, decoration: axiosDecoration },
+      { name: 'Rust', description: "stack.language", icon: rust, decoration: rustDecoration },
       {
         name: 'TypeScript',
-        description: 'Язык П.',
+        description: "stack.language",
         icon: typescript,
         decoration: typescriptDecoration
       },
-      { name: 'Next.js', description: 'Фреймворк', icon: nextjs, decoration: nextjsDecoration }
+      { name: 'Next.js', description: "stack.framework", icon: nextjs, decoration: nextjsDecoration }
     ]
   },
   {
     title: 'Frontend',
-    description: 'интерфейсы',
+    description: "stack.interfaces",
     technologies: [
-      { name: 'React', description: 'Дизайн системы', icon: react, decoration: reactDecoration },
+      { name: 'React', description: "stack.designSystems", icon: react, decoration: reactDecoration },
       {
         name: 'Framer Motion',
-        description: 'Анимации',
+        description: "stack.animations",
         icon: motion,
         decoration: motionDecoration
       },
       {
         name: 'Tailwind CSS',
-        description: 'Интерфейс',
+        description: "stack.interface",
         icon: tailwind,
         decoration: tailwindDecoration
       },
-      { name: 'Shadcn ui', description: 'Интерфейс', icon: shadcn, decoration: shadcnDecoration },
-      { name: 'Axios', description: 'Анимации', icon: axios, decoration: axiosDecoration },
-      { name: 'Rust', description: 'Язык П.', icon: rust, decoration: rustDecoration },
+      { name: 'Shadcn ui', description: "stack.interface", icon: shadcn, decoration: shadcnDecoration },
+      { name: 'Axios', description: "stack.animations", icon: axios, decoration: axiosDecoration },
+      { name: 'Rust', description: "stack.language", icon: rust, decoration: rustDecoration },
       {
         name: 'TypeScript',
-        description: 'Язык П.',
+        description: "stack.language",
         icon: typescript,
         decoration: typescriptDecoration
       },
-      { name: 'Next.js', description: 'Фреймворк', icon: nextjs, decoration: nextjsDecoration }
+      { name: 'Next.js', description: "stack.framework", icon: nextjs, decoration: nextjsDecoration }
     ]
   }
 ]
