@@ -22,8 +22,7 @@ export function useScrollbarVisibility(scrolling: boolean) {
     onTransitionEnd,
     edgeProps: {
       onPointerEnter: () => setPhase('edge-open'),
-      onPointerLeave: () =>
-        setPhase(phase === 'edge-open' ? 'edge-closing' : phase)
+      onPointerLeave: () => setPhase(phase === 'edge-open' ? 'edge-closing' : phase)
     }
   }
 }
