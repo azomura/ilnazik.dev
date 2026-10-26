@@ -1,4 +1,4 @@
-import type { IIconGradientProps } from '@/interfaces/icon'
+import type { IIconGradientProps } from '@/interfaces/ui/icon'
 
 export function IconGradient({ id, gradient }: IIconGradientProps) {
   if (!gradient) return null
