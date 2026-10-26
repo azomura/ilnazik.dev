@@ -1,0 +1,116 @@
+{
+  "footer": {
+    "discuss": "Taslamaňyzy ara alyp maslahatlaşalyň",
+    "telegram": "Telegram-da ýazmak",
+    "credit": "Dizaýn awtory",
+    "taxId": "Salgyt belgisi:",
+    "description": "— fullstack programmaçy. Saýtlar, web we Telegram programmalaryny döredýärin. Bu ýerde taslamalarym, tehnologiýalarym we hyzmatlarym bar."
+  },
+  "profile": {
+    "name": "Ilnaz Mingaleýew",
+    "initials": "IM",
+    "fullName": "Mingaleýew Ilnaz Tagirowiç",
+    "status": "Özbaşdak işleýän",
+    "role": "Fullstack programmaçy"
+  },
+  "nav": {
+    "about": "Men hakda",
+    "stack": "Tehnologiýalar",
+    "services": "Hyzmatlar",
+    "projects": "Taslamalar",
+    "orders": "Sargytlar",
+    "reviews": "Synlar",
+    "login": "Giriş"
+  },
+  "preview": {
+    "external": "Daşarky saýta geçmek"
+  },
+  "about": {
+    "label": "men hakda",
+    "description": "Salam! Men Ilnaz, 5 ýyldan gowrak tejribeli fullstack programmaçy. Taslamalarymy we tehnologiýalarymy paýlaşýaryn, pikirleri amatly saýtlara, programmalara we hyzmatlara öwürýärin.",
+    "years": "ýaş",
+    "experience": "ýyl programma düzmek tejribesi",
+    "clients": "müşderi",
+    "completed": "tamamlanan taslama"
+  },
+  "hero": {
+    "projects": "Taslamalary görmek",
+    "services": "Hyzmatlar we tehnologiýalar",
+    "status": "häzirki wagtda täjirçilik taslamasynyň üstünde işleýärin",
+    "description": "Saýtlar we web hyzmatlary, mobil we kompýuter programmalary, Telegram we MAX kiçi programmalary hem-de çatbotlar döredýärin.",
+    "bots": "Telegram / MAX / VK / Discord botlary"
+  },
+  "projects": {
+    "label": "taslamalar",
+    "all": "Ähli taslamalar",
+    "title": "Soňky taslamalar",
+    "empty": "Bu kategoriýadaky taslamalar ýakynda peýda bolar.",
+    "aromaForge": "Aroma Forge — Ys berijiler dükany"
+  },
+  "reviews": {
+    "all": "Ähli synlar",
+    "label": "synlar",
+    "title": "Soňky synlar",
+    "author": "Aleksandr K.",
+    "sample": "Çalt we ýokary hilli, hemmesi ýerlikli. Ajaýyp ýigit!"
+  },
+  "common": {
+    "more": "Giňişleýin"
+  },
+  "services": {
+    "label": "hyzmatlar",
+    "title": "Meniň hyzmatlarym",
+    "from": "başlap",
+    "duration": "möhlet",
+    "discuss": "Taslamany maslahatlaşmak",
+    "frontend": "Frontend işläp düzmek",
+    "backend": "Backend işläp düzmek",
+    "mobile": "Mobil programmalar",
+    "frontendDescription": "Çalt we uýgunlaşýan interfeýsler, dizaýn ulgamlary we çylşyrymly ulanyjy ssenariýalary.",
+    "weeks": "4–5 hepde",
+    "backendDescription": "Hyzmatlaryň arhitekturasy, integrasiýalar, maglumat bazalary we ygtybarly API-ler.",
+    "appDescription": "Dürli platformalar üçin taýýar programmalar.",
+    "desktop": "Kompýuter programmalary",
+    "bots": "TG, MAX we Discord üçin çatbotlar",
+    "botsDescription": "Dürli platformaly botlaryň doly işläp düzülmegi.",
+    "miniApps": "MAX we Telegram kiçi programmalary",
+    "miniAppsDescription": "Dürli platformaly kiçi programmalaryň doly işläp düzülmegi."
+  },
+  "stack": {
+    "label": "tehnologiýalar",
+    "title": "Kategoriýalar boýunça tehnologiýalarym",
+    "interfaces": "interfeýsler",
+    "designSystems": "Dizaýn ulgamlary",
+    "animations": "Animasiýalar",
+    "interface": "Interfeýs",
+    "language": "Programmirleme dili",
+    "framework": "Freýmwork"
+  },
+  "legal": {
+    "privacy": "Gizlinlik syýasaty",
+    "terms": "Ulanyş şertleri",
+    "cooperation": "Iş tertibi",
+    "payment": "Töleg we yzyna gaýtarmak",
+    "support": "Işe girizilenden soň goldaw"
+  },
+  "pages": {
+    "pricing": "Bahalar",
+    "about": "Men hakda giňişleýin",
+    "rewards": "Sylaglar",
+    "blog": "Blog",
+    "title": "Sahypalar"
+  },
+  "socials": {
+    "channel": "TG kanaly"
+  },
+  "settings": {
+    "theme": "Tema",
+    "language": "Dil"
+  },
+  "projectCategories": {
+    "miniApps": "Kiçi programmalar",
+    "web": "Web",
+    "desktop": "Kompýuter",
+    "mobile": "Mobil"
+  }
+}

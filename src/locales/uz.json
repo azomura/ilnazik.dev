@@ -1,0 +1,116 @@
+{
+  "footer": {
+    "discuss": "Loyihangizni muhokama qilaylik",
+    "telegram": "Telegram orqali yozish",
+    "credit": "Dizayn muallifi",
+    "taxId": "STIR:",
+    "description": "— fullstack dasturchi. Saytlar, veb va Telegram ilovalarini yarataman. Bu yerda loyihalarim, texnologiyalarim va xizmatlarim bor."
+  },
+  "profile": {
+    "name": "Ilnaz Mingaleyev",
+    "initials": "IM",
+    "fullName": "Mingaleyev Ilnaz Tagirovich",
+    "status": "O‘zini o‘zi band qilgan",
+    "role": "Fullstack dasturchi"
+  },
+  "nav": {
+    "about": "Men haqimda",
+    "stack": "Texnologiyalar",
+    "services": "Xizmatlar",
+    "projects": "Loyihalar",
+    "orders": "Buyurtmalar",
+    "reviews": "Sharhlar",
+    "login": "Kirish"
+  },
+  "preview": {
+    "external": "Tashqi saytga o‘tish"
+  },
+  "about": {
+    "label": "men haqimda",
+    "description": "Salom! Men Ilnaz, 5 yildan ortiq tajribaga ega fullstack dasturchiman. Loyihalarim va texnologiyalarim bilan bo‘lishaman, g‘oyalarni qulay saytlar, ilovalar va xizmatlarga aylantiraman.",
+    "years": "yosh",
+    "experience": "yillik dasturlash tajribasi",
+    "clients": "mijoz",
+    "completed": "yakunlangan loyiha"
+  },
+  "hero": {
+    "projects": "Loyihalarni ko‘rish",
+    "services": "Xizmatlar va texnologiyalar",
+    "status": "hozir tijoriy loyiha ustida ishlayapman",
+    "description": "Saytlar va veb xizmatlar, mobil va kompyuter ilovalari, Telegram va MAX mini ilovalari hamda chatbotlar yarataman.",
+    "bots": "Telegram / MAX / VK / Discord botlari"
+  },
+  "projects": {
+    "label": "loyihalar",
+    "all": "Barcha loyihalar",
+    "title": "So‘nggi loyihalar",
+    "empty": "Bu turkumdagi loyihalar tez orada paydo bo‘ladi.",
+    "aromaForge": "Aroma Forge — Xushbo‘ylantirgichlar do‘koni"
+  },
+  "reviews": {
+    "all": "Barcha sharhlar",
+    "label": "sharhlar",
+    "title": "So‘nggi sharhlar",
+    "author": "Aleksandr K.",
+    "sample": "Tez va sifatli, hammasi aniq. Zo‘r yigit!"
+  },
+  "common": {
+    "more": "Batafsil"
+  },
+  "services": {
+    "label": "xizmatlar",
+    "title": "Mening xizmatlarim",
+    "from": "dan boshlab",
+    "duration": "muddat",
+    "discuss": "Loyihani muhokama qilish",
+    "frontend": "Frontend dasturlash",
+    "backend": "Backend dasturlash",
+    "mobile": "Mobil ilovalar",
+    "frontendDescription": "Tezkor moslashuvchan interfeyslar, dizayn tizimlari va murakkab foydalanuvchi ssenariylari.",
+    "weeks": "4–5 hafta",
+    "backendDescription": "Xizmatlar arxitekturasi, integratsiyalar, ma’lumotlar bazalari va xavfsiz API-lar.",
+    "appDescription": "Ko‘p platformali ilovalarni tayyor holda ishlab chiqish.",
+    "desktop": "Kompyuter ilovalari",
+    "bots": "TG, MAX va Discord chatbotlari",
+    "botsDescription": "Ko‘p platformali botlarni to‘liq ishlab chiqish.",
+    "miniApps": "MAX va Telegram mini ilovalari",
+    "miniAppsDescription": "Ko‘p platformali mini ilovalarni to‘liq ishlab chiqish."
+  },
+  "stack": {
+    "label": "texnologiyalar",
+    "title": "Turkumlar bo‘yicha texnologiyalarim",
+    "interfaces": "interfeyslar",
+    "designSystems": "Dizayn tizimlari",
+    "animations": "Animatsiyalar",
+    "interface": "Interfeys",
+    "language": "Dasturlash tili",
+    "framework": "Freymvork"
+  },
+  "legal": {
+    "privacy": "Maxfiylik siyosati",
+    "terms": "Foydalanish shartlari",
+    "cooperation": "Ish tartibi",
+    "payment": "To‘lov va pulni qaytarish",
+    "support": "Ishga tushirgandan keyingi yordam"
+  },
+  "pages": {
+    "pricing": "Narxlar",
+    "about": "Men haqimda batafsil",
+    "rewards": "Mukofotlar",
+    "blog": "Blog",
+    "title": "Sahifalar"
+  },
+  "socials": {
+    "channel": "TG kanali"
+  },
+  "settings": {
+    "theme": "Mavzu",
+    "language": "Til"
+  },
+  "projectCategories": {
+    "miniApps": "Mini ilovalar",
+    "web": "Veb",
+    "desktop": "Kompyuter",
+    "mobile": "Mobil"
+  }
+}
