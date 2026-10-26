@@ -29,11 +29,25 @@
     })
   }
 
-  document.addEventListener(
-    'touchmove',
-    event => {
-      if (event.touches.length > 1) event.preventDefault()
-    },
-    { capture: true, passive: false }
-  )
+  const preventPinch = event => {
+    if (event.touches.length > 1) event.preventDefault()
+  }
+
+  let blockingPinch = false
+
+  const updatePinch = event => {
+    const next = event.touches.length > 1
+    if (next === blockingPinch) return
+
+    blockingPinch = next
+    if (next) {
+      document.addEventListener('touchmove', preventPinch, { capture: true, passive: false })
+    } else {
+      document.removeEventListener('touchmove', preventPinch, true)
+    }
+  }
+
+  for (const eventName of ['touchstart', 'touchend', 'touchcancel']) {
+    document.addEventListener(eventName, updatePinch, { capture: true, passive: true })
+  }
 })()
