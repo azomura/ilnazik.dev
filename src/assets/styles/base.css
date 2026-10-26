@@ -9,6 +9,20 @@
   }
 }
 
+@keyframes page-scroll-thumb {
+  from { translate: 0 0; }
+  to { translate: 0 var(--scroll-thumb-travel, 0px); }
+}
+
+@utility page-scroll-thumb {
+  translate: 0 var(--scroll-thumb-offset, 0px);
+
+  @supports (animation-timeline: scroll(root block)) {
+    animation: page-scroll-thumb 1s linear both;
+    animation-timeline: scroll(root block);
+  }
+}
+
 @property --button-scroll-progress {
   syntax: '<number>';
   inherits: false;

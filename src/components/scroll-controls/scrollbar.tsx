@@ -53,7 +53,7 @@ export function Scrollbar({ trackRef, visible, enabled, onRelease }: IScrollbarP
           <button
             className={cn(
               'absolute inset-x-0 top-0 h-(--scroll-thumb-size) rounded-full',
-              'translate-y-(--scroll-thumb-offset) bg-muted-foreground/60',
+              'page-scroll-thumb bg-muted-foreground/60',
               'transition-colors duration-200 hover:bg-primary',
               dragging ? 'cursor-grabbing bg-primary' : 'cursor-grab'
             )}

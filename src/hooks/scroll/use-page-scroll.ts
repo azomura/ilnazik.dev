@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 
+import { getScrollMetrics } from '@/lib/scroll-metrics'
+
 export function usePageScroll() {
   const rootRef = useRef<HTMLDivElement>(null)
   const trackRef = useRef<HTMLDivElement>(null)
@@ -13,6 +15,7 @@ export function usePageScroll() {
   useEffect(() => {
     const root = rootRef.current
     const track = trackRef.current
+    const fill = root?.querySelector<HTMLElement>('.page-scroll-fill')
     if (!root || !track) return
 
     let frame = 0
@@ -22,6 +25,8 @@ export function usePageScroll() {
     let travel = 0
     let active = false
     let topVisible = false
+    let needsMeasure = true
+    let wasScrollable = false
 
     const nativeProgress = CSS.supports('animation-timeline', 'scroll(root block)')
 
@@ -33,12 +38,28 @@ export function usePageScroll() {
 
     const update = () => {
       frame = 0
+      if (needsMeasure) {
+        needsMeasure = false
+        const metrics = getScrollMetrics(track)
+        maximum = metrics.maximum
+        travel = metrics.travel
+        track.style.setProperty('--scroll-thumb-size', `${metrics.size}px`)
+        track.style.setProperty('--scroll-thumb-travel', `${travel}px`)
+        if (wasScrollable !== maximum > 1) {
+          wasScrollable = maximum > 1
+          setScrollable(wasScrollable)
+        }
+      }
 
       const progress = maximum > 0 ? Math.min(1, Math.max(0, window.scrollY / maximum)) : 0
-      if (!nativeProgress) root.style.setProperty('--page-scroll-progress', String(progress))
+      if (!nativeProgress) {
+        fill?.style.setProperty('--page-scroll-progress', String(progress))
+        track.style.setProperty('--scroll-thumb-offset', `${progress * travel}px`)
+      }
+      updateVisibility()
+    }
 
-      root.style.setProperty('--scroll-thumb-offset', `${progress * travel}px`)
-
+    const updateVisibility = () => {
       const nextVisible = window.scrollY > 48
       if (nextVisible !== topVisible) {
         topVisible = nextVisible
@@ -47,23 +68,13 @@ export function usePageScroll() {
     }
 
     const measure = () => {
-      maximum = Math.max(0, document.documentElement.scrollHeight - window.innerHeight)
-
-      const size = Math.min(
-        track.clientHeight,
-        Math.max(36, (track.clientHeight * window.innerHeight) / (maximum + window.innerHeight))
-      )
-
-      travel = track.clientHeight - size
-
-      root.style.setProperty('--scroll-thumb-size', `${size}px`)
-
-      setScrollable(maximum > 1)
-      update()
+      needsMeasure = true
+      if (!frame) frame = requestAnimationFrame(update)
     }
 
     const onScroll = () => {
-      if (!frame) frame = requestAnimationFrame(update)
+      if (nativeProgress) updateVisibility()
+      else if (!frame) frame = requestAnimationFrame(update)
       if (!active) {
         active = true
         setScrolling(true)
