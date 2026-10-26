@@ -4,7 +4,7 @@ import { ExternalLinkPreview } from '@/components/links/external-link-preview'
 import { DeveloperCard } from '@/components/profile/developer-card'
 import { PreviewCard } from '@/components/ui/preview-card'
 
-import { usePreview } from '@/hooks/use-preview'
+import { usePreview } from '@/hooks/preview/use-preview'
 
 export function PreviewProvider({ children }: PropsWithChildren) {
   const { target, open, setOpen, data, loading } = usePreview()

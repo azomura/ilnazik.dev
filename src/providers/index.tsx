@@ -1,7 +1,10 @@
 import type { PropsWithChildren } from 'react'
 
-import { ImageProvider } from './image'
+import { AccentProvider } from './accent'
+import { I18nProvider } from './i18n'
+import { ThemeProvider } from './theme'
 
+import { ImageProvider } from './image.provider'
 import { PreviewProvider } from './preview.provider'
 import { QueryProvider } from './query.provider'
 
@@ -9,7 +12,13 @@ export function Providers({ children }: PropsWithChildren) {
   return (
     <QueryProvider>
       <ImageProvider>
-        <PreviewProvider>{children}</PreviewProvider>
+        <ThemeProvider>
+          <AccentProvider>
+            <I18nProvider>
+              <PreviewProvider>{children}</PreviewProvider>
+            </I18nProvider>
+          </AccentProvider>
+        </ThemeProvider>
       </ImageProvider>
     </QueryProvider>
   )
