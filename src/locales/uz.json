@@ -37,7 +37,7 @@
     "projects": "Loyihalarni ko‘rish",
     "services": "Xizmatlar va texnologiyalar",
     "status": "hozir tijoriy loyiha ustida ishlayapman",
-    "description": "Saytlar va veb xizmatlar, mobil va kompyuter ilovalari, Telegram va MAX mini ilovalari hamda chatbotlar yarataman.",
+    "description": "Saytlar va veb xizmatlar, mobil va kompyuter ilovalari, Telegram va MAX Mini-apps hamda chatbotlar yarataman.",
     "bots": "Telegram / MAX / VK / Discord botlari"
   },
   "projects": {
@@ -73,8 +73,8 @@
     "desktop": "Kompyuter ilovalari",
     "bots": "TG, MAX va Discord chatbotlari",
     "botsDescription": "Ko‘p platformali botlarni to‘liq ishlab chiqish.",
-    "miniApps": "MAX va Telegram mini ilovalari",
-    "miniAppsDescription": "Ko‘p platformali mini ilovalarni to‘liq ishlab chiqish."
+    "miniApps": "MAX va Telegram Mini-apps",
+    "miniAppsDescription": "Ko‘p platformali Mini-apps to‘liq ishlab chiqish."
   },
   "stack": {
     "label": "texnologiyalar",
@@ -108,7 +108,7 @@
     "language": "Til"
   },
   "projectCategories": {
-    "miniApps": "Mini ilovalar",
+    "miniApps": "Mini-apps",
     "web": "Veb",
     "desktop": "Kompyuter",
     "mobile": "Mobil"
