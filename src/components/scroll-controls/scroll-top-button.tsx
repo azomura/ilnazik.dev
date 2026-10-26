@@ -16,8 +16,8 @@ export function ScrollTopButton({ visible }: IScrollTopButtonProps) {
     <div
       inert={!visible}
       className={cn(
-        'fixed right-6 bottom-6 z-50 transition-[opacity,translate] duration-300 ease-out',
-        'motion-reduce:transition-none sm:right-8 sm:bottom-8',
+        'fixed right-4 bottom-22 z-50 xl:right-8 xl:bottom-6',
+        'transition-[opacity,translate] duration-300 ease-out motion-reduce:transition-none',
         visible ? 'translate-y-0 opacity-100' : 'pointer-events-none translate-y-3 opacity-0'
       )}
     >

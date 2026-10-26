@@ -1,4 +1,4 @@
-import { usePageScroll } from '@/hooks/use-page-scroll'
+import { usePageScroll } from '@/hooks/scroll/use-page-scroll'
 
 import { ScrollTopButton } from './scroll-top-button'
 import { Scrollbar } from './scrollbar'

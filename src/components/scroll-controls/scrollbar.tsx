@@ -1,6 +1,6 @@
 import type { Ref } from 'react'
 
-import { useScrollbarDrag, useScrollbarVisibility } from '@/hooks'
+import { useScrollbarDrag, useScrollbarVisibility } from '@/hooks/scroll'
 
 import { cn } from '@/lib/utils'
 
