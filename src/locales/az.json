@@ -1,0 +1,116 @@
+{
+  "footer": {
+    "discuss": "Layihənizi müzakirə edək",
+    "telegram": "Telegram-da yazın",
+    "credit": "Dizayn müəllifi",
+    "taxId": "VÖEN:",
+    "description": "— fullstack proqramçı. Saytlar, veb və Telegram tətbiqləri hazırlayıram. Burada layihələrim, texnologiyalarım və xidmətlərim var."
+  },
+  "profile": {
+    "name": "İlnaz Minqaleyev",
+    "initials": "İM",
+    "fullName": "Minqaleyev İlnaz Tagiroviç",
+    "status": "Özünüməşğul",
+    "role": "Fullstack proqramçı"
+  },
+  "nav": {
+    "about": "Haqqımda",
+    "stack": "Texnologiyalar",
+    "services": "Xidmətlər",
+    "projects": "Layihələr",
+    "orders": "Sifarişlər",
+    "reviews": "Rəylər",
+    "login": "Daxil ol"
+  },
+  "preview": {
+    "external": "Xarici sayta keç"
+  },
+  "about": {
+    "label": "haqqımda",
+    "description": "Salam! Mən İlnazam, 5 ildən çox təcrübəsi olan fullstack proqramçıyam. Layihələrimi və texnologiyalarımı bölüşür, ideyaları rahat saytlara, tətbiqlərə və xidmətlərə çevirirəm.",
+    "years": "yaş",
+    "experience": "il proqramlaşdırma təcrübəsi",
+    "clients": "müştəri",
+    "completed": "tamamlanmış layihə"
+  },
+  "hero": {
+    "projects": "Layihələrə bax",
+    "services": "Xidmətlər və texnologiyalar",
+    "status": "hazırda kommersiya layihəsi üzərində işləyirəm",
+    "description": "Saytlar və veb xidmətlər, mobil və masaüstü tətbiqlər, Telegram və MAX üçün mini tətbiqlər və çatbotlar hazırlayıram.",
+    "bots": "Telegram / MAX / VK / Discord botları"
+  },
+  "projects": {
+    "label": "layihələr",
+    "all": "Bütün layihələr",
+    "title": "Son layihələr",
+    "empty": "Bu kateqoriyada layihələr tezliklə görünəcək.",
+    "aromaForge": "Aroma Forge — Ətirləndiricilər mağazası"
+  },
+  "reviews": {
+    "all": "Bütün rəylər",
+    "label": "rəylər",
+    "title": "Son rəylər",
+    "author": "Aleksandr K.",
+    "sample": "Sürətli və keyfiyyətli, hər şey yerində. Əla adamdır!"
+  },
+  "common": {
+    "more": "Ətraflı"
+  },
+  "services": {
+    "label": "xidmətlər",
+    "title": "Xidmətlərim",
+    "from": "başlayaraq",
+    "duration": "müddət",
+    "discuss": "Layihəni müzakirə et",
+    "frontend": "Frontend hazırlanması",
+    "backend": "Backend hazırlanması",
+    "mobile": "Mobil tətbiqlər",
+    "frontendDescription": "Sürətli adaptiv interfeyslər, dizayn sistemləri və mürəkkəb istifadəçi ssenariləri.",
+    "weeks": "4–5 həftə",
+    "backendDescription": "Xidmət arxitekturası, inteqrasiyalar, verilənlər bazaları və təhlükəsiz API-lər.",
+    "appDescription": "Açar təslim çoxplatformalı tətbiqlər.",
+    "desktop": "Masaüstü tətbiqlər",
+    "bots": "TG, MAX və Discord üçün çatbotlar",
+    "botsDescription": "Çoxplatformalı botların tam dövrlü hazırlanması.",
+    "miniApps": "MAX və Telegram mini tətbiqləri",
+    "miniAppsDescription": "Çoxplatformalı mini tətbiqlərin tam dövrlü hazırlanması."
+  },
+  "stack": {
+    "label": "texnologiyalar",
+    "title": "Kateqoriyalar üzrə texnologiyalarım",
+    "interfaces": "interfeyslər",
+    "designSystems": "Dizayn sistemləri",
+    "animations": "Animasiyalar",
+    "interface": "İnterfeys",
+    "language": "Proqramlaşdırma dili",
+    "framework": "Freymvork"
+  },
+  "legal": {
+    "privacy": "Məxfilik siyasəti",
+    "terms": "İstifadə şərtləri",
+    "cooperation": "İş qaydası",
+    "payment": "Ödəniş və geri qaytarma",
+    "support": "İşə salındıqdan sonra dəstək"
+  },
+  "pages": {
+    "pricing": "Qiymətlər",
+    "about": "Haqqımda ətraflı",
+    "rewards": "Mükafatlar",
+    "blog": "Bloq",
+    "title": "Səhifələr"
+  },
+  "socials": {
+    "channel": "TG kanalı"
+  },
+  "settings": {
+    "theme": "Mövzu",
+    "language": "Dil"
+  },
+  "projectCategories": {
+    "miniApps": "Mini tətbiqlər",
+    "web": "Veb",
+    "desktop": "Masaüstü",
+    "mobile": "Mobil"
+  }
+}
