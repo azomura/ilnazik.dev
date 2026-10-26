@@ -37,7 +37,7 @@
     "projects": "Taslamalary görmek",
     "services": "Hyzmatlar we tehnologiýalar",
     "status": "häzirki wagtda täjirçilik taslamasynyň üstünde işleýärin",
-    "description": "Saýtlar we web hyzmatlary, mobil we kompýuter programmalary, Telegram we MAX kiçi programmalary hem-de çatbotlar döredýärin.",
+    "description": "Saýtlar we web hyzmatlary, mobil we kompýuter programmalary, Telegram we MAX Mini-apps hem-de çatbotlar döredýärin.",
     "bots": "Telegram / MAX / VK / Discord botlary"
   },
   "projects": {
@@ -73,8 +73,8 @@
     "desktop": "Kompýuter programmalary",
     "bots": "TG, MAX we Discord üçin çatbotlar",
     "botsDescription": "Dürli platformaly botlaryň doly işläp düzülmegi.",
-    "miniApps": "MAX we Telegram kiçi programmalary",
-    "miniAppsDescription": "Dürli platformaly kiçi programmalaryň doly işläp düzülmegi."
+    "miniApps": "MAX we Telegram Mini-apps",
+    "miniAppsDescription": "Dürli platformaly Mini-apps doly işläp düzülmegi."
   },
   "stack": {
     "label": "tehnologiýalar",
@@ -108,7 +108,7 @@
     "language": "Dil"
   },
   "projectCategories": {
-    "miniApps": "Kiçi programmalar",
+    "miniApps": "Mini-apps",
     "web": "Web",
     "desktop": "Kompýuter",
     "mobile": "Mobil"

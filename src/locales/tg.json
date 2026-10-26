@@ -37,7 +37,7 @@
     "projects": "Дидани лоиҳаҳо",
     "services": "Хизматҳо ва технологияҳо",
     "status": "ҳоло лоиҳаи тиҷоратӣ дар таҳия аст",
-    "description": "Сайтҳо ва хизматҳои веб, барномаҳои мобилӣ ва компютерӣ, минибарномаҳои Telegram ва MAX, инчунин чат-ботҳо месозам.",
+    "description": "Сайтҳо ва хизматҳои веб, барномаҳои мобилӣ ва компютерӣ, Mini-apps Telegram ва MAX, инчунин чат-ботҳо месозам.",
     "bots": "Ботҳои Telegram / MAX / VK / Discord"
   },
   "projects": {
@@ -73,8 +73,8 @@
     "desktop": "Барномаҳои компютерӣ",
     "bots": "Чат-ботҳои TG, MAX, Discord",
     "botsDescription": "Таҳияи пурраи ботҳои байниплатформавӣ.",
-    "miniApps": "Минибарномаҳои MAX, Telegram",
-    "miniAppsDescription": "Таҳияи пурраи минибарномаҳои байниплатформавӣ."
+    "miniApps": "Mini-apps MAX, Telegram",
+    "miniAppsDescription": "Таҳияи пурраи Mini-apps байниплатформавӣ."
   },
   "stack": {
     "label": "технологияҳо",
@@ -108,7 +108,7 @@
     "language": "Забон"
   },
   "projectCategories": {
-    "miniApps": "Минибарномаҳо",
+    "miniApps": "Mini-apps",
     "web": "Веб",
     "desktop": "Компютерӣ",
     "mobile": "Мобилӣ"
