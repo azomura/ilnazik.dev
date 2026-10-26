@@ -1,4 +1,4 @@
-import { Footer, Header } from '@/components/layout'
+import { BottomToolbar, Footer, Header } from '@/components/layout'
 
 import { Outlet } from 'react-router-dom'
 
@@ -10,6 +10,7 @@ export function MainLayout() {
         <Outlet />
       </main>
       <Footer />
+      <BottomToolbar />
     </div>
   )
 }
