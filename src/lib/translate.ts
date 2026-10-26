@@ -1,26 +1,24 @@
 import type { Language, TranslationParams } from '@/interfaces/providers/i18n'
 
 import ru from '@/locales/ru.json'
-import en from '@/locales/en.json'
-import uk from '@/locales/uk.json'
-import be from '@/locales/be.json'
-import kk from '@/locales/kk.json'
-import ky from '@/locales/ky.json'
-import tg from '@/locales/tg.json'
-import uz from '@/locales/uz.json'
-import tk from '@/locales/tk.json'
-import az from '@/locales/az.json'
-import hy from '@/locales/hy.json'
-import ro from '@/locales/ro.json'
-import ka from '@/locales/ka.json'
-import zh from '@/locales/zh.json'
-import ja from '@/locales/ja.json'
-import de from '@/locales/de.json'
-import tt from '@/locales/tt.json'
-import ba from '@/locales/ba.json'
 
-const translations: Record<Language, typeof ru> = {
-  ru, en, uk, be, kk, ky, tg, uz, tk, az, hy, ro, ka, zh, ja, de, tt, ba
+const loaders = import.meta.glob<{ default: typeof ru }>(['../locales/*.json', '!../locales/ru.json'])
+const translations = new Map<Language, typeof ru>([['ru', ru]])
+const pending = new Map<Language, Promise<void>>()
+
+export function loadTranslations(lang: Language): Promise<void> {
+  if (translations.has(lang)) return Promise.resolve()
+  const existing = pending.get(lang)
+  if (existing) return existing
+
+  const request = loaders[`../locales/${lang}.json`]().then(module => {
+    translations.set(lang, module.default)
+  }).catch(error => {
+    pending.delete(lang)
+    throw error
+  })
+  pending.set(lang, request)
+  return request
 }
 
 function findTranslation(dictionary: unknown, key: string): unknown {
@@ -37,7 +35,7 @@ function findTranslation(dictionary: unknown, key: string): unknown {
 }
 
 export function translate(lang: Language, key: string, params?: TranslationParams): string {
-  const value = findTranslation(translations[lang], key) ?? findTranslation(ru, key)
+  const value = findTranslation(translations.get(lang), key) ?? findTranslation(ru, key)
 
   if (typeof value !== 'string') return key
 
