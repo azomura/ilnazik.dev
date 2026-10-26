@@ -1,3 +1,5 @@
+import { useI18n } from '@/hooks/providers/use-i18n'
+
 import { DesignerLogo } from '@/components/icons/designer-logo'
 
 import { socials } from '@/config/socials'
@@ -5,6 +7,8 @@ import { socials } from '@/config/socials'
 import { cn } from '@/lib/utils'
 
 export function FooterCredit() {
+  const { t } = useI18n()
+
   return (
     <a
       target='_blank'
@@ -16,7 +20,7 @@ export function FooterCredit() {
         'focus-visible:outline-2 focus-visible:outline-ring'
       )}
     >
-      <span className='font-nt-somic text-[12px]'>Дизайн разработал</span>
+      <span className='font-nt-somic text-[12px]'>{t('footer.credit')}</span>
       <DesignerLogo size={54} className='h-8.25 w-13.5 text-foreground' />
     </a>
   )

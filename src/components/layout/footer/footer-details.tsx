@@ -1,8 +1,12 @@
+import { useI18n } from '@/hooks/providers/use-i18n'
+
 import { business } from '@/config/business'
 
 import { cn } from '@/lib/utils'
 
 export function FooterDetails() {
+  const { t } = useI18n()
+
   return (
     <div
       className={cn(
@@ -13,16 +17,16 @@ export function FooterDetails() {
     >
       <div className='flex flex-col gap-1.5'>
         <p>
-          {business.status}{' '}
+          {t(business.status)}{' '}
           <span
             data-preview='developer'
             tabIndex={0}
             className='cursor-pointer underline underline-offset-4'
           >
-            {business.fullName}
+            {t(business.fullName)}
           </span>
         </p>
-        <p>ИНН: {business.inn || '—'}</p>
+        <p>{t('footer.taxId')} {business.inn || '—'}</p>
       </div>
       <p className='shrink-0'>
         © {new Date().getFullYear()}{' '}

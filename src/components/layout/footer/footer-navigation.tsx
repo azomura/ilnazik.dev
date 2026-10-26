@@ -1,3 +1,5 @@
+import { useI18n } from '@/hooks/providers/use-i18n'
+
 import { Link } from 'react-router-dom'
 
 import { footerNavigation } from '@/data/navigation'
@@ -5,11 +7,13 @@ import { footerNavigation } from '@/data/navigation'
 import { cn } from '@/lib/utils'
 
 export function FooterNavigation() {
+  const { t } = useI18n()
+
   return (
     <nav className='min-w-0 md:col-start-1 md:row-start-2 lg:col-start-2 lg:row-start-1'>
       {footerNavigation.map(group => (
-        <div key={group.title}>
-          <p className='font-artegra text-[13px] font-semibold text-foreground/90'>{group.title}</p>
+        <div key={t(group.title)}>
+          <p className='font-artegra text-[13px] font-semibold text-foreground/90'>{t(group.title)}</p>
 
           <ul className='mt-2 grid grid-flow-col grid-rows-2 auto-cols-max gap-x-12 gap-y-2'>
             {group.links.map(link => (
@@ -22,7 +26,7 @@ export function FooterNavigation() {
                     'transition-colors focus-visible:outline-ring'
                   )}
                 >
-                  {link.label}
+                  {t(link.label)}
                 </Link>
               </li>
             ))}

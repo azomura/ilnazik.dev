@@ -1,3 +1,5 @@
+import { useI18n } from '@/hooks/providers/use-i18n'
+
 import { Link } from 'react-router-dom'
 
 import { informationPages } from '@/data/information-pages'
@@ -5,6 +7,8 @@ import { informationPages } from '@/data/information-pages'
 import { cn } from '@/lib/utils'
 
 export function FooterLinks() {
+  const { t } = useI18n()
+
   return (
     <nav>
       <ul className='flex flex-col gap-x-4 gap-y-3 sm:flex-row sm:flex-wrap'>
@@ -17,7 +21,7 @@ export function FooterLinks() {
                 'hover:text-foreground focus-visible:outline-2 focus-visible:outline-ring'
               )}
             >
-              {page.title}
+              {t(page.title)}
             </Link>
           </li>
         ))}
