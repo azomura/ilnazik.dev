@@ -1,6 +1,6 @@
 import { useId } from 'react'
 
-import type { IIconProps } from '@/interfaces/icon'
+import type { IIconProps } from '@/interfaces/ui/icon'
 
 import { IconSvg } from '../shared/icon-svg'
 
@@ -27,8 +27,8 @@ export function User2({ size = 92, ...props }: IIconProps) {
           gradientTransform='matrix(6.04728 -57.8811 46.0957 5.49514 57.461 47.6144)'
           gradientUnits='userSpaceOnUse'
         >
-          <stop offset='0' stopColor='#E83D40' stopOpacity={0.8} />
-          <stop offset='1' stopColor='#E83D40' stopOpacity={0.1} />
+          <stop offset='0' stopColor='currentColor' stopOpacity={0.8} />
+          <stop offset='1' stopColor='currentColor' stopOpacity={0.1} />
         </radialGradient>
         <radialGradient
           id={`${id}-1`}
@@ -38,8 +38,8 @@ export function User2({ size = 92, ...props }: IIconProps) {
           gradientTransform='matrix(-5.22038 44.0831 -62.3728 -8.22973 47.5576 47.1891)'
           gradientUnits='userSpaceOnUse'
         >
-          <stop offset='0' stopColor='#E83D40' stopOpacity={0.8} />
-          <stop offset='1' stopColor='#E83D40' stopOpacity={0} />
+          <stop offset='0' stopColor='currentColor' stopOpacity={0.8} />
+          <stop offset='1' stopColor='currentColor' stopOpacity={0} />
         </radialGradient>
       </defs>
       <g opacity={0.5}>
