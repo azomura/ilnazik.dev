@@ -1,10 +1,12 @@
+import { useI18n } from '@/hooks/providers/use-i18n'
+
 import { Link } from 'react-router-dom'
 
 import { Logo, Wordmark } from '@/components/icons'
 
 import { routes } from '@/config/routes'
 
-import { useReveal } from '@/hooks/use-reveal'
+import { useReveal } from '@/hooks/ui/use-reveal'
 
 import { cn } from '@/lib/utils'
 
@@ -16,6 +18,8 @@ import { FooterNavigation } from './footer-navigation'
 import { FooterSocials } from './footer-socials'
 
 export function Footer() {
+  const { t } = useI18n()
+
   const { ref, visible } = useReveal()
 
   return (
@@ -46,10 +50,9 @@ export function Footer() {
             tabIndex={0}
             className='cursor-pointer underline underline-offset-4'
           >
-            Ильназ Мингалеев
+            {t('profile.name')}
           </span>{' '}
-          — fullstack-разработчик. Создаю сайты, веб-приложения и Telegram-приложения. Здесь — мои
-          проекты, стек и услуги.
+          {t('footer.description')}
         </p>
 
         <div
