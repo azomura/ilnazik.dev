@@ -25,8 +25,13 @@ function Avatar({
 function AvatarImage({ className, ...props }: AvatarPrimitive.Image.Props) {
   return (
     <AvatarPrimitive.Image
+      keepMounted
       data-slot='avatar-image'
-      className={cn('aspect-square size-full rounded-full object-cover', className)}
+      className={cn(
+        'absolute inset-0 z-1 aspect-square size-full rounded-[inherit] object-cover',
+        'data-loading:invisible data-error:invisible data-[image-state=loading]:invisible',
+        className
+      )}
       {...props}
     />
   )
