@@ -1,6 +1,6 @@
-import { Image } from '@/components/ui/image'
+import { useI18n } from '@/hooks/providers/use-i18n'
 
-import type { IStackTechnology } from '@/interfaces/stack'
+import type { IStackTechnology } from '@/interfaces/sections/stack'
 
 import { cn } from '@/lib/utils'
 
@@ -9,6 +9,8 @@ interface IStackCardProps {
 }
 
 export function StackCard({ technology }: IStackCardProps) {
+  const { t } = useI18n()
+
   return (
     <li
       className={cn(
@@ -16,27 +18,24 @@ export function StackCard({ technology }: IStackCardProps) {
         'rounded-[16px] bg-card px-3.5 py-3'
       )}
     >
-      <Image
-        src={technology.decoration}
-        alt=''
-        loading='lazy'
-        containerClassName='pointer-events-none absolute inset-0 -z-10 size-full'
-        className='size-full object-cover'
+      <div
+        style={{ maskImage: `url("${technology.decoration}")` }}
+        className={cn(
+          'pointer-events-none absolute inset-0 -z-10 size-full bg-primary',
+          'mask-cover mask-center mask-no-repeat'
+        )}
       />
-      <Image
-        src={technology.icon}
-        alt=''
-        width={35}
-        height={35}
-        loading='lazy'
-        containerClassName='size-8.75 rounded-[7px] bg-popover'
-        className='size-full'
-      />
+      <div className='size-8.75 rounded-[7px] bg-popover'>
+        <div
+          style={{ maskImage: `url("${technology.icon}")` }}
+          className='size-full bg-primary mask-contain mask-center mask-no-repeat'
+        />
+      </div>
       <h4 className='mt-2 truncate font-artegra text-[16px] font-semibold leading-5'>
         {technology.name}
       </h4>
       <p className='mt-0.5 truncate font-artegra text-[14px] leading-5 text-text-dim'>
-        {technology.description}
+        {t(technology.description)}
       </p>
     </li>
   )
