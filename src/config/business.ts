@@ -1,5 +1,5 @@
 export const business = {
-  fullName: 'Мингалеев Ильназ Тагирович',
-  status: 'Самозанятый',
+  fullName: "profile.fullName",
+  status: "profile.status",
   inn: '000000000000'
 } as const
