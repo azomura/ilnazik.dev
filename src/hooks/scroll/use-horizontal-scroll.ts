@@ -3,41 +3,21 @@ import { useEffect, useRef, useState } from 'react'
 import { bindHorizontalWheel } from '@/lib/bind-horizontal-wheel'
 
 import { useDragScroll } from './use-drag-scroll'
+import { useScrollEdges } from './use-scroll-edges'
 
 export function useHorizontalScroll<T extends HTMLElement>(observeEnd = false) {
   const ref = useRef<T | null>(null)
 
   const { drag, dragging, scrollProps } = useDragScroll(ref)
 
-  const [edges, setEdges] = useState({ left: false, right: false })
+  const { start, end } = useScrollEdges(ref, 'horizontal')
   const [endVisible, setEndVisible] = useState(false)
 
   useEffect(() => {
     const element = ref.current
     if (!element) return
 
-    const updateEdges = () => {
-      const leftDistance = Math.max(0, element.scrollLeft)
-      const rightDistance = Math.max(0, element.scrollWidth - element.clientWidth - leftDistance)
-
-      const left = leftDistance > 1
-      const right = rightDistance > 1
-
-      setEdges(previous =>
-        previous.left === left && previous.right === right ? previous : { left, right }
-      )
-    }
-
     const unbindWheel = bindHorizontalWheel(element, () => Boolean(drag.current))
-
-    const controller = new AbortController()
-
-    element.addEventListener('scroll', updateEdges, { passive: true, signal: controller.signal })
-
-    const observer = new ResizeObserver(updateEdges)
-
-    observer.observe(element)
-    updateEdges()
 
     const endObserver = observeEnd
       ? new IntersectionObserver(
@@ -50,8 +30,6 @@ export function useHorizontalScroll<T extends HTMLElement>(observeEnd = false) {
     if (element.lastElementChild) endObserver?.observe(element.lastElementChild)
 
     return () => {
-      controller.abort()
-      observer.disconnect()
       endObserver?.disconnect()
       unbindWheel()
     }
@@ -59,8 +37,8 @@ export function useHorizontalScroll<T extends HTMLElement>(observeEnd = false) {
 
   return {
     dragging,
-    canScrollLeft: edges.left,
-    canScrollRight: edges.right,
+    canScrollLeft: start,
+    canScrollRight: end,
     endVisible,
     scrollBy: (direction: number) => {
       const element = ref.current
