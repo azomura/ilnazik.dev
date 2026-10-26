@@ -1,6 +1,6 @@
 import { useRoutes } from 'react-router-dom'
 
-import { useRouteScroll } from '@/hooks/use-route-scroll'
+import { useRouteScroll } from '@/hooks/navigation/use-route-scroll'
 
 import { appRoutes } from './app-routes'
 

@@ -2,7 +2,7 @@ import type { ComponentProps } from 'react'
 
 import { Tabs as TabsPrimitive } from '@base-ui/react/tabs'
 
-import { useTabsHeight } from '@/hooks/use-tabs-height'
+import { useTabsHeight } from '@/hooks/ui/use-tabs-height'
 import { cn } from '@/lib/utils'
 
 interface ITabsListProps extends Omit<ComponentProps<typeof TabsPrimitive.List>, 'className'> {

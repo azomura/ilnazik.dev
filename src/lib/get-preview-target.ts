@@ -1,4 +1,4 @@
-import type { IPreviewTarget } from '@/interfaces/preview'
+import type { IPreviewTarget } from '@/interfaces/ui/preview'
 
 export function getPreviewTarget(anchor: HTMLElement | null): IPreviewTarget | null {
   if (anchor?.dataset.preview === 'developer') return { anchor, developer: true, url: '' }

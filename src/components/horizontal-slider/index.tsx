@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react'
 
-import { useHorizontalScroll } from '@/hooks/use-horizontal-scroll'
+import { useHorizontalScroll } from '@/hooks/scroll/use-horizontal-scroll'
 
 import { cn } from '@/lib/utils'
 
