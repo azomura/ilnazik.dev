@@ -1,3 +1,5 @@
+import { useI18n } from '@/hooks/providers/use-i18n'
+
 import { ArrowUpRight } from 'lucide-react'
 
 import { Link } from 'react-router-dom'
@@ -15,11 +17,13 @@ import { ProjectCard } from './project-card'
 import { ProjectFilters } from './project-filters'
 
 export function Projects() {
+  const { t } = useI18n()
+
   return (
     <Section id='projects'>
       <Tabs defaultValue='Mini-apps'>
         <SectionHeading
-          label='проекты'
+          label={t('projects.label')}
           showDot={false}
           className='max-sm:[&_h2]:flex-1 max-sm:[&_h2]:text-[20px]'
           actionsClassName='max-sm:contents'
@@ -33,12 +37,12 @@ export function Projects() {
                 variant='secondary'
                 className='h-8.5 gap-2 rounded-[16px] bg-card px-3 font-artegra font-normal text-[13px]'
               >
-                Все проекты <ArrowUpRight className='size-3.5' />
+                {t('projects.all')}<ArrowUpRight className='size-3.5' />
               </Button>
             </div>
           }
         >
-          Недавние проекты
+          {t('projects.title')}
         </SectionHeading>
 
         <TabsViewport className='mt-6'>
@@ -52,7 +56,7 @@ export function Projects() {
                 </ul>
               ) : (
                 <p className='rounded-[26px] bg-card p-6 font-nt-somic text-muted-foreground'>
-                  Проекты в этой категории скоро появятся.
+                  {t('projects.empty')}
                 </p>
               )}
             </TabsContent>

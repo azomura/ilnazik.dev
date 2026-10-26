@@ -1,9 +1,10 @@
+import { useI18n } from '@/hooks/providers/use-i18n'
+
 import { ArrowUpRight } from 'lucide-react'
 
 import { IphoneFrame } from '@/components/icons/iphone-frame'
-import { Image } from '@/components/ui/image'
 
-import type { IProject } from '@/interfaces/project'
+import type { IProject } from '@/interfaces/sections/project'
 
 import { cn } from '@/lib/utils'
 
@@ -14,6 +15,8 @@ interface IProjectCardProps {
 }
 
 export function ProjectCard({ project }: IProjectCardProps) {
+  const { t } = useI18n()
+
   return (
     <li className='relative min-w-0 hover:z-10'>
       <article
@@ -30,14 +33,15 @@ export function ProjectCard({ project }: IProjectCardProps) {
         >
           <div className='relative aspect-360/726 w-full'>
             {project.screenshot && (
-              <Image
+              <img
                 src={project.screenshot}
+                alt=''
                 loading='lazy'
-                containerClassName={cn(
+                className={cn(
+                  'object-cover object-top',
                   'absolute top-[2.34%] left-[5.56%] h-[95.32%] w-[88.88%]',
                   'rounded-[15%/7%]'
                 )}
-                className='h-full w-full object-cover object-top'
               />
             )}
 
@@ -47,7 +51,8 @@ export function ProjectCard({ project }: IProjectCardProps) {
 
         <div
           className={cn(
-            'pointer-events-none absolute inset-x-0 bottom-0 h-[77.49%] rounded-[26px]',
+            'pointer-events-none absolute inset-x-0 bottom-0 h-[65%] rounded-[26px]',
+            'dark:h-[77.49%]',
             'bg-project-overlay',
             'transition-opacity duration-500 ease-out group-hover:opacity-80',
             'motion-reduce:transition-none'
@@ -57,19 +62,19 @@ export function ProjectCard({ project }: IProjectCardProps) {
         {(project.logo || project.outlineLogo) && (
           <div className='pointer-events-none absolute inset-0 overflow-hidden rounded-[26px]'>
             {project.outlineLogo && (
-              <Image
+              <img
                 src={project.outlineLogo}
+                data-image-skeleton='false'
                 alt=''
-                containerClassName='absolute inset-0 size-full'
-                className='size-full'
+                className='absolute inset-0 size-full'
               />
             )}
             {project.logo && (
-              <Image
+              <img
                 src={project.logo}
+                data-image-skeleton='false'
                 alt=''
-                containerClassName='absolute inset-0 size-full'
-                className='size-full'
+                className='absolute inset-0 size-full'
               />
             )}
           </div>
@@ -79,7 +84,7 @@ export function ProjectCard({ project }: IProjectCardProps) {
             {project.platform}
           </p>
 
-          <h3 className='mt-2 font-artegra-alt text-[18px] font-bold leading-6'>{project.title}</h3>
+          <h3 className='mt-2 font-artegra-alt text-[18px] font-bold leading-6'>{t(project.title)}</h3>
 
           <div className='mt-auto flex items-center gap-3 pt-3'>
             <ProjectTags tags={project.tags} />
