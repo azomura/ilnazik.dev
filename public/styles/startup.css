@@ -1,0 +1,148 @@
+:root {
+  --startup-background: #f6f6f6;
+  --startup-foreground: #12100c;
+  --startup-muted: #686b72;
+}
+
+html.dark {
+  --startup-background: #0f1113;
+  --startup-foreground: #edeef0;
+  --startup-muted: #969da8;
+}
+
+body {
+  margin: 0;
+}
+
+.startup-screen {
+  box-sizing: border-box;
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: var(--startup-background);
+  color: var(--startup-foreground);
+  font-family: 'Artegra Sans', system-ui, sans-serif;
+  transition:
+    opacity 350ms ease,
+    visibility 350ms;
+}
+
+.startup-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min(100%, 320px);
+  text-align: center;
+}
+
+.startup-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.startup-logo {
+  width: 40px;
+  height: 42px;
+  flex-shrink: 0;
+  color: var(--brand-accent, #e83d40);
+}
+
+.startup-name {
+  font-size: 32px;
+  font-weight: 750;
+  letter-spacing: -1px;
+}
+
+.startup-track {
+  width: 132px;
+  height: 4px;
+  overflow: hidden;
+  margin-top: 24px;
+  border-radius: 16px;
+  background: color-mix(in srgb, var(--startup-foreground) 9%, transparent);
+}
+
+.startup-track::after {
+  content: '';
+  display: block;
+  width: 45%;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--brand-accent, #e83d40);
+  animation: startup-progress 1.2s ease-in-out infinite alternate;
+}
+
+.startup-message {
+  display: none;
+  margin-top: 24px;
+}
+
+.startup-message h1 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.startup-message p {
+  margin: 8px 0 0;
+  color: var(--startup-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.startup-message button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 16px;
+  background: var(--brand-accent, #e83d40);
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+}
+
+html[data-startup='ready'] .startup-screen {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+html[data-startup='error'] .startup-track {
+  display: none;
+}
+
+html[data-startup='error'] .startup-message {
+  display: block;
+}
+
+@keyframes startup-progress {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(225%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .startup-screen {
+    transition: none;
+  }
+  .startup-track::after {
+    animation: none;
+    width: 100%;
+  }
+}
+
+html[data-network='offline'] .startup-screen {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+html[data-network='offline'] .startup-track { display: none; }
+html[data-network='offline'] .startup-message { display: block; }

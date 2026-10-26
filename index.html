@@ -1,19 +1,66 @@
 <!doctype html>
-<html lang="en" class="dark">
+<html lang="ru" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/styles/startup.css" />
 
-    <title>frontend</title>
+    <title>azomura</title>
 
+    <noscript>
+      <style>
+        #startup-screen {
+          display: none;
+        }
+        .startup-message {
+          display: block;
+        }
+      </style>
+    </noscript>
+
+    <script src="/scripts/startup.js"></script>
+    <script defer src="/scripts/offline.js"></script>
     <script defer src="/scripts/disable-text-actions.js"></script>
     <script defer src="/scripts/disable-context-menu.js"></script>
     <script defer src="/scripts/disable-page-zoom.js"></script>
     <script defer src="/scripts/disable-f12.js"></script>
   </head>
   <body>
+    <div id="startup-screen" class="startup-screen">
+      <div class="startup-content">
+        <div class="startup-brand">
+          <!-- startup-logo -->
+
+          <span class="startup-name">azomura</span>
+        </div>
+        <div class="startup-track"></div>
+        <div class="startup-message">
+          <h1>Не удалось загрузить сайт</h1>
+          <p>Проверьте подключение к интернету и попробуйте ещё раз.</p>
+          <button data-startup-retry>Попробовать снова</button>
+        </div>
+      </div>
+    </div>
+    <noscript>
+      <div class="startup-screen">
+        <div class="startup-content">
+          <div class="startup-brand">
+            <!-- startup-logo -->
+
+            <span class="startup-name">azomura</span>
+          </div>
+          <div class="startup-message">
+            <h1>Включите JavaScript</h1>
+            <p>
+              Он нужен для работы сайта. Включите JavaScript в настройках браузера и обновите
+              страницу.
+            </p>
+          </div>
+        </div>
+      </div>
+    </noscript>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
