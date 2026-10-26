@@ -37,7 +37,7 @@
     "projects": "Жобаларды қарау",
     "services": "Қызметтер мен технологиялар",
     "status": "қазір коммерциялық жоба әзірленуде",
-    "description": "Сайттар мен веб-сервистер, мобильді және компьютерлік қолданбалар, Telegram мен MAX шағын қолданбалары және чат-боттар жасаймын.",
+    "description": "Сайттар мен веб-сервистер, мобильді және компьютерлік қолданбалар, Telegram мен MAX Mini-apps және чат-боттар жасаймын.",
     "bots": "Telegram / MAX / VK / Discord боттары"
   },
   "projects": {
@@ -73,8 +73,8 @@
     "desktop": "Компьютерлік қолданбалар",
     "bots": "TG, MAX, Discord чат-боттары",
     "botsDescription": "Кросс-платформалық боттарды толық әзірлеу.",
-    "miniApps": "MAX, Telegram шағын қолданбалары",
-    "miniAppsDescription": "Кросс-платформалық шағын қолданбаларды толық әзірлеу."
+    "miniApps": "MAX, Telegram Mini-apps",
+    "miniAppsDescription": "Кросс-платформалық Mini-apps толық әзірлеу."
   },
   "stack": {
     "label": "технологиялар",
@@ -108,7 +108,7 @@
     "language": "Тіл"
   },
   "projectCategories": {
-    "miniApps": "Шағын қолданбалар",
+    "miniApps": "Mini-apps",
     "web": "Веб",
     "desktop": "Компьютерлік",
     "mobile": "Мобильді"

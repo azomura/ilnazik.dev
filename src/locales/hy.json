@@ -37,7 +37,7 @@
     "projects": "Դիտել նախագծերը",
     "services": "Ծառայություններ և տեխնոլոգիաներ",
     "status": "այժմ մշակում եմ առևտրային նախագիծ",
-    "description": "Ստեղծում եմ կայքեր և վեբ ծառայություններ, բջջային ու համակարգչային հավելվածներ, Telegram և MAX մինի հավելվածներ, ինչպես նաև չատբոտեր։",
+    "description": "Ստեղծում եմ կայքեր և վեբ ծառայություններ, բջջային ու համակարգչային հավելվածներ, Telegram և MAX Mini-apps, ինչպես նաև չատբոտեր։",
     "bots": "Telegram / MAX / VK / Discord բոտեր"
   },
   "projects": {
@@ -73,8 +73,8 @@
     "desktop": "Համակարգչային հավելվածներ",
     "bots": "Չատբոտեր TG-ի, MAX-ի և Discord-ի համար",
     "botsDescription": "Բազմահարթակ բոտերի ամբողջական մշակում։",
-    "miniApps": "MAX և Telegram մինի հավելվածներ",
-    "miniAppsDescription": "Բազմահարթակ մինի հավելվածների ամբողջական մշակում։"
+    "miniApps": "MAX և Telegram Mini-apps",
+    "miniAppsDescription": "Բազմահարթակ Mini-apps ամբողջական մշակում։"
   },
   "stack": {
     "label": "տեխնոլոգիաներ",
@@ -108,7 +108,7 @@
     "language": "Լեզու"
   },
   "projectCategories": {
-    "miniApps": "Մինի հավելվածներ",
+    "miniApps": "Mini-apps",
     "web": "Վեբ",
     "desktop": "Համակարգչային",
     "mobile": "Բջջային"

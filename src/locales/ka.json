@@ -37,7 +37,7 @@
     "projects": "პროექტების ნახვა",
     "services": "მომსახურებები და ტექნოლოგიები",
     "status": "ამჟამად კომერციულ პროექტზე ვმუშაობ",
-    "description": "ვქმნი საიტებსა და ვებ სერვისებს, მობილურ და კომპიუტერის აპლიკაციებს, Telegram-ისა და MAX-ის მინი აპლიკაციებს და ჩატბოტებს.",
+    "description": "ვქმნი საიტებსა და ვებ სერვისებს, მობილურ და კომპიუტერის აპლიკაციებს, Telegram-ისა და MAX-ის Mini-apps და ჩატბოტებს.",
     "bots": "Telegram / MAX / VK / Discord ბოტები"
   },
   "projects": {
@@ -73,8 +73,8 @@
     "desktop": "კომპიუტერის აპლიკაციები",
     "bots": "TG, MAX და Discord ჩატბოტები",
     "botsDescription": "მრავალპლატფორმიანი ბოტების სრული შემუშავება.",
-    "miniApps": "MAX და Telegram მინი აპლიკაციები",
-    "miniAppsDescription": "მრავალპლატფორმიანი მინი აპლიკაციების სრული შემუშავება."
+    "miniApps": "MAX და Telegram Mini-apps",
+    "miniAppsDescription": "მრავალპლატფორმიანი Mini-apps სრული შემუშავება."
   },
   "stack": {
     "label": "ტექნოლოგიები",
@@ -108,7 +108,7 @@
     "language": "ენა"
   },
   "projectCategories": {
-    "miniApps": "მინი აპლიკაციები",
+    "miniApps": "Mini-apps",
     "web": "ვებ",
     "desktop": "კომპიუტერის",
     "mobile": "მობილური"

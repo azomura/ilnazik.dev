@@ -37,7 +37,7 @@
     "projects": "Долбоорлорду көрүү",
     "services": "Кызматтар жана технологиялар",
     "status": "азыр коммерциялык долбоор иштелүүдө",
-    "description": "Сайттарды жана веб кызматтарды, мобилдик жана компьютердик тиркемелерди, Telegram жана MAX мини-тиркемелерин жана чат-ботторду түзөм.",
+    "description": "Сайттарды жана веб кызматтарды, мобилдик жана компьютердик тиркемелерди, Telegram жана MAX Mini-apps жана чат-ботторду түзөм.",
     "bots": "Telegram / MAX / VK / Discord боттору"
   },
   "projects": {
@@ -73,8 +73,8 @@
     "desktop": "Компьютердик тиркемелер",
     "bots": "TG, MAX, Discord чат-боттору",
     "botsDescription": "Кросс-платформалык ботторду толук иштеп чыгуу.",
-    "miniApps": "MAX, Telegram мини-тиркемелери",
-    "miniAppsDescription": "Кросс-платформалык мини-тиркемелерди толук иштеп чыгуу."
+    "miniApps": "MAX, Telegram Mini-apps",
+    "miniAppsDescription": "Кросс-платформалык Mini-apps толук иштеп чыгуу."
   },
   "stack": {
     "label": "технологиялар",
@@ -108,7 +108,7 @@
     "language": "Тил"
   },
   "projectCategories": {
-    "miniApps": "Мини-тиркемелер",
+    "miniApps": "Mini-apps",
     "web": "Веб",
     "desktop": "Компьютердик",
     "mobile": "Мобилдик"

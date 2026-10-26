@@ -37,7 +37,7 @@
     "projects": "Vezi proiectele",
     "services": "Servicii și tehnologii",
     "status": "în lucru — un proiect comercial",
-    "description": "Dezvolt site-uri și servicii web, aplicații mobile și desktop, miniaplicații pentru Telegram și MAX, precum și boți de chat.",
+    "description": "Dezvolt site-uri și servicii web, aplicații mobile și desktop, Mini-apps pentru Telegram și MAX, precum și boți de chat.",
     "bots": "Boți Telegram / MAX / VK / Discord"
   },
   "projects": {
@@ -73,8 +73,8 @@
     "desktop": "Aplicații desktop",
     "bots": "Boți de chat pentru TG, MAX și Discord",
     "botsDescription": "Dezvoltare completă de boți multiplatformă.",
-    "miniApps": "Miniaplicații MAX și Telegram",
-    "miniAppsDescription": "Dezvoltare completă de miniaplicații multiplatformă."
+    "miniApps": "Mini-apps MAX și Telegram",
+    "miniAppsDescription": "Dezvoltare completă de Mini-apps multiplatformă."
   },
   "stack": {
     "label": "tehnologii",
@@ -108,7 +108,7 @@
     "language": "Limbă"
   },
   "projectCategories": {
-    "miniApps": "Miniaplicații",
+    "miniApps": "Mini-apps",
     "web": "Web",
     "desktop": "Desktop",
     "mobile": "Mobile"
