@@ -23,7 +23,7 @@ export function MobileMenuButton({ open, onClick, ref }: IMobileMenuButtonProps)
       onClick={onClick}
       className={cn(
         'h-12 min-h-12 w-12 shrink-0 border-0 bg-surface-subtle-overlay bg-clip-border p-0',
-        'backdrop-blur-[10.3px] hover:bg-secondary [&_svg]:size-5  text-white',
+        'hover:bg-secondary [&_svg]:size-5  text-white',
         'rounded-l-[8px] rounded-r-[16px]'
       )}
     >

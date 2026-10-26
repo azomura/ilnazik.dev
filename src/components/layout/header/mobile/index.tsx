@@ -18,7 +18,7 @@ export function HeaderMobile() {
       className={cn(
         'fixed top-4 left-1/2 z-50 -translate-x-1/2',
         'max-h-[calc(100dvh-2rem)] w-[calc(100%-2rem)] max-w-275',
-        'overflow-y-auto rounded-[20px] bg-card/70 p-1.5 backdrop-blur-[12.3px] sm:hidden'
+        'overflow-y-auto rounded-[20px] bg-card/70 p-1.5 backdrop-blur-[6px] sm:backdrop-blur-[12.3px] sm:hidden'
       )}
     >
       <div className='flex h-12 items-center gap-1'>

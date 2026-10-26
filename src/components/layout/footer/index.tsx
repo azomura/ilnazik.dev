@@ -27,11 +27,15 @@ export function Footer() {
       ref={ref}
       className={cn(
         'mx-auto mt-auto w-[calc(100%-2rem)] max-w-275 shrink-0 rounded-t-[26px] bg-card',
-        'px-6 pt-7 pb-6 sm:px-9.5 origin-bottom transition-[opacity,transform,filter]',
-        'duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:scale-100',
+        'px-6 pt-7 pb-6 sm:px-9.5 origin-bottom transition-[opacity,translate]',
+        'sm:transition-[opacity,transform,filter]',
+        'duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]',
+        'motion-reduce:scale-100 motion-reduce:translate-y-0',
         'motion-reduce:blur-none motion-reduce:opacity-100 motion-reduce:transition-none',
-        'focus-within:scale-100 focus-within:blur-none focus-within:opacity-100',
-        visible ? 'scale-100 blur-none opacity-100' : 'scale-[0.97] blur-[6px] opacity-0'
+        'focus-within:scale-100 focus-within:blur-none focus-within:opacity-100 focus-within:translate-y-0',
+        visible
+          ? 'translate-y-0 opacity-100 sm:scale-100 sm:blur-none'
+          : 'translate-y-3 opacity-0 sm:translate-y-0 sm:scale-[0.97] sm:blur-[6px]'
       )}
     >
       <div className='grid gap-x-6 gap-y-4 md:grid-cols-[194px_minmax(0,1fr)]'>

@@ -19,7 +19,7 @@ export function BottomToolbar() {
         size='icon'
         className={cn(
           'pointer-events-auto size-12 rounded-[16px] bg-surface-subtle-overlay text-foreground',
-          'backdrop-blur-[12.3px]'
+          'backdrop-blur-[6px] sm:backdrop-blur-[12.3px]'
         )}
       >
         <ToolbarMusic />
