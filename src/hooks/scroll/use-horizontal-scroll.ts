@@ -17,7 +17,9 @@ export function useHorizontalScroll<T extends HTMLElement>(observeEnd = false) {
     const element = ref.current
     if (!element) return
 
-    const unbindWheel = bindHorizontalWheel(element, () => Boolean(drag.current))
+    const unbindWheel = matchMedia('(any-hover: hover)').matches
+      ? bindHorizontalWheel(element, () => Boolean(drag.current))
+      : undefined
 
     const endObserver = observeEnd
       ? new IntersectionObserver(
@@ -31,7 +33,7 @@ export function useHorizontalScroll<T extends HTMLElement>(observeEnd = false) {
 
     return () => {
       endObserver?.disconnect()
-      unbindWheel()
+      unbindWheel?.()
     }
   }, [observeEnd, drag])
 

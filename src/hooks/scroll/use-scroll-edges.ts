@@ -10,31 +10,60 @@ export function useScrollEdges<T extends HTMLElement>(
     const element = ref.current
     if (!element) return
 
+    const horizontal = axis === 'horizontal'
+
+    let frame = 0
+    let maximum = 0
+
+    let start: boolean | undefined
+    let end: boolean | undefined
+
+    let disposed = false
+
     const update = () => {
-      const horizontal = axis === 'horizontal'
+      frame = 0
+
       const offset = horizontal ? element.scrollLeft : element.scrollTop
+      const nextStart = offset > 1
+      const nextEnd = offset < maximum - 1
 
-      const size = horizontal ? element.clientWidth : element.clientHeight
-      const total = horizontal ? element.scrollWidth : element.scrollHeight
+      if (start === nextStart && end === nextEnd) return
 
-      const start = offset > 1
-      const end = offset < total - size - 1
+      start = nextStart
+      end = nextEnd
 
-      setEdges(previous =>
-        previous.start === start && previous.end === end ? previous : { start, end }
-      )
+      setEdges({ start, end })
     }
 
-    const observer = new ResizeObserver(update)
+    const schedule = () => {
+      if (!frame) frame = requestAnimationFrame(update)
+    }
+
+    const measure = () => {
+      maximum = horizontal
+        ? element.scrollWidth - element.clientWidth
+        : element.scrollHeight - element.clientHeight
+      schedule()
+    }
+
+    const observer = new ResizeObserver(measure)
 
     observer.observe(element)
-    element.addEventListener('scroll', update, { passive: true })
+    element.addEventListener('scroll', schedule, { passive: true })
 
-    update()
+    void document.fonts.ready.then(() => {
+      if (!disposed) measure()
+    })
+
+    measure()
 
     return () => {
+      disposed = true
       observer.disconnect()
-      element.removeEventListener('scroll', update)
+
+      cancelAnimationFrame(frame)
+
+      element.removeEventListener('scroll', schedule)
     }
   }, [ref, axis])
 
