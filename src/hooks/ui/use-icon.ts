@@ -1,6 +1,6 @@
 import { useId, useMemo } from 'react'
 
-import type { IIconGradient, IIconOptions, IIconStyle } from '@/interfaces/icon'
+import type { IIconGradient, IIconOptions, IIconStyle } from '@/interfaces/ui/icon'
 
 const gradientVariables: IIconStyle = {
   '--icon-gradient-from': 'var(--tw-gradient-from, currentColor)',
