@@ -16,13 +16,13 @@
   --surface-warm: #12100c;
 
   /* Акцент и действия */
-  --primary: #e83d40;
+  --primary: var(--brand-accent, #e83d40);
   --primary-foreground: #ffffff;
 
   --secondary: #22262c;
   --secondary-foreground: #edeef0;
 
-  --accent: #e83d40;
+  --accent: var(--brand-accent, #e83d40);
   --accent-foreground: #ffffff;
 
   --destructive: #e83d40;
@@ -36,7 +36,7 @@
   /* Границы и фокус */
   --border: rgb(62 63 66 / 62%);
   --input: #22262c;
-  --ring: #e83d40;
+  --ring: var(--brand-accent, #e83d40);
 
   /* Белый цвет с прозрачностью из макета */
   --white: #ffffff;
@@ -46,7 +46,7 @@
   --transparent: rgb(0 0 0 / 0%);
 
   /* Графики: оттенки палитры макета */
-  --chart-1: #e83d40;
+  --chart-1: var(--brand-accent, #e83d40);
   --chart-2: #e05254;
   --chart-3: #edeef0;
   --chart-4: #9ca3ad;
@@ -56,18 +56,18 @@
   --sidebar: #171a1e;
   --sidebar-foreground: #edeef0;
 
-  --sidebar-primary: #e83d40;
+  --sidebar-primary: var(--brand-accent, #e83d40);
   --sidebar-primary-foreground: #ffffff;
 
   --sidebar-accent: #22262c;
   --sidebar-accent-foreground: #edeef0;
 
   --sidebar-border: rgb(62 63 66 / 62%);
-  --sidebar-ring: #e83d40;
+  --sidebar-ring: var(--brand-accent, #e83d40);
 
   /* Радиальные заливки.*/
-  --gradient: radial-gradient(ellipse at center, rgb(232 61 64 / 56%) 0%, rgb(232 61 64 / 7%) 100%);
-  --stroke: radial-gradient(ellipse at center, rgb(232 61 64 / 80%) 0%, rgb(232 61 64 / 0%) 100%);
+  --gradient: radial-gradient(ellipse at center, color-mix(in srgb, var(--primary) 56%, transparent) 0%, color-mix(in srgb, var(--primary) 7%, transparent) 100%);
+  --stroke: radial-gradient(ellipse at center, color-mix(in srgb, var(--primary) 80%, transparent) 0%, color-mix(in srgb, var(--primary) 0%, transparent) 100%);
   --big-stroke-back: radial-gradient(
     ellipse at center,
     rgb(255 255 255 / 16%) 0%,
@@ -80,5 +80,5 @@
     #171a1ef2 40%,
     #171a1e 56%
   );
-  --logo-accent: radial-gradient(ellipse at center, #e83d40 6%, #e05254 39%, #e83d40 75%);
+  --logo-accent: radial-gradient(ellipse at center, var(--primary) 6%, color-mix(in srgb, var(--primary) 88%, white) 39%, var(--primary) 75%);
 }

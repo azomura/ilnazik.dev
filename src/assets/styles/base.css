@@ -22,8 +22,12 @@
 }
 
 @keyframes page-scroll-fill {
-  from { --button-scroll-progress: 0; }
-  to { --button-scroll-progress: 1; }
+  from {
+    --button-scroll-progress: 0;
+  }
+  to {
+    --button-scroll-progress: 1;
+  }
 }
 
 @utility page-scroll-fill {
@@ -37,5 +41,53 @@
   @supports (animation-timeline: scroll(root block)) {
     animation: page-scroll-fill 1s linear both;
     animation-timeline: scroll(root block);
+  }
+}
+
+/* Native images keep their layout while their pixels are being decoded. */
+@layer base {
+  img:not([data-image-state='loaded']):not([data-image-state='error']) {
+    color: transparent !important;
+    font-size: 0 !important;
+    object-position: -100000px -100000px !important;
+    background-color: var(--muted) !important;
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  img[data-image-state='error'] {
+    visibility: hidden;
+  }
+
+  img[data-image-skeleton='false']:not([data-image-state='loaded']) {
+    visibility: hidden !important;
+    background-color: transparent !important;
+    animation: none;
+  }
+
+  [data-slot='avatar']:has(img:not([data-image-state='loaded']):not([data-image-state='error'])) {
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      border-radius: inherit;
+      background-color: var(--muted);
+      animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+      pointer-events: none;
+    }
+
+    img {
+      visibility: hidden !important;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    img:not([data-image-state='loaded']) {
+      animation: none;
+    }
+
+    [data-slot='avatar']::before {
+      animation: none !important;
+    }
   }
 }
