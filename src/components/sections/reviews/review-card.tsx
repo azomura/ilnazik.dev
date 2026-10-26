@@ -1,11 +1,11 @@
+import { useI18n } from '@/hooks/providers/use-i18n'
+
 import { Star } from 'lucide-react'
 
 import { User } from '@/components/icons/user'
-import { Avatar, AvatarFallback, AvatarImage, Skeleton } from '@/components/ui'
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui'
 
-import { useImage } from '@/hooks/use-image'
-
-import type { IReview } from '@/interfaces/review'
+import type { IReview } from '@/interfaces/sections/review'
 
 import { cn } from '@/lib/utils'
 
@@ -17,39 +17,33 @@ interface IReviewCardProps {
 const stars = [1, 2, 3, 4, 5] as const
 
 export function ReviewCard({ review, className }: IReviewCardProps) {
-  const { status, loading, imageProps } = useImage(review.avatar)
+  const { t } = useI18n()
 
   return (
     <li className={cn('min-w-0 rounded-[26px] bg-card p-5', className)}>
       <figure>
         <figcaption className='flex items-center gap-3'>
           <Avatar className='size-12 rounded-[16px] after:rounded-[inherit]'>
-            {review.avatar && status !== 'error' && (
+            {review.avatar && (
               <AvatarImage
-                {...imageProps}
-                keepMounted
                 src={review.avatar}
-                alt={review.author}
+                alt=''
                 width={48}
                 height={48}
                 loading='lazy'
                 decoding='async'
                 referrerPolicy='no-referrer'
-                className={cn('rounded-[16px]', loading && 'invisible')}
+                className='rounded-[16px]'
               />
             )}
 
             <AvatarFallback className='rounded-[16px] bg-muted'>
               <User className='h-3.5 w-3 text-white' />
             </AvatarFallback>
-
-            {review.avatar && loading && (
-              <Skeleton className='absolute inset-0 size-full rounded-[16px]' />
-            )}
           </Avatar>
 
           <div className='min-w-0 font-artegra text-[14px] leading-5'>
-            <h3 className='truncate font-medium text-foreground'>{review.author}</h3>
+            <h3 className='truncate font-medium text-foreground'>{t(review.author)}</h3>
             <p className='mt-px font-normal text-text-dim'>{review.projectType}</p>
           </div>
 
@@ -67,7 +61,7 @@ export function ReviewCard({ review, className }: IReviewCardProps) {
         </figcaption>
 
         <blockquote className='mt-2 font-artegra font-medium text-[14px] leading-5 text-foreground'>
-          {review.text}
+          {t(review.text)}
         </blockquote>
       </figure>
     </li>

@@ -1,3 +1,5 @@
+import { useI18n } from '@/hooks/providers/use-i18n'
+
 import { HorizontalSlider } from '@/components/horizontal-slider'
 
 import { reviews } from '@/data/reviews'
@@ -9,14 +11,16 @@ import { AllReviewsButton } from './all-reviews-button'
 import { ReviewCard } from './review-card'
 
 export function Reviews() {
+  const { t } = useI18n()
+
   const visibleReviews = reviews.slice(0, 5)
 
   return (
     <Section id='reviews'>
       <HorizontalSlider
         renderHeader={controls => (
-          <SectionHeading label='отзывы' actions={controls} className='mb-6' showDot={false}>
-            Недавние отзывы
+          <SectionHeading label={t('reviews.label')} actions={controls} className='mb-6' showDot={false}>
+            {t('reviews.title')}
           </SectionHeading>
         )}
         hideActionsAtEnd
