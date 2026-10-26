@@ -4,7 +4,7 @@ import { routes } from '@/config/routes'
 
 import { MainLayout, SimpleLayout } from './layouts'
 
-import { HomePage, NotFoundPage } from './pages'
+import { HomePage, NotFoundPage } from './pages/lazy-pages'
 
 export const appRoutes: RouteObject[] = [
   {

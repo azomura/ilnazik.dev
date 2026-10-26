@@ -13,6 +13,18 @@ export default defineConfig(({ mode }) => {
 
   return {
     plugins: [startupHtml(), react(), tailwindcss()],
+    build: {
+      rolldownOptions: {
+        output: {
+          codeSplitting: {
+            groups: [{
+              name: 'react-runtime',
+              test: /\/node_modules\/(react|react-dom|scheduler|react-router|react-router-dom)\//
+            }]
+          }
+        }
+      }
+    },
     resolve: {
       alias: {
         '@': path.resolve(import.meta.dirname, './src')
