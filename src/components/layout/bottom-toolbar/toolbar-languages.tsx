@@ -53,10 +53,10 @@ export function ToolbarLanguages({ value, onSelect }: IToolbarLanguagesProps) {
                   >
                     {item.flag}
                   </span>
-  
+
                   <span className='truncate'>{item.label}</span>
                 </span>
-  
+
                 <Check className={cn('size-3.5', value !== item.code && 'opacity-0')} />
               </Button>
             </li>
