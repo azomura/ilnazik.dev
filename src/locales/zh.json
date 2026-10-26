@@ -1,0 +1,116 @@
+{
+  "footer": {
+    "discuss": "聊聊您的项目",
+    "telegram": "在 Telegram 联系我",
+    "credit": "设计者",
+    "taxId": "税号：",
+    "description": "— 全栈开发者。我创建网站、Web 应用和 Telegram 应用。这里展示我的项目、技术栈和服务。"
+  },
+  "profile": {
+    "name": "伊尔纳兹·明加列耶夫",
+    "initials": "IM",
+    "fullName": "明加列耶夫·伊尔纳兹·塔吉罗维奇",
+    "status": "自由职业者",
+    "role": "全栈开发者"
+  },
+  "nav": {
+    "about": "关于我",
+    "stack": "技术栈",
+    "services": "服务",
+    "projects": "项目",
+    "orders": "订单",
+    "reviews": "评价",
+    "login": "登录"
+  },
+  "preview": {
+    "external": "访问外部网站"
+  },
+  "about": {
+    "label": "关于我",
+    "description": "你好！我是伊尔纳兹，一名拥有五年多经验的全栈开发者。我在这里分享项目和技术栈，帮助您将创意变成易用的网站、应用和服务。",
+    "years": "岁",
+    "experience": "年开发经验",
+    "clients": "位客户",
+    "completed": "个已完成项目"
+  },
+  "hero": {
+    "projects": "查看项目",
+    "services": "服务与技术栈",
+    "status": "正在开发商业项目",
+    "description": "我开发网站和 Web 服务、移动和桌面应用、Telegram 和 MAX 迷你应用以及聊天机器人。",
+    "bots": "Telegram / MAX / VK / Discord 机器人"
+  },
+  "projects": {
+    "label": "项目",
+    "all": "所有项目",
+    "title": "近期项目",
+    "empty": "此类别的项目即将上线。",
+    "aromaForge": "Aroma Forge — 香料商店"
+  },
+  "reviews": {
+    "all": "所有评价",
+    "label": "评价",
+    "title": "近期评价",
+    "author": "亚历山大 K.",
+    "sample": "高效优质，直奔主题，很棒的开发者！"
+  },
+  "common": {
+    "more": "了解更多"
+  },
+  "services": {
+    "label": "服务",
+    "title": "我的服务",
+    "from": "起价",
+    "duration": "交付周期",
+    "discuss": "讨论项目",
+    "frontend": "前端开发",
+    "backend": "后端开发",
+    "mobile": "移动应用",
+    "frontendDescription": "快速响应式界面、设计系统和复杂用户流程。",
+    "weeks": "4–5 周",
+    "backendDescription": "服务架构、系统集成、数据库及安全 API。",
+    "appDescription": "跨平台应用的一站式开发。",
+    "desktop": "桌面应用",
+    "bots": "TG、MAX 和 Discord 聊天机器人",
+    "botsDescription": "跨平台聊天机器人的全流程开发。",
+    "miniApps": "MAX 和 Telegram 迷你应用",
+    "miniAppsDescription": "跨平台迷你应用的全流程开发。"
+  },
+  "stack": {
+    "label": "技术栈",
+    "title": "按类别查看技术栈",
+    "interfaces": "界面",
+    "designSystems": "设计系统",
+    "animations": "动画",
+    "interface": "界面",
+    "language": "编程语言",
+    "framework": "框架"
+  },
+  "legal": {
+    "privacy": "隐私政策",
+    "terms": "使用条款",
+    "cooperation": "合作流程",
+    "payment": "付款与退款",
+    "support": "上线后支持"
+  },
+  "pages": {
+    "pricing": "价目表",
+    "about": "更多关于我",
+    "rewards": "奖励",
+    "blog": "博客",
+    "title": "页面"
+  },
+  "socials": {
+    "channel": "TG 频道"
+  },
+  "settings": {
+    "theme": "主题",
+    "language": "语言"
+  },
+  "projectCategories": {
+    "miniApps": "迷你应用",
+    "web": "网页",
+    "desktop": "桌面",
+    "mobile": "移动"
+  }
+}

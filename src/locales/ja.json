@@ -1,0 +1,116 @@
+{
+  "footer": {
+    "discuss": "プロジェクトについて相談する",
+    "telegram": "Telegram で連絡",
+    "credit": "デザイン",
+    "taxId": "納税者番号：",
+    "description": "— フルスタック開発者です。ウェブサイト、ウェブアプリ、Telegram アプリを制作しています。プロジェクト、技術スタック、サービスをご紹介します。"
+  },
+  "profile": {
+    "name": "イルナズ・ミンガレエフ",
+    "initials": "IM",
+    "fullName": "ミンガレエフ・イルナズ・タギロヴィチ",
+    "status": "個人事業主",
+    "role": "フルスタック開発者"
+  },
+  "nav": {
+    "about": "自己紹介",
+    "stack": "技術スタック",
+    "services": "サービス",
+    "projects": "プロジェクト",
+    "orders": "ご依頼",
+    "reviews": "レビュー",
+    "login": "ログイン"
+  },
+  "preview": {
+    "external": "外部サイトを開く"
+  },
+  "about": {
+    "label": "自己紹介",
+    "description": "こんにちは！イルナズです。5 年以上の経験を持つフルスタック開発者です。プロジェクトや技術を紹介し、アイデアを使いやすい ウェブサイト、アプリ、サービスに形にします。",
+    "years": "歳",
+    "experience": "年の開発経験",
+    "clients": "名以上のお客様",
+    "completed": "件の完成プロジェクト"
+  },
+  "hero": {
+    "projects": "プロジェクトを見る",
+    "services": "サービスと技術",
+    "status": "商用プロジェクトを開発中",
+    "description": "ウェブサイトや ウェブサービス、モバイル・デスクトップアプリ、Telegram・MAX ミニアプリ、チャットボットを開発しています。",
+    "bots": "Telegram / MAX / VK / Discord ボット"
+  },
+  "projects": {
+    "label": "プロジェクト",
+    "all": "すべてのプロジェクト",
+    "title": "最近のプロジェクト",
+    "empty": "このカテゴリのプロジェクトは近日公開予定です。",
+    "aromaForge": "Aroma Forge — 香料ストア"
+  },
+  "reviews": {
+    "all": "すべてのレビュー",
+    "label": "レビュー",
+    "title": "最近のレビュー",
+    "author": "アレクサンドル K.",
+    "sample": "迅速で質が高く、要点を押さえた仕事。素晴らしい方です！"
+  },
+  "common": {
+    "more": "詳しく見る"
+  },
+  "services": {
+    "label": "サービス",
+    "title": "提供サービス",
+    "from": "料金",
+    "duration": "納期",
+    "discuss": "プロジェクトを相談",
+    "frontend": "フロントエンド開発",
+    "backend": "バックエンド開発",
+    "mobile": "モバイルアプリ",
+    "frontendDescription": "高速なレスポンシブ UI、デザインシステム、複雑なユーザーフロー。",
+    "weeks": "4～5 週間",
+    "backendDescription": "サービス設計、外部連携、データベース、安全な API。",
+    "appDescription": "クロスプラットフォームアプリの一括開発。",
+    "desktop": "デスクトップアプリ",
+    "bots": "TG・MAX・Discord 用チャットボット",
+    "botsDescription": "クロスプラットフォームボットの全工程を開発。",
+    "miniApps": "MAX・Telegram ミニアプリ",
+    "miniAppsDescription": "クロスプラットフォームミニアプリの全工程を開発。"
+  },
+  "stack": {
+    "label": "技術スタック",
+    "title": "カテゴリ別の技術スタック",
+    "interfaces": "インターフェース",
+    "designSystems": "デザインシステム",
+    "animations": "アニメーション",
+    "interface": "インターフェース",
+    "language": "プログラミング言語",
+    "framework": "フレームワーク"
+  },
+  "legal": {
+    "privacy": "プライバシーポリシー",
+    "terms": "利用規約",
+    "cooperation": "制作の流れ",
+    "payment": "お支払いと返金",
+    "support": "公開後のサポート"
+  },
+  "pages": {
+    "pricing": "料金表",
+    "about": "詳しい自己紹介",
+    "rewards": "報酬",
+    "blog": "ブログ",
+    "title": "ページ"
+  },
+  "socials": {
+    "channel": "TG チャンネル"
+  },
+  "settings": {
+    "theme": "テーマ",
+    "language": "言語"
+  },
+  "projectCategories": {
+    "miniApps": "ミニアプリ",
+    "web": "ウェブ",
+    "desktop": "デスクトップ",
+    "mobile": "モバイル"
+  }
+}
