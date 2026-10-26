@@ -1,10 +1,10 @@
 import { cn } from '@/lib/utils'
 
 interface IScrollProgressProps {
-  active: boolean
+  visible: boolean
 }
 
-export function ScrollProgress({ active }: IScrollProgressProps) {
+export function ScrollProgress({ visible }: IScrollProgressProps) {
   return (
     <span
       className={cn(
@@ -20,7 +20,7 @@ export function ScrollProgress({ active }: IScrollProgressProps) {
         'after:bg-card/70 after:animate-spin after:animation-duration-[4.5s]',
         "after:shimmer-reverse after:content-['']",
         'motion-reduce:before:animate-none motion-reduce:after:animate-none',
-        !active && 'before:paused after:paused'
+        !visible && 'before:paused after:paused'
       )}
     />
   )

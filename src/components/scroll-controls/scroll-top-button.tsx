@@ -30,7 +30,7 @@ export function ScrollTopButton({ visible }: IScrollTopButtonProps) {
           'text-foreground shadow-lg transition-colors hover:text-primary'
         )}
       >
-        <ScrollProgress active={visible} />
+        <ScrollProgress visible={visible} />
         <ArrowUp className='relative size-5' />
       </Button>
     </div>
