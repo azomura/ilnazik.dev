@@ -1,6 +1,10 @@
+import { useI18n } from '@/hooks/providers/use-i18n'
+
 import { cn } from '@/lib/utils'
 
 export function HeroContent() {
+  const { t } = useI18n()
+
   return (
     <>
       <p
@@ -9,7 +13,7 @@ export function HeroContent() {
           'sm:text-[13px] lg:text-[14px]'
         )}
       >
-        сейчас в работе — коммерческий проект
+        {t('hero.status')}
       </p>
 
       <h1
@@ -27,8 +31,7 @@ export function HeroContent() {
           'text-muted-foreground lg:text-[18px]'
         )}
       >
-        Создаю сайты и веб-сервисы, мобильные и десктопные приложения, мини-приложения для Telegram
-        и MAX, а также чат-ботов.
+        {t('hero.description')}
       </p>
     </>
   )

@@ -1,24 +1,33 @@
+import { useI18n } from '@/hooks/providers/use-i18n'
+
 import { developerProfile } from '@/config/profile'
+import { routes } from '@/config/routes'
 
 import { HeroSpecializations } from '../hero/hero-specializations'
+
 import { SectionHeading } from '../section-heading'
+import { SectionMoreLink } from '../section-more-link'
 
 import { AboutStatistics } from './about-statistics'
 
 export function AboutContent() {
+  const { t } = useI18n()
+
   return (
     <div className='min-w-0'>
-      <SectionHeading label='обо мне' showDot={false}>
+      <SectionHeading label={t('about.label')} showDot={false}>
         <span data-preview='developer' tabIndex={0} className='cursor-pointer'>
-          {developerProfile.name}
+          {t(developerProfile.name)}
         </span>
       </SectionHeading>
 
       <p className='mt-4 max-w-145 font-artegra text-[16px] font-normal leading-6 text-muted-foreground'>
-        Привет! Я Ильназ — fullstack-разработчик с более чем 5-летним опытом. Здесь делюсь своими
-        проектами, рассказываю о стеке и помогаю воплощать идеи в удобные сайты, приложения и
-        сервисы.
+        {t('about.description')}
       </p>
+
+      <div className='mt-4'>
+        <SectionMoreLink to={routes.about} />
+      </div>
 
       <HeroSpecializations />
       <AboutStatistics />

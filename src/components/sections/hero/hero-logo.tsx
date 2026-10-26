@@ -26,8 +26,8 @@ export function HeroLogo() {
             r={1}
             gradientTransform='matrix(0.484 -0.056 0.063 0.614 0.605 0.502)'
           >
-            <stop offset='0%' stopColor='#e83d40' stopOpacity={0.56} />
-            <stop offset='100%' stopColor='#e83d40' stopOpacity={0.07} />
+            <stop offset='0%' stopColor='var(--primary)' stopOpacity={0.56} />
+            <stop offset='100%' stopColor='var(--primary)' stopOpacity={0.07} />
           </radialGradient>
         </defs>
         <rect

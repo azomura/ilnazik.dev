@@ -1,3 +1,5 @@
+import { useI18n } from '@/hooks/providers/use-i18n'
+
 import { Link } from 'react-router-dom'
 
 import { Button } from '@/components/ui/button'
@@ -7,6 +9,8 @@ import { routes } from '@/config/routes'
 import { cn } from '@/lib/utils'
 
 export function HeroActions() {
+  const { t } = useI18n()
+
   return (
     <div className='mt-3.25 flex flex-wrap gap-3'>
       <Button
@@ -17,7 +21,7 @@ export function HeroActions() {
           'text-center leading-none text-surface-warm'
         )}
       >
-        Смотреть проекты
+        {t('hero.projects')}
       </Button>
       <Button
         render={<Link to={routes.home.services} />}
@@ -28,7 +32,7 @@ export function HeroActions() {
           'text-center leading-none'
         )}
       >
-        Услуги и стек
+        {t('hero.services')}
       </Button>
     </div>
   )
