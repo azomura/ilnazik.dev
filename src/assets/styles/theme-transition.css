@@ -15,6 +15,7 @@ html[data-theme-transition='active'] {
 
   &::view-transition-new(root) {
     z-index: 2;
+    will-change: clip-path;
     clip-path: var(--theme-transition-start);
   }
 }
