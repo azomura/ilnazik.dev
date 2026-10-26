@@ -1,4 +1,4 @@
-import type { IIconProps } from '@/interfaces/icon'
+import type { IIconProps } from '@/interfaces/ui/icon'
 
 import { IconSvg } from '../shared/icon-svg'
 

@@ -1,6 +1,6 @@
-import { useIcon } from '@/hooks/use-icon'
+import { useIcon } from '@/hooks/ui/use-icon'
 
-import type { IIconSvgProps } from '@/interfaces/icon'
+import type { IIconSvgProps } from '@/interfaces/ui/icon'
 
 import { IconGradient } from './icon-gradient'
 
