@@ -5,11 +5,14 @@ import tailwindcss from '@tailwindcss/vite'
 
 import path from 'path'
 
+import { startupHtml } from './config/startup-html.ts'
+
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '')
+
   return {
-    plugins: [react(), tailwindcss()],
+    plugins: [startupHtml(), react(), tailwindcss()],
     resolve: {
       alias: {
         '@': path.resolve(import.meta.dirname, './src')

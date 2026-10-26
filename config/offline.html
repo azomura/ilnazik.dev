@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru" class="dark" data-startup="error">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>azomura — Нет подключения</title>
+    <style>
+      /* startup-styles */
+    </style>
+  </head>
+  <body>
+    <div class="startup-screen">
+      <div class="startup-content">
+        <div class="startup-brand">
+          <!-- startup-logo -->
+          <span class="startup-name">azomura</span>
+        </div>
+        <div class="startup-message">
+          <h1>Нет подключения к интернету</h1>
+          <p>Проверьте подключение к сети и попробуйте ещё раз.</p>
+          <button onclick="location.reload()">Попробовать снова</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      try {
+        const root = document.documentElement
+
+        const theme = JSON.parse(localStorage.getItem('app-theme'))
+        const dark =
+          theme === 'system'
+            ? matchMedia('(prefers-color-scheme: dark)').matches
+            : theme !== 'light'
+
+        root.classList.toggle('dark', dark)
+
+        const accent = JSON.parse(localStorage.getItem('app-accent'))
+        if (/^#[0-9a-f]{6}$/i.test(accent)) root.style.setProperty('--brand-accent', accent)
+      } catch {}
+
+      window.addEventListener('online', () => location.reload())
+    </script>
+  </body>
+</html>
