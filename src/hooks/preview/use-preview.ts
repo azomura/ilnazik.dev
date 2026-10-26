@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-import type { IPreviewTarget } from '@/interfaces/preview'
+import type { IPreviewTarget } from '@/interfaces/ui/preview'
 
 import { getPreviewTarget } from '@/lib/get-preview-target'
 
