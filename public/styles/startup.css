@@ -112,6 +112,7 @@ html[data-startup='ready'] .startup-screen {
   pointer-events: none;
 }
 
+html[data-startup='ready'] .startup-track,
 html[data-startup='error'] .startup-track {
   display: none;
 }
@@ -144,5 +145,9 @@ html[data-network='offline'] .startup-screen {
   visibility: visible;
   pointer-events: auto;
 }
-html[data-network='offline'] .startup-track { display: none; }
-html[data-network='offline'] .startup-message { display: block; }
+html[data-network='offline'] .startup-track {
+  display: none;
+}
+html[data-network='offline'] .startup-message {
+  display: block;
+}
