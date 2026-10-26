@@ -1,6 +1,6 @@
 import AromaForgeLogo from '@/assets/projects/aroma-forge-logo.svg'
 import aromaForgeOutline from '@/assets/projects/aroma-forge-outline.svg'
-import aromaForgeScreen from '@/assets/projects/aroma-forge-screen.png'
+import aromaForgeScreen from '@/assets/projects/aroma-forge-screen.webp'
 
 import type { IProject, ProjectCategory } from '@/interfaces/sections/project'
 
@@ -14,7 +14,7 @@ export const projectCategories: readonly ProjectCategory[] = [
 export const projects: readonly IProject[] = [
   {
     id: 'aroma-forge',
-    title: "projects.aromaForge",
+    title: 'projects.aromaForge',
     category: 'Mini-apps',
     platform: 'Telegram mini app',
     tags: ['Fullstack', 'Frontend', 'Backend', 'Mini-apps'],
@@ -24,7 +24,7 @@ export const projects: readonly IProject[] = [
   },
   {
     id: 'aroma-forge',
-    title: "projects.aromaForge",
+    title: 'projects.aromaForge',
     category: 'Mini-apps',
     platform: 'Telegram mini app',
     tags: ['Fullstack', 'Frontend', 'Backend', 'Mini-apps'],
@@ -34,7 +34,7 @@ export const projects: readonly IProject[] = [
   },
   {
     id: 'aroma-forge',
-    title: "projects.aromaForge",
+    title: 'projects.aromaForge',
     category: 'Mini-apps',
     platform: 'Telegram mini app',
     tags: ['Fullstack', 'Frontend', 'Backend', 'Mini-apps'],
