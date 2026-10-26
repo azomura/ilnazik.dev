@@ -37,7 +37,7 @@
     "projects": "Паглядзець праекты",
     "services": "Паслугі і стэк",
     "status": "зараз у працы — камерцыйны праект",
-    "description": "Ствараю сайты і вэб-сэрвісы, мабільныя і настольныя праграмы, міні-праграмы для Telegram і MAX, а таксама чат-ботаў.",
+    "description": "Ствараю сайты і вэб-сэрвісы, мабільныя і настольныя праграмы, Mini-apps для Telegram і MAX, а таксама чат-ботаў.",
     "bots": "Боты Telegram / MAX / VK / Discord"
   },
   "projects": {
@@ -73,8 +73,8 @@
     "desktop": "Праграмы для ПК",
     "bots": "Чат-боты для TG, MAX, Discord",
     "botsDescription": "Кросплатформныя боты, поўны цыкл распрацоўкі.",
-    "miniApps": "Міні-праграмы MAX, Telegram",
-    "miniAppsDescription": "Кросплатформныя міні-праграмы, поўны цыкл распрацоўкі."
+    "miniApps": "Mini-apps MAX, Telegram",
+    "miniAppsDescription": "Кросплатформныя Mini-apps, поўны цыкл распрацоўкі."
   },
   "stack": {
     "label": "стэк",
@@ -108,7 +108,7 @@
     "language": "Мова"
   },
   "projectCategories": {
-    "miniApps": "Міні-праграмы",
+    "miniApps": "Mini-apps",
     "web": "Вэб",
     "desktop": "Для ПК",
     "mobile": "Мабільныя"

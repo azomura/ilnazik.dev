@@ -37,7 +37,7 @@
     "projects": "View projects",
     "services": "Services and stack",
     "status": "currently working on a commercial project",
-    "description": "I build websites and web services, mobile and desktop apps, Telegram and MAX mini apps, and chatbots.",
+    "description": "I build websites and web services, mobile and desktop apps, Telegram and MAX Mini-apps, and chatbots.",
     "bots": "Telegram / MAX / VK / Discord bots"
   },
   "projects": {
@@ -73,8 +73,8 @@
     "desktop": "Desktop apps",
     "bots": "Chatbots for TG, MAX and Discord",
     "botsDescription": "Full-cycle cross-platform chatbot development.",
-    "miniApps": "MAX and Telegram mini apps",
-    "miniAppsDescription": "Full-cycle cross-platform mini app development."
+    "miniApps": "MAX and Telegram Mini-apps",
+    "miniAppsDescription": "Full-cycle cross-platform Mini-apps development."
   },
   "stack": {
     "label": "tech stack",

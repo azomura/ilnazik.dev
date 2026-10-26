@@ -37,7 +37,7 @@
     "projects": "Проекттарҙы ҡарау",
     "services": "Хеҙмәттәр һәм технологиялар",
     "status": "хәҙер коммерция проекты эшләнә",
-    "description": "Сайттар һәм веб-сервистар, мобиль һәм компьютер ҡушымталары, Telegram һәм MAX мини-ҡушымталары, шулай уҡ чат-боттар яһайым.",
+    "description": "Сайттар һәм веб-сервистар, мобиль һәм компьютер ҡушымталары, Telegram һәм MAX Mini-apps, шулай уҡ чат-боттар яһайым.",
     "bots": "Telegram / MAX / VK / Discord боттары"
   },
   "projects": {
@@ -73,8 +73,8 @@
     "desktop": "Компьютер ҡушымталары",
     "bots": "TG, MAX, Discord чат-боттары",
     "botsDescription": "Төрлө платформалар өсөн боттарҙы тулыһынса эшләү.",
-    "miniApps": "MAX, Telegram мини-ҡушымталары",
-    "miniAppsDescription": "Төрлө платформалар өсөн мини-ҡушымталарҙы тулыһынса эшләү."
+    "miniApps": "MAX, Telegram Mini-apps",
+    "miniAppsDescription": "Төрлө платформалар өсөн Mini-apps тулыһынса эшләү."
   },
   "stack": {
     "label": "технологиялар",
@@ -108,7 +108,7 @@
     "language": "Тел"
   },
   "projectCategories": {
-    "miniApps": "Мини-ҡушымталар",
+    "miniApps": "Mini-apps",
     "web": "Веб",
     "desktop": "Компьютер",
     "mobile": "Мобиль"

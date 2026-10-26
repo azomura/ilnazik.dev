@@ -37,7 +37,7 @@
     "projects": "Layihələrə bax",
     "services": "Xidmətlər və texnologiyalar",
     "status": "hazırda kommersiya layihəsi üzərində işləyirəm",
-    "description": "Saytlar və veb xidmətlər, mobil və masaüstü tətbiqlər, Telegram və MAX üçün mini tətbiqlər və çatbotlar hazırlayıram.",
+    "description": "Saytlar və veb xidmətlər, mobil və masaüstü tətbiqlər, Telegram və MAX üçün Mini-apps və çatbotlar hazırlayıram.",
     "bots": "Telegram / MAX / VK / Discord botları"
   },
   "projects": {
@@ -73,8 +73,8 @@
     "desktop": "Masaüstü tətbiqlər",
     "bots": "TG, MAX və Discord üçün çatbotlar",
     "botsDescription": "Çoxplatformalı botların tam dövrlü hazırlanması.",
-    "miniApps": "MAX və Telegram mini tətbiqləri",
-    "miniAppsDescription": "Çoxplatformalı mini tətbiqlərin tam dövrlü hazırlanması."
+    "miniApps": "MAX və Telegram Mini-apps",
+    "miniAppsDescription": "Çoxplatformalı Mini-apps tam dövrlü hazırlanması."
   },
   "stack": {
     "label": "texnologiyalar",
@@ -108,7 +108,7 @@
     "language": "Dil"
   },
   "projectCategories": {
-    "miniApps": "Mini tətbiqlər",
+    "miniApps": "Mini-apps",
     "web": "Veb",
     "desktop": "Masaüstü",
     "mobile": "Mobil"

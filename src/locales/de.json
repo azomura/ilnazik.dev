@@ -37,7 +37,7 @@
     "projects": "Projekte ansehen",
     "services": "Leistungen und Technologien",
     "status": "aktuell in Arbeit — ein kommerzielles Projekt",
-    "description": "Ich entwickle Websites und Webdienste, mobile und Desktop-Apps, Mini-Apps für Telegram und MAX sowie Chatbots.",
+    "description": "Ich entwickle Websites und Webdienste, mobile und Desktop-Apps, Mini-apps für Telegram und MAX sowie Chatbots.",
     "bots": "Telegram / MAX / VK / Discord Bots"
   },
   "projects": {
@@ -73,8 +73,8 @@
     "desktop": "Desktop-Apps",
     "bots": "Chatbots für TG, MAX und Discord",
     "botsDescription": "Plattformübergreifende Chatbots über den gesamten Entwicklungszyklus.",
-    "miniApps": "Mini-Apps für MAX und Telegram",
-    "miniAppsDescription": "Plattformübergreifende Mini-Apps über den gesamten Entwicklungszyklus."
+    "miniApps": "Mini-apps für MAX und Telegram",
+    "miniAppsDescription": "Plattformübergreifende Mini-apps über den gesamten Entwicklungszyklus."
   },
   "stack": {
     "label": "technologien",
@@ -108,7 +108,7 @@
     "language": "Sprache"
   },
   "projectCategories": {
-    "miniApps": "Mini-Apps",
+    "miniApps": "Mini-apps",
     "web": "Web",
     "desktop": "Desktop",
     "mobile": "Mobil"
