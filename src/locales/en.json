@@ -1,0 +1,116 @@
+{
+  "footer": {
+    "discuss": "Let's discuss your project",
+    "telegram": "Message on Telegram",
+    "credit": "Designed by",
+    "taxId": "Tax ID:",
+    "description": "— fullstack developer. I create websites, web apps and Telegram apps. Here are my projects, tech stack and services."
+  },
+  "profile": {
+    "name": "Ilnaz Mingaleev",
+    "initials": "IM",
+    "fullName": "Mingaleev Ilnaz Tagirovich",
+    "status": "Self-employed",
+    "role": "Fullstack developer"
+  },
+  "nav": {
+    "about": "About me",
+    "stack": "Tech stack",
+    "services": "Services",
+    "projects": "Projects",
+    "orders": "Orders",
+    "reviews": "Reviews",
+    "login": "Sign in"
+  },
+  "preview": {
+    "external": "Visit external website"
+  },
+  "about": {
+    "label": "about me",
+    "description": "Hi! I'm Ilnaz, a fullstack developer with over 5 years of experience. I share my projects and tech stack here and help turn ideas into convenient websites, apps and services.",
+    "years": "years old",
+    "experience": "years of development experience",
+    "clients": "clients",
+    "completed": "completed projects"
+  },
+  "hero": {
+    "projects": "View projects",
+    "services": "Services and stack",
+    "status": "currently working on a commercial project",
+    "description": "I build websites and web services, mobile and desktop apps, Telegram and MAX mini apps, and chatbots.",
+    "bots": "Telegram / MAX / VK / Discord bots"
+  },
+  "projects": {
+    "label": "projects",
+    "all": "All projects",
+    "title": "Recent projects",
+    "empty": "Projects in this category are coming soon.",
+    "aromaForge": "Aroma Forge — Flavorings store"
+  },
+  "reviews": {
+    "all": "All reviews",
+    "label": "reviews",
+    "title": "Recent reviews",
+    "author": "Alexander K.",
+    "sample": "Fast, high-quality work, straight to the point. Great guy!"
+  },
+  "common": {
+    "more": "Learn more"
+  },
+  "services": {
+    "label": "services",
+    "title": "My services",
+    "from": "from",
+    "duration": "delivery time",
+    "discuss": "Discuss project",
+    "frontend": "Frontend development",
+    "backend": "Backend development",
+    "mobile": "Mobile apps",
+    "frontendDescription": "Fast, responsive interfaces, design systems and complex user flows.",
+    "weeks": "4–5 weeks",
+    "backendDescription": "Service architecture, integrations, databases and secure APIs.",
+    "appDescription": "Turnkey cross-platform app development.",
+    "desktop": "Desktop apps",
+    "bots": "Chatbots for TG, MAX and Discord",
+    "botsDescription": "Full-cycle cross-platform chatbot development.",
+    "miniApps": "MAX and Telegram mini apps",
+    "miniAppsDescription": "Full-cycle cross-platform mini app development."
+  },
+  "stack": {
+    "label": "tech stack",
+    "title": "My stack by category",
+    "interfaces": "interfaces",
+    "designSystems": "Design systems",
+    "animations": "Animations",
+    "interface": "Interface",
+    "language": "Programming language",
+    "framework": "Framework"
+  },
+  "legal": {
+    "privacy": "Privacy policy",
+    "terms": "Terms of use",
+    "cooperation": "How I work",
+    "payment": "Payment and refunds",
+    "support": "Post-launch support"
+  },
+  "pages": {
+    "pricing": "Pricing",
+    "about": "More about me",
+    "rewards": "Rewards",
+    "blog": "Blog",
+    "title": "Pages"
+  },
+  "socials": {
+    "channel": "TG channel"
+  },
+  "settings": {
+    "theme": "Theme",
+    "language": "Language"
+  },
+  "projectCategories": {
+    "miniApps": "Mini-apps",
+    "web": "Web",
+    "desktop": "Desktop",
+    "mobile": "Mobile"
+  }
+}

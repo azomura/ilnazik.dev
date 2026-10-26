@@ -1,0 +1,116 @@
+{
+  "footer": {
+    "discuss": "Besprechen wir Ihr Projekt",
+    "telegram": "Auf Telegram schreiben",
+    "credit": "Design von",
+    "taxId": "Steuer-ID:",
+    "description": "— Fullstack-Entwickler. Ich erstelle Websites, Web-Apps und Telegram-Apps. Hier finden Sie meine Projekte, Technologien und Leistungen."
+  },
+  "profile": {
+    "name": "Ilnaz Mingaleev",
+    "initials": "IM",
+    "fullName": "Mingaleev Ilnaz Tagirovich",
+    "status": "Selbstständig",
+    "role": "Fullstack-Entwickler"
+  },
+  "nav": {
+    "about": "Über mich",
+    "stack": "Technologien",
+    "services": "Leistungen",
+    "projects": "Projekte",
+    "orders": "Aufträge",
+    "reviews": "Bewertungen",
+    "login": "Anmelden"
+  },
+  "preview": {
+    "external": "Externe Website besuchen"
+  },
+  "about": {
+    "label": "über mich",
+    "description": "Hallo! Ich bin Ilnaz, Fullstack-Entwickler mit über 5 Jahren Erfahrung. Hier teile ich meine Projekte und Technologien und verwandle Ideen in benutzerfreundliche Websites, Apps und Dienste.",
+    "years": "Jahre alt",
+    "experience": "Jahre Entwicklungserfahrung",
+    "clients": "Kunden",
+    "completed": "abgeschlossene Projekte"
+  },
+  "hero": {
+    "projects": "Projekte ansehen",
+    "services": "Leistungen und Technologien",
+    "status": "aktuell in Arbeit — ein kommerzielles Projekt",
+    "description": "Ich entwickle Websites und Webdienste, mobile und Desktop-Apps, Mini-Apps für Telegram und MAX sowie Chatbots.",
+    "bots": "Telegram / MAX / VK / Discord Bots"
+  },
+  "projects": {
+    "label": "projekte",
+    "all": "Alle Projekte",
+    "title": "Aktuelle Projekte",
+    "empty": "Projekte in dieser Kategorie folgen bald.",
+    "aromaForge": "Aroma Forge — Shop für Aromen"
+  },
+  "reviews": {
+    "all": "Alle Bewertungen",
+    "label": "bewertungen",
+    "title": "Aktuelle Bewertungen",
+    "author": "Alexander K.",
+    "sample": "Schnelle, hochwertige Arbeit, alles auf den Punkt. Toller Typ!"
+  },
+  "common": {
+    "more": "Mehr erfahren"
+  },
+  "services": {
+    "label": "leistungen",
+    "title": "Meine Leistungen",
+    "from": "ab",
+    "duration": "Dauer",
+    "discuss": "Projekt besprechen",
+    "frontend": "Frontend-Entwicklung",
+    "backend": "Backend-Entwicklung",
+    "mobile": "Mobile Apps",
+    "frontendDescription": "Schnelle, responsive Oberflächen, Designsysteme und komplexe Nutzerabläufe.",
+    "weeks": "4–5 Wochen",
+    "backendDescription": "Servicearchitektur, Integrationen, Datenbanken und sichere APIs.",
+    "appDescription": "Schlüsselfertige Entwicklung plattformübergreifender Apps.",
+    "desktop": "Desktop-Apps",
+    "bots": "Chatbots für TG, MAX und Discord",
+    "botsDescription": "Plattformübergreifende Chatbots über den gesamten Entwicklungszyklus.",
+    "miniApps": "Mini-Apps für MAX und Telegram",
+    "miniAppsDescription": "Plattformübergreifende Mini-Apps über den gesamten Entwicklungszyklus."
+  },
+  "stack": {
+    "label": "technologien",
+    "title": "Meine Technologien nach Kategorien",
+    "interfaces": "oberflächen",
+    "designSystems": "Designsysteme",
+    "animations": "Animationen",
+    "interface": "Oberfläche",
+    "language": "Programmiersprache",
+    "framework": "Framework"
+  },
+  "legal": {
+    "privacy": "Datenschutzerklärung",
+    "terms": "Nutzungsbedingungen",
+    "cooperation": "Zusammenarbeit",
+    "payment": "Zahlung und Rückerstattung",
+    "support": "Support nach dem Start"
+  },
+  "pages": {
+    "pricing": "Preise",
+    "about": "Mehr über mich",
+    "rewards": "Prämien",
+    "blog": "Blog",
+    "title": "Seiten"
+  },
+  "socials": {
+    "channel": "TG-Kanal"
+  },
+  "settings": {
+    "theme": "Design",
+    "language": "Sprache"
+  },
+  "projectCategories": {
+    "miniApps": "Mini-Apps",
+    "web": "Web",
+    "desktop": "Desktop",
+    "mobile": "Mobil"
+  }
+}

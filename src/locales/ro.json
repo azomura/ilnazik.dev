@@ -1,0 +1,116 @@
+{
+  "footer": {
+    "discuss": "Să discutăm proiectul tău",
+    "telegram": "Scrie pe Telegram",
+    "credit": "Design realizat de",
+    "taxId": "Cod fiscal:",
+    "description": "— dezvoltator fullstack. Creez site-uri, aplicații web și aplicații Telegram. Aici găsești proiectele, tehnologiile și serviciile mele."
+  },
+  "profile": {
+    "name": "Ilnaz Mingaleev",
+    "initials": "IM",
+    "fullName": "Mingaleev Ilnaz Tagirovici",
+    "status": "Persoană independentă",
+    "role": "Dezvoltator fullstack"
+  },
+  "nav": {
+    "about": "Despre mine",
+    "stack": "Tehnologii",
+    "services": "Servicii",
+    "projects": "Proiecte",
+    "orders": "Comenzi",
+    "reviews": "Recenzii",
+    "login": "Autentificare"
+  },
+  "preview": {
+    "external": "Vizitează site-ul extern"
+  },
+  "about": {
+    "label": "despre mine",
+    "description": "Salut! Sunt Ilnaz, dezvoltator fullstack cu peste 5 ani de experiență. Îmi prezint proiectele și tehnologiile și transform ideile în site-uri, aplicații și servicii ușor de folosit.",
+    "years": "de ani",
+    "experience": "ani de experiență în dezvoltare",
+    "clients": "clienți",
+    "completed": "proiecte finalizate"
+  },
+  "hero": {
+    "projects": "Vezi proiectele",
+    "services": "Servicii și tehnologii",
+    "status": "în lucru — un proiect comercial",
+    "description": "Dezvolt site-uri și servicii web, aplicații mobile și desktop, miniaplicații pentru Telegram și MAX, precum și boți de chat.",
+    "bots": "Boți Telegram / MAX / VK / Discord"
+  },
+  "projects": {
+    "label": "proiecte",
+    "all": "Toate proiectele",
+    "title": "Proiecte recente",
+    "empty": "Proiectele din această categorie vor apărea în curând.",
+    "aromaForge": "Aroma Forge — Magazin de arome"
+  },
+  "reviews": {
+    "all": "Toate recenziile",
+    "label": "recenzii",
+    "title": "Recenzii recente",
+    "author": "Alexandru K.",
+    "sample": "Rapid și de calitate, totul la obiect. Un tip grozav!"
+  },
+  "common": {
+    "more": "Află mai multe"
+  },
+  "services": {
+    "label": "servicii",
+    "title": "Serviciile mele",
+    "from": "de la",
+    "duration": "durată",
+    "discuss": "Discută proiectul",
+    "frontend": "Dezvoltare frontend",
+    "backend": "Dezvoltare backend",
+    "mobile": "Aplicații mobile",
+    "frontendDescription": "Interfețe rapide și adaptive, sisteme de design și fluxuri complexe de utilizare.",
+    "weeks": "4–5 săptămâni",
+    "backendDescription": "Arhitectură de servicii, integrări, baze de date și API-uri sigure.",
+    "appDescription": "Dezvoltare la cheie de aplicații multiplatformă.",
+    "desktop": "Aplicații desktop",
+    "bots": "Boți de chat pentru TG, MAX și Discord",
+    "botsDescription": "Dezvoltare completă de boți multiplatformă.",
+    "miniApps": "Miniaplicații MAX și Telegram",
+    "miniAppsDescription": "Dezvoltare completă de miniaplicații multiplatformă."
+  },
+  "stack": {
+    "label": "tehnologii",
+    "title": "Tehnologiile mele pe categorii",
+    "interfaces": "interfețe",
+    "designSystems": "Sisteme de design",
+    "animations": "Animații",
+    "interface": "Interfață",
+    "language": "Limbaj de programare",
+    "framework": "Framework"
+  },
+  "legal": {
+    "privacy": "Politica de confidențialitate",
+    "terms": "Condiții de utilizare",
+    "cooperation": "Cum lucrăm",
+    "payment": "Plată și rambursare",
+    "support": "Suport după lansare"
+  },
+  "pages": {
+    "pricing": "Prețuri",
+    "about": "Mai multe despre mine",
+    "rewards": "Recompense",
+    "blog": "Blog",
+    "title": "Pagini"
+  },
+  "socials": {
+    "channel": "Canal TG"
+  },
+  "settings": {
+    "theme": "Temă",
+    "language": "Limbă"
+  },
+  "projectCategories": {
+    "miniApps": "Miniaplicații",
+    "web": "Web",
+    "desktop": "Desktop",
+    "mobile": "Mobile"
+  }
+}
