@@ -1,13 +1,17 @@
+import { useI18n } from '@/hooks/providers/use-i18n'
+
 import { aboutStatistics } from '@/data/about'
 
 import { cn } from '@/lib/utils'
 
 export function AboutStatistics() {
+  const { t } = useI18n()
+
   return (
     <ul className='mt-2.5 grid grid-cols-2 gap-2.5 sm:grid-cols-4'>
       {aboutStatistics.map(({ value, label, icon: Icon }) => (
         <li
-          key={label}
+          key={t(label)}
           className='relative isolate min-w-41.5 min-h-30.25 overflow-hidden rounded-[16px] bg-card/70 px-5 py-5'
         >
           <Icon
@@ -23,7 +27,7 @@ export function AboutStatistics() {
           </p>
 
           <p className='mt-0.75 font-artegra font-normal max-w-24 text-[13px] leading-4.25 text-foreground/90'>
-            {label}
+            {t(label)}
           </p>
         </li>
       ))}
