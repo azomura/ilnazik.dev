@@ -1,9 +1,10 @@
-import { useI18n } from '@/hooks/providers/use-i18n'
+import { Link } from 'react-router-dom'
 
-import { Telegram } from '@/components/icons/telegram'
+import { ArrowUpRight } from 'lucide-react'
+
 import { Button } from '@/components/ui/button'
 
-import { socials } from '@/config/socials'
+import { useI18n } from '@/hooks/providers/use-i18n'
 
 import type { IService } from '@/interfaces/sections/service'
 
@@ -24,9 +25,11 @@ export function ServiceCard({ service, position }: IServiceCardProps) {
       <p className='font-artegra-extended text-[13px] font-bold italic leading-5 text-primary'>
         {formatOrderNumber(position)} / {service.category}
       </p>
+
       <h3 className='mt-1 font-artegra text-[18px] font-bold leading-6 text-foreground'>
         {t(service.title)}
       </h3>
+
       <p className='mt-2 font-artegra text-[14px] leading-5 text-muted-foreground'>
         {t(service.description)}
       </p>
@@ -35,17 +38,20 @@ export function ServiceCard({ service, position }: IServiceCardProps) {
         <dl className='flex justify-between gap-4 border-t border-secondary pt-2 font-artegra'>
           <div>
             <dt className='text-[12px] leading-4 text-text-dim'>{t('services.from')}</dt>
+
             <dd className='mt-0.5 text-[14px] font-semibold leading-5'>
               {priceFormatter.format(service.priceFrom)} ₽
             </dd>
           </div>
+
           <div>
             <dt className='text-[12px] leading-4 text-text-dim'>{t('services.duration')}</dt>
             <dd className='mt-0.5 text-[14px] font-semibold leading-5'>{t(service.duration)}</dd>
           </div>
         </dl>
+
         <Button
-          render={<a href={socials.developer.telegram} target='_blank' rel='noopener noreferrer' />}
+          render={<Link to='/#orders' />}
           nativeButton={false}
           variant='secondary'
           className={cn(
@@ -53,7 +59,8 @@ export function ServiceCard({ service, position }: IServiceCardProps) {
             'font-artegra text-[14px] font-medium leading-none'
           )}
         >
-          {t('services.discuss')}<Telegram className='h-2.5 w-3 shrink-0' />
+          {t('services.discuss')}
+          <ArrowUpRight className='size-3.5 shrink-0' />
         </Button>
       </div>
     </li>
