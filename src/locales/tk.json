@@ -112,5 +112,14 @@
     "web": "Web",
     "desktop": "Kompýuter",
     "mobile": "Mobil"
+  },
+  "search": {
+    "title": "Gözleg",
+    "placeholder": "Sahypalar, taslamalar, ýazgylar…",
+    "results": "Gözleg netijeleri",
+    "empty": "Hiç zat tapylmady. Başga sorag bilen synanyşyň.",
+    "tags": "Bellikler",
+    "recent": "Soňky ýazgylar",
+    "noPosts": "Entek ýazgy çap edilmedi."
   }
 }

@@ -112,5 +112,14 @@
     "web": "Web",
     "desktop": "Desktop",
     "mobile": "Mobile"
+  },
+  "search": {
+    "title": "Căutare",
+    "placeholder": "Pagini, proiecte, articole…",
+    "results": "Rezultatele căutării",
+    "empty": "Nu s-a găsit nimic. Încercați altă căutare.",
+    "tags": "Etichete",
+    "recent": "Articole recente",
+    "noPosts": "Nu există încă articole publicate."
   }
 }
