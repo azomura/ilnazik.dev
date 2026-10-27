@@ -24,8 +24,10 @@ export function useThemeTransition() {
     if (active.current) return
 
     const apply = () => setTheme(effectiveTheme === 'dark' ? 'light' : 'dark')
+
     if (!document.startViewTransition || matchMedia('(prefers-reduced-motion: reduce)').matches) {
       apply()
+
       return
     }
 

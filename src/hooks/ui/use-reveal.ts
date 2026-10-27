@@ -7,6 +7,7 @@ export function useReveal() {
 
   useEffect(() => {
     const element = ref.current
+
     if (!element) return
 
     const observer = new IntersectionObserver(

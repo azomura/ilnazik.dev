@@ -24,6 +24,7 @@ function getGradient(className: string, option: IIconOptions['gradient']) {
 
   for (const token of className.split(/\s+/)) {
     const utility = token.slice(token.lastIndexOf(':') + 1)
+
     if (utility.startsWith('from-') || utility.startsWith('to-')) hasColors = true
     if (utility.startsWith('via-')) hasVia = true
     if (hasVia && (option || hasColors)) return viaGradient

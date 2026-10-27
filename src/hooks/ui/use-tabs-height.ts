@@ -7,9 +7,11 @@ export function useTabsHeight() {
 
   useLayoutEffect(() => {
     const root = ref.current
+
     if (!root) return
 
     let active: HTMLElement | undefined
+
     const resize = new ResizeObserver(() => {
       if (active) setHeight(active.offsetHeight)
     })
@@ -22,6 +24,7 @@ export function useTabsHeight() {
           !child.hasAttribute('data-hidden') &&
           !child.hasAttribute('data-ending-style')
       )
+
       if (!panel || panel === active) return
 
       resize.disconnect()
