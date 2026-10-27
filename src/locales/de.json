@@ -4,7 +4,7 @@
     "telegram": "Auf Telegram schreiben",
     "credit": "Design von",
     "taxId": "Steuer-ID:",
-    "description": "— Fullstack-Entwickler. Ich erstelle Websites, Web-Apps und Telegram-Apps. Hier finden Sie meine Projekte, Technologien und Leistungen."
+    "description": "- Fullstack-Entwickler. Ich erstelle Websites, Web-Apps und Telegram-Apps. Hier finden Sie meine Projekte, Technologien und Leistungen."
   },
   "profile": {
     "name": "Ilnaz Mingaleev",
@@ -36,7 +36,7 @@
   "hero": {
     "projects": "Projekte ansehen",
     "services": "Leistungen und Technologien",
-    "status": "aktuell in Arbeit — ein kommerzielles Projekt",
+    "status": "aktuell in Arbeit - ein kommerzielles Projekt",
     "description": "Ich entwickle Websites und Webdienste, mobile und Desktop-Apps, Mini-apps für Telegram und MAX sowie Chatbots.",
     "bots": "Telegram / MAX / VK / Discord Bots"
   },
@@ -45,7 +45,7 @@
     "all": "Alle Projekte",
     "title": "Aktuelle Projekte",
     "empty": "Projekte in dieser Kategorie folgen bald.",
-    "aromaForge": "Aroma Forge — Shop für Aromen"
+    "aromaForge": "Aroma Forge - Shop für Aromen"
   },
   "reviews": {
     "all": "Alle Bewertungen",
@@ -67,7 +67,7 @@
     "backend": "Backend-Entwicklung",
     "mobile": "Mobile Apps",
     "frontendDescription": "Schnelle, responsive Oberflächen, Designsysteme und komplexe Nutzerabläufe.",
-    "weeks": "4–5 Wochen",
+    "weeks": "4-5 Wochen",
     "backendDescription": "Servicearchitektur, Integrationen, Datenbanken und sichere APIs.",
     "appDescription": "Schlüsselfertige Entwicklung plattformübergreifender Apps.",
     "desktop": "Desktop-Apps",
@@ -133,5 +133,37 @@
     "tags": "Tags",
     "recent": "Neueste Beiträge",
     "noPosts": "Es wurden noch keine Beiträge veröffentlicht."
+  },
+  "projectRequest": {
+    "label": "neues Projekt",
+    "title": "Eine Idee? Lass uns darüber sprechen.",
+    "name": "Dein Name",
+    "namePlaceholder": "Wie darf ich dich nennen?",
+    "contact": "Kontakt",
+    "contactPlaceholder": "Telegram oder E-Mail",
+    "description": "Über das Projekt",
+    "descriptionPlaceholder": "Beschreibe kurz dein Vorhaben…",
+    "budget": "Budget",
+    "budgetPlaceholder": "Betrag eingeben…",
+    "design": "Design",
+    "yes": "Ja",
+    "no": "Nein",
+    "submit": "Anfrage senden",
+    "telegram": "Auf Telegram schreiben",
+    "sending": "Wird gesendet…",
+    "success": "Deine Anfrage wurde gesendet. Ich melde mich bei dir.",
+    "error": "Die Anfrage konnte nicht gesendet werden. Versuche es erneut oder schreibe mir auf Telegram.",
+    "rateLimit": "Bitte warte kurz, bevor du eine weitere Anfrage sendest.",
+    "nameError": "Name: 2-80 Zeichen.",
+    "contactError": "Kontakt: 3-190 Zeichen.",
+    "descriptionError": "Beschreibung: 10-2500 Zeichen.",
+    "budgetError": "Budget: 0-1.000.000.000.",
+    "email": "E-Mail",
+    "username": "Benutzername oder Profillink",
+    "emailError": "Gib eine gültige E-Mail-Adresse ein.",
+    "responseTime": "Bitte rechne mit einer Antwort innerhalb von 1-5 Stunden.",
+    "telegramGreeting": "Guten Tag! Ich möchte ein Projekt mit Ihnen besprechen. Hier sind die wichtigsten Informationen.",
+    "designHelpTitle": "Benötigen Sie ein Design?",
+    "designHelp": "Wählen Sie „Ja“, wenn Sie ein Website- oder App-Design benötigen - unser Designer erstellt es nach Ihren Anforderungen. Wählen Sie „Nein“, wenn Sie kein Design benötigen oder bereits eines haben. Wir können Ihren Entwurf verwenden."
   }
 }

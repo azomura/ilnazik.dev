@@ -4,7 +4,7 @@
     "telegram": "Message on Telegram",
     "credit": "Designed by",
     "taxId": "Tax ID:",
-    "description": "— fullstack developer. I create websites, web apps and Telegram apps. Here are my projects, tech stack and services."
+    "description": "- fullstack developer. I create websites, web apps and Telegram apps. Here are my projects, tech stack and services."
   },
   "profile": {
     "name": "Ilnaz Mingaleev",
@@ -45,7 +45,7 @@
     "all": "All projects",
     "title": "Recent projects",
     "empty": "Projects in this category are coming soon.",
-    "aromaForge": "Aroma Forge — Flavorings store"
+    "aromaForge": "Aroma Forge - Flavorings store"
   },
   "reviews": {
     "all": "All reviews",
@@ -67,7 +67,7 @@
     "backend": "Backend development",
     "mobile": "Mobile apps",
     "frontendDescription": "Fast, responsive interfaces, design systems and complex user flows.",
-    "weeks": "4–5 weeks",
+    "weeks": "4-5 weeks",
     "backendDescription": "Service architecture, integrations, databases and secure APIs.",
     "appDescription": "Turnkey cross-platform app development.",
     "desktop": "Desktop apps",
@@ -133,5 +133,37 @@
     "tags": "Tags",
     "recent": "Recent posts",
     "noPosts": "No posts published yet."
+  },
+  "projectRequest": {
+    "label": "new project",
+    "title": "Have an idea? Let’s talk.",
+    "name": "Your name",
+    "namePlaceholder": "What should I call you?",
+    "contact": "Contact",
+    "contactPlaceholder": "Telegram or email",
+    "description": "About the project",
+    "descriptionPlaceholder": "Briefly describe your project…",
+    "budget": "Budget",
+    "budgetPlaceholder": "Enter an amount…",
+    "design": "Design",
+    "yes": "Yes",
+    "no": "No",
+    "submit": "Send a request",
+    "telegram": "Message on Telegram",
+    "sending": "Sending…",
+    "success": "Your request has been sent. I’ll get in touch.",
+    "error": "Could not send your request. Try again or message me on Telegram.",
+    "rateLimit": "Please wait a moment before sending another request.",
+    "nameError": "Name: 2-80 characters.",
+    "contactError": "Contact: 3-190 characters.",
+    "descriptionError": "Description: 10-2500 characters.",
+    "budgetError": "Budget: 0-1,000,000,000.",
+    "email": "Email",
+    "username": "Username or profile link",
+    "emailError": "Enter a valid email address.",
+    "responseTime": "Please allow 1-5 hours for a reply.",
+    "telegramGreeting": "Hello! I would like to discuss a project with you. Here are the main details.",
+    "designHelpTitle": "Do you need a design?",
+    "designHelp": "Choose “Yes” if you need a website or app design - our designer will create it based on your requirements. Choose “No” if you do not need a design or already have one - we can use your existing design."
   }
 }

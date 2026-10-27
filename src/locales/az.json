@@ -4,7 +4,7 @@
     "telegram": "Telegram-da yazın",
     "credit": "Dizayn müəllifi",
     "taxId": "VÖEN:",
-    "description": "— fullstack proqramçı. Saytlar, veb və Telegram tətbiqləri hazırlayıram. Burada layihələrim, texnologiyalarım və xidmətlərim var."
+    "description": "- fullstack proqramçı. Saytlar, veb və Telegram tətbiqləri hazırlayıram. Burada layihələrim, texnologiyalarım və xidmətlərim var."
   },
   "profile": {
     "name": "İlnaz Minqaleyev",
@@ -45,7 +45,7 @@
     "all": "Bütün layihələr",
     "title": "Son layihələr",
     "empty": "Bu kateqoriyada layihələr tezliklə görünəcək.",
-    "aromaForge": "Aroma Forge — Ətirləndiricilər mağazası"
+    "aromaForge": "Aroma Forge - Ətirləndiricilər mağazası"
   },
   "reviews": {
     "all": "Bütün rəylər",
@@ -67,7 +67,7 @@
     "backend": "Backend hazırlanması",
     "mobile": "Mobil tətbiqlər",
     "frontendDescription": "Sürətli adaptiv interfeyslər, dizayn sistemləri və mürəkkəb istifadəçi ssenariləri.",
-    "weeks": "4–5 həftə",
+    "weeks": "4-5 həftə",
     "backendDescription": "Xidmət arxitekturası, inteqrasiyalar, verilənlər bazaları və təhlükəsiz API-lər.",
     "appDescription": "Açar təslim çoxplatformalı tətbiqlər.",
     "desktop": "Masaüstü tətbiqlər",
@@ -133,5 +133,37 @@
     "tags": "Teqlər",
     "recent": "Son yazılar",
     "noPosts": "Hələ heç bir yazı dərc edilməyib."
+  },
+  "projectRequest": {
+    "label": "yeni layihə",
+    "title": "İdeyanız var? Gəlin müzakirə edək.",
+    "name": "Adınız",
+    "namePlaceholder": "Sizə necə müraciət edək?",
+    "contact": "Əlaqə",
+    "contactPlaceholder": "Telegram və ya e-poçt",
+    "description": "Layihə haqqında",
+    "descriptionPlaceholder": "Tapşırığı qısaca təsvir edin…",
+    "budget": "Büdcə",
+    "budgetPlaceholder": "Məbləği daxil edin…",
+    "design": "Dizayn",
+    "yes": "Bəli",
+    "no": "Xeyr",
+    "submit": "Sorğu göndər",
+    "telegram": "Telegram-da yaz",
+    "sending": "Göndərilir…",
+    "success": "Sorğunuz göndərildi. Sizinlə əlaqə saxlayacağam.",
+    "error": "Sorğunu göndərmək mümkün olmadı. Yenidən cəhd edin və ya Telegram-da yazın.",
+    "rateLimit": "Yenidən göndərməzdən əvvəl bir az gözləyin.",
+    "nameError": "Ad: 2-80 simvol.",
+    "contactError": "Əlaqə: 3-190 simvol.",
+    "descriptionError": "Təsvir: 10-2500 simvol.",
+    "budgetError": "Büdcə: 0-1 000 000 000.",
+    "email": "E-poçt",
+    "username": "İstifadəçi adı və ya keçid",
+    "emailError": "Düzgün e-poçt ünvanı daxil edin.",
+    "responseTime": "Cavab üçün 1-5 saat gözləyin.",
+    "telegramGreeting": "Salam! Sizinlə bir layihəni müzakirə etmək istərdim. Aşağıda tapşırıq haqqında əsas məlumatlar var.",
+    "designHelpTitle": "Dizayna ehtiyacınız varmı?",
+    "designHelp": "Sayt və ya tətbiq dizaynı lazımdırsa, “Bəli” seçin - dizaynerimiz onu tələblərinizə uyğun hazırlayacaq. Dizayn lazım deyilsə və ya hazır dizaynınız varsa, “Xeyr” seçin - hazır dizaynınızdan istifadə edə bilərik."
   }
 }
