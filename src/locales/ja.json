@@ -113,6 +113,18 @@
     "desktop": "デスクトップ",
     "mobile": "モバイル"
   },
+  "player": {
+    "recent": "最近聴いた曲",
+    "recentError": "最近聴いた曲を読み込めませんでした",
+    "recentEmpty": "再生履歴はまだありません",
+    "retry": "再試行",
+    "title": "音楽",
+    "searching": "歌詞を検索中",
+    "missing": "歌詞が見つかりません",
+    "error": "歌詞を読み込めませんでした",
+    "instrumental": "インストゥルメンタル",
+    "queue": "プレイリスト"
+  },
   "search": {
     "title": "検索",
     "placeholder": "ページ、プロジェクト、記事…",
