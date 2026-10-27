@@ -113,6 +113,18 @@
     "desktop": "Kompýuter",
     "mobile": "Mobil"
   },
+  "player": {
+    "recent": "Soňky diňlenen aýdymlar",
+    "recentError": "Soňky aýdymlary ýükläp bolmady",
+    "recentEmpty": "Diňleniş taryhy entek boş",
+    "retry": "Gaýtadan synanyş",
+    "title": "Saz",
+    "searching": "Aýdymyň sözleri gözlenýär",
+    "missing": "Aýdymyň sözleri tapylmady",
+    "error": "Sözleri ýükläp bolmady",
+    "instrumental": "Sözsüz",
+    "queue": "Aýdym sanawy"
+  },
   "search": {
     "title": "Gözleg",
     "placeholder": "Sahypalar, taslamalar, ýazgylar…",

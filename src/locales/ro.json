@@ -113,6 +113,18 @@
     "desktop": "Desktop",
     "mobile": "Mobile"
   },
+  "player": {
+    "recent": "Piese recente",
+    "recentError": "Nu s-au putut încărca piesele recente",
+    "recentEmpty": "Istoricul de ascultare este gol",
+    "retry": "Încearcă din nou",
+    "title": "Muzică",
+    "searching": "Se caută versurile",
+    "missing": "Versurile nu au fost găsite",
+    "error": "Versurile nu s-au putut încărca",
+    "instrumental": "Instrumental",
+    "queue": "Listă de redare"
+  },
   "search": {
     "title": "Căutare",
     "placeholder": "Pagini, proiecte, articole…",
