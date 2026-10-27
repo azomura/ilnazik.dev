@@ -4,7 +4,7 @@
     "telegram": "Telegram で連絡",
     "credit": "デザイン",
     "taxId": "納税者番号：",
-    "description": "— フルスタック開発者です。ウェブサイト、ウェブアプリ、Telegram アプリを制作しています。プロジェクト、技術スタック、サービスをご紹介します。"
+    "description": "- フルスタック開発者です。ウェブサイト、ウェブアプリ、Telegram アプリを制作しています。プロジェクト、技術スタック、サービスをご紹介します。"
   },
   "profile": {
     "name": "イルナズ・ミンガレエフ",
@@ -45,7 +45,7 @@
     "all": "すべてのプロジェクト",
     "title": "最近のプロジェクト",
     "empty": "このカテゴリのプロジェクトは近日公開予定です。",
-    "aromaForge": "Aroma Forge — 香料ストア"
+    "aromaForge": "Aroma Forge - 香料ストア"
   },
   "reviews": {
     "all": "すべてのレビュー",
@@ -133,5 +133,37 @@
     "tags": "タグ",
     "recent": "最近の記事",
     "noPosts": "記事はまだ公開されていません。"
+  },
+  "projectRequest": {
+    "label": "新しいプロジェクト",
+    "title": "アイデアをお聞かせください。",
+    "name": "お名前",
+    "namePlaceholder": "お名前を入力してください",
+    "contact": "連絡先",
+    "contactPlaceholder": "Telegram またはメールアドレス",
+    "description": "プロジェクトについて",
+    "descriptionPlaceholder": "ご依頼の内容を簡単にご説明ください…",
+    "budget": "予算",
+    "budgetPlaceholder": "金額を入力…",
+    "design": "デザイン",
+    "yes": "あり",
+    "no": "なし",
+    "submit": "相談を送信",
+    "telegram": "Telegram で相談",
+    "sending": "送信中…",
+    "success": "ご相談を送信しました。折り返しご連絡します。",
+    "error": "送信できませんでした。再試行するか Telegram でご連絡ください。",
+    "rateLimit": "少し時間をおいてから再送信してください。",
+    "nameError": "名前は2〜80文字で入力してください。",
+    "contactError": "連絡先は3〜190文字で入力してください。",
+    "descriptionError": "説明は10〜2500文字で入力してください。",
+    "budgetError": "予算は0〜1,000,000,000で入力してください。",
+    "email": "メール",
+    "username": "ユーザー名またはリンク",
+    "emailError": "有効なメールアドレスを入力してください。",
+    "responseTime": "返信まで1〜5時間ほどお待ちください。",
+    "telegramGreeting": "こんにちは。プロジェクトについてご相談したく、ご連絡いたしました。以下に概要を記載いたします。",
+    "designHelpTitle": "デザインの制作は必要ですか？",
+    "designHelp": "サイトやアプリのデザイン制作が必要な場合は「はい」を選択してください。ご要望に合わせてデザイナーが作成します。不要な場合や、すでにデザイン案がある場合は「いいえ」を選択してください。既存のデザイン案を使用できます。"
   }
 }
