@@ -112,5 +112,14 @@
     "web": "Veb",
     "desktop": "Kompyuter",
     "mobile": "Mobil"
+  },
+  "search": {
+    "title": "Qidiruv",
+    "placeholder": "Sahifalar, loyihalar, yozuvlar…",
+    "results": "Qidiruv natijalari",
+    "empty": "Hech narsa topilmadi. Boshqa soʻrovni sinab koʻring.",
+    "tags": "Teglar",
+    "recent": "Soʻnggi yozuvlar",
+    "noPosts": "Hozircha yozuvlar chop etilmagan."
   }
 }

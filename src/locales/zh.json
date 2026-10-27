@@ -112,5 +112,14 @@
     "web": "网页",
     "desktop": "桌面",
     "mobile": "移动"
+  },
+  "search": {
+    "title": "搜索",
+    "placeholder": "页面、项目、文章…",
+    "results": "搜索结果",
+    "empty": "未找到结果，请尝试其他关键词。",
+    "tags": "标签",
+    "recent": "最新文章",
+    "noPosts": "暂无已发布的文章。"
   }
 }
