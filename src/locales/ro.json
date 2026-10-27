@@ -4,7 +4,7 @@
     "telegram": "Scrie pe Telegram",
     "credit": "Design realizat de",
     "taxId": "Cod fiscal:",
-    "description": "— dezvoltator fullstack. Creez site-uri, aplicații web și aplicații Telegram. Aici găsești proiectele, tehnologiile și serviciile mele."
+    "description": "- dezvoltator fullstack. Creez site-uri, aplicații web și aplicații Telegram. Aici găsești proiectele, tehnologiile și serviciile mele."
   },
   "profile": {
     "name": "Ilnaz Mingaleev",
@@ -36,7 +36,7 @@
   "hero": {
     "projects": "Vezi proiectele",
     "services": "Servicii și tehnologii",
-    "status": "în lucru — un proiect comercial",
+    "status": "în lucru - un proiect comercial",
     "description": "Dezvolt site-uri și servicii web, aplicații mobile și desktop, Mini-apps pentru Telegram și MAX, precum și boți de chat.",
     "bots": "Boți Telegram / MAX / VK / Discord"
   },
@@ -45,7 +45,7 @@
     "all": "Toate proiectele",
     "title": "Proiecte recente",
     "empty": "Proiectele din această categorie vor apărea în curând.",
-    "aromaForge": "Aroma Forge — Magazin de arome"
+    "aromaForge": "Aroma Forge - Magazin de arome"
   },
   "reviews": {
     "all": "Toate recenziile",
@@ -67,7 +67,7 @@
     "backend": "Dezvoltare backend",
     "mobile": "Aplicații mobile",
     "frontendDescription": "Interfețe rapide și adaptive, sisteme de design și fluxuri complexe de utilizare.",
-    "weeks": "4–5 săptămâni",
+    "weeks": "4-5 săptămâni",
     "backendDescription": "Arhitectură de servicii, integrări, baze de date și API-uri sigure.",
     "appDescription": "Dezvoltare la cheie de aplicații multiplatformă.",
     "desktop": "Aplicații desktop",
@@ -133,5 +133,37 @@
     "tags": "Etichete",
     "recent": "Articole recente",
     "noPosts": "Nu există încă articole publicate."
+  },
+  "projectRequest": {
+    "label": "proiect nou",
+    "title": "Ai o idee? Hai să discutăm.",
+    "name": "Numele tău",
+    "namePlaceholder": "Cum să mă adresez?",
+    "contact": "Contact",
+    "contactPlaceholder": "Telegram sau e-mail",
+    "description": "Despre proiect",
+    "descriptionPlaceholder": "Descrie pe scurt proiectul…",
+    "budget": "Buget",
+    "budgetPlaceholder": "Introdu suma…",
+    "design": "Design",
+    "yes": "Da",
+    "no": "Nu",
+    "submit": "Trimite cererea",
+    "telegram": "Scrie pe Telegram",
+    "sending": "Se trimite…",
+    "success": "Cererea a fost trimisă. Te voi contacta.",
+    "error": "Cererea nu a putut fi trimisă. Încearcă din nou sau scrie-mi pe Telegram.",
+    "rateLimit": "Așteaptă puțin înainte de a trimite din nou.",
+    "nameError": "Nume: 2-80 de caractere.",
+    "contactError": "Contact: 3-190 de caractere.",
+    "descriptionError": "Descriere: 10-2500 de caractere.",
+    "budgetError": "Buget: 0-1.000.000.000.",
+    "email": "E-mail",
+    "username": "Nume de utilizator sau link",
+    "emailError": "Introdu o adresă de e-mail validă.",
+    "responseTime": "Vei primi un răspuns în aproximativ 1-5 ore.",
+    "telegramGreeting": "Bună ziua! Aș dori să discut un proiect cu dumneavoastră. Mai jos sunt informațiile principale.",
+    "designHelpTitle": "Aveți nevoie de un design?",
+    "designHelp": "Alegeți „Da” dacă aveți nevoie de un design pentru site sau aplicație - designerul nostru îl va crea conform cerințelor dumneavoastră. Alegeți „Nu” dacă nu aveți nevoie sau aveți deja un design, pe care îl putem folosi."
   }
 }

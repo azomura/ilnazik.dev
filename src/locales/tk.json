@@ -4,7 +4,7 @@
     "telegram": "Telegram-da ýazmak",
     "credit": "Dizaýn awtory",
     "taxId": "Salgyt belgisi:",
-    "description": "— fullstack programmaçy. Saýtlar, web we Telegram programmalaryny döredýärin. Bu ýerde taslamalarym, tehnologiýalarym we hyzmatlarym bar."
+    "description": "- fullstack programmaçy. Saýtlar, web we Telegram programmalaryny döredýärin. Bu ýerde taslamalarym, tehnologiýalarym we hyzmatlarym bar."
   },
   "profile": {
     "name": "Ilnaz Mingaleýew",
@@ -45,7 +45,7 @@
     "all": "Ähli taslamalar",
     "title": "Soňky taslamalar",
     "empty": "Bu kategoriýadaky taslamalar ýakynda peýda bolar.",
-    "aromaForge": "Aroma Forge — Ys berijiler dükany"
+    "aromaForge": "Aroma Forge - Ys berijiler dükany"
   },
   "reviews": {
     "all": "Ähli synlar",
@@ -67,7 +67,7 @@
     "backend": "Backend işläp düzmek",
     "mobile": "Mobil programmalar",
     "frontendDescription": "Çalt we uýgunlaşýan interfeýsler, dizaýn ulgamlary we çylşyrymly ulanyjy ssenariýalary.",
-    "weeks": "4–5 hepde",
+    "weeks": "4-5 hepde",
     "backendDescription": "Hyzmatlaryň arhitekturasy, integrasiýalar, maglumat bazalary we ygtybarly API-ler.",
     "appDescription": "Dürli platformalar üçin taýýar programmalar.",
     "desktop": "Kompýuter programmalary",
@@ -133,5 +133,37 @@
     "tags": "Bellikler",
     "recent": "Soňky ýazgylar",
     "noPosts": "Entek ýazgy çap edilmedi."
+  },
+  "projectRequest": {
+    "label": "täze taslama",
+    "title": "Pikiriňiz barmy? Geliň, maslahatlaşalyň.",
+    "name": "Adyňyz",
+    "namePlaceholder": "Size nähili ýüzlenmeli?",
+    "contact": "Habarlaşmak",
+    "contactPlaceholder": "Telegram ýa-da e-poçta",
+    "description": "Taslama barada",
+    "descriptionPlaceholder": "Ýumşy gysgaça beýan ediň…",
+    "budget": "Býujet",
+    "budgetPlaceholder": "Mukdary giriziň…",
+    "design": "Dizaýn",
+    "yes": "Hawa",
+    "no": "Ýok",
+    "submit": "Arza ibermek",
+    "telegram": "Telegram-da ýazmak",
+    "sending": "Iberilýär…",
+    "success": "Arzaňyz iberildi. Siziň bilen habarlaşaryn.",
+    "error": "Arzany iberip bolmady. Gaýtadan synanyşyň ýa-da Telegram-da ýazyň.",
+    "rateLimit": "Gaýtadan ibermezden ozal biraz garaşyň.",
+    "nameError": "Ady: 2-80 nyşan.",
+    "contactError": "Habarlaşmak: 3-190 nyşan.",
+    "descriptionError": "Beýany: 10-2500 nyşan.",
+    "budgetError": "Býujet: 0-1 000 000 000.",
+    "email": "E-poçta",
+    "username": "Ulanyjy ady ýa-da salgylanma",
+    "emailError": "Dogry e-poçta salgysyny giriziň.",
+    "responseTime": "Jogaba 1-5 sagadyň dowamynda garaşyň.",
+    "telegramGreeting": "Salam! Siziň bilen bir taslamany ara alyp maslahatlaşmak isleýärin. Aşakda iş barada esasy maglumatlar bar.",
+    "designHelpTitle": "Dizaýn gerekmi?",
+    "designHelp": "Saýt ýa-da programma dizaýny gerek bolsa, “Hawa” saýlaň - dizaýnerimiz ony talaplaryňyza görä taýýarlar. Gerek däl bolsa ýa-da taýýar dizaýnyňyz bar bolsa, “Ýok” saýlaň - taýýar dizaýnyňyzy ulanyp bileris."
   }
 }
