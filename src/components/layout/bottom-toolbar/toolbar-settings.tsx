@@ -22,10 +22,10 @@ export function ToolbarSettings() {
   return (
     <div
       className={cn(
-        'pointer-events-auto flex flex-col overflow-hidden rounded-[16px] p-1.5',
+        'toolbar-settings pointer-events-auto flex shrink-0 flex-col overflow-hidden',
         'bg-surface-subtle-overlay text-foreground backdrop-blur-[6px] sm:backdrop-blur-[12.3px]',
         'contain-[layout_paint] transition-[width] duration-300 ease-out',
-        'motion-reduce:transition-none',
+        'motion-reduce:transition-none rounded-[16px] p-1.5',
         open ? 'w-44' : panel === 'palette' ? 'w-[calc(8rem+min(9rem,100vw-13.5rem))]' : 'w-30'
       )}
     >

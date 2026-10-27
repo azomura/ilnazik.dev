@@ -4,11 +4,8 @@
  * Azomura Portfolio API
  * OpenAPI spec version: 0.1.0
  */
-import * as axios from 'axios';
-import type {
-  AxiosRequestConfig,
-  AxiosResponse
-} from 'axios';
+import type { AxiosRequestConfig, AxiosResponse } from 'axios'
+import * as axios from 'axios'
 
 import type {
   LinkPreviewV1LinksPreviewGetParams,
@@ -21,92 +18,88 @@ import type {
   MusicRecentV1ResponseDto,
   ProjectRequestV1Dto,
   ProjectRequestV1ResponseDto
-} from './models';
+} from './models'
 
 /**
  * @summary Health
  */
 export const healthV1HealthGet = (
-     options?: AxiosRequestConfig
- ): Promise<AxiosResponse<unknown>> => {
-    return axios.default.get(
-      `/v1/health`,options
-    );
-  }
+  options?: AxiosRequestConfig
+): Promise<AxiosResponse<unknown>> => {
+  return axios.default.get(`/v1/health`, options)
+}
 
 /**
  * @summary Link Preview
  */
 export const linkPreviewV1LinksPreviewGet = (
-    params: LinkPreviewV1LinksPreviewGetParams, options?: AxiosRequestConfig
- ): Promise<AxiosResponse<LinkPreviewV1ResponseDto>> => {
-    return axios.default.get(
-      `/v1/links/preview`,{
+  params: LinkPreviewV1LinksPreviewGetParams,
+  options?: AxiosRequestConfig
+): Promise<AxiosResponse<LinkPreviewV1ResponseDto>> => {
+  return axios.default.get(`/v1/links/preview`, {
     ...options,
-        params: {...params, ...options?.params},}
-    );
-  }
+    params: { ...params, ...options?.params }
+  })
+}
 
 /**
  * @summary Music Stream
  */
 export const musicStreamV1MusicYandexTracksTrackIdStreamGet = (
-    trackId: string, options?: AxiosRequestConfig
- ): Promise<AxiosResponse<void>> => {
-    return axios.default.get(
-      `/v1/music/yandex/tracks/${trackId}/stream`,options
-    );
-  }
+  trackId: string,
+  options?: AxiosRequestConfig
+): Promise<AxiosResponse<void>> => {
+  return axios.default.get(`/v1/music/yandex/tracks/${trackId}/stream`, options)
+}
 
 /**
  * @summary Music Cover
  */
 export const musicCoverV1MusicCoverGet = (
-    params: MusicCoverV1MusicCoverGetParams, options?: AxiosRequestConfig
- ): Promise<AxiosResponse<MusicCoverV1ResponseDto>> => {
-    return axios.default.get(
-      `/v1/music/cover`,{
+  params: MusicCoverV1MusicCoverGetParams,
+  options?: AxiosRequestConfig
+): Promise<AxiosResponse<MusicCoverV1ResponseDto>> => {
+  return axios.default.get(`/v1/music/cover`, {
     ...options,
-        params: {...params, ...options?.params},}
-    );
-  }
+    params: { ...params, ...options?.params }
+  })
+}
 
 /**
  * @summary Cover Image
  */
 export const coverImageV1MusicCoversFilenameGet = (
-    filename: string, options?: AxiosRequestConfig
- ): Promise<AxiosResponse<unknown>> => {
-    return axios.default.get(
-      `/v1/music/covers/${filename}`,options
-    );
-  }
+  filename: string,
+  options?: AxiosRequestConfig
+): Promise<AxiosResponse<unknown>> => {
+  return axios.default.get(`/v1/music/covers/${filename}`, options)
+}
 
 /**
  * @summary Music Lyrics
  */
 export const musicLyricsV1MusicLyricsGet = (
-    params: MusicLyricsV1MusicLyricsGetParams, options?: AxiosRequestConfig
- ): Promise<AxiosResponse<MusicLyricsV1ResponseDto>> => {
-    return axios.default.get(
-      `/v1/music/lyrics`,{
+  params: MusicLyricsV1MusicLyricsGetParams,
+  options?: AxiosRequestConfig
+): Promise<AxiosResponse<MusicLyricsV1ResponseDto>> => {
+  return axios.default.get(`/v1/music/lyrics`, {
     ...options,
-        params: {...params, ...options?.params},}
-    );
-  }
+    params: { ...params, ...options?.params }
+  })
+}
 
 /**
  * @summary Music Recent
  */
 export const musicRecentV1MusicYandexRecentGet = (
-    params?: MusicRecentV1MusicYandexRecentGetParams, options?: AxiosRequestConfig
- ): Promise<AxiosResponse<MusicRecentV1ResponseDto>> => {
-    return axios.default.get(
-      `/v1/music/yandex/recent`,{
+  params?: MusicRecentV1MusicYandexRecentGetParams,
+  options?: AxiosRequestConfig
+): Promise<AxiosResponse<MusicRecentV1ResponseDto>> => {
+  return axios.default.get(`/v1/music/yandex/recent`, {
     ...options,
-        params: {...params, ...options?.params},}
-    );
-  }
+    params: { ...params, ...options?.params }
+  })
+}
 
 /**
  * @summary Project Request
