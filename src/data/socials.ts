@@ -11,6 +11,6 @@ export const socialLinks: readonly ISocialLink[] = [
   { label: 'Discord', href: socials.developer.discord, icon: CodeXml },
   { label: 'X', href: socials.developer.x, icon: CodeXml },
   { label: 'YouTube', href: socials.developer.youtube, icon: CodeXml },
-  { label: "socials.channel", href: socials.developer.telegramChannel, icon: CodeXml },
+  { label: 'socials.channel', href: socials.developer.telegramChannel, icon: CodeXml },
   { label: 'Twitch', href: socials.developer.twitch, icon: CodeXml }
 ]
