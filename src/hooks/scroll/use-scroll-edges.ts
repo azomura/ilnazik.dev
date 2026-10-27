@@ -8,6 +8,7 @@ export function useScrollEdges<T extends HTMLElement>(
 
   useEffect(() => {
     const element = ref.current
+
     if (!element) return
 
     const horizontal = axis === 'horizontal'
@@ -43,6 +44,7 @@ export function useScrollEdges<T extends HTMLElement>(
       maximum = horizontal
         ? element.scrollWidth - element.clientWidth
         : element.scrollHeight - element.clientHeight
+
       schedule()
     }
 

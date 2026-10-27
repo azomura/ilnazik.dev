@@ -51,9 +51,9 @@ export function useScrollbarDrag(onRelease: () => void) {
     setDragging(false)
     onRelease()
 
-    if (event.currentTarget.hasPointerCapture(event.pointerId)) {
-      event.currentTarget.releasePointerCapture(event.pointerId)
-    }
+    if (!event.currentTarget.hasPointerCapture(event.pointerId)) return
+
+    event.currentTarget.releasePointerCapture(event.pointerId)
   }
 
   return {

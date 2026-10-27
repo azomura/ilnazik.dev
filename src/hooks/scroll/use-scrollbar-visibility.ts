@@ -11,6 +11,7 @@ export function useScrollbarVisibility(scrolling: boolean) {
   const setPhase = (next: ScrollbarPhase) => setState(previous => ({ ...previous, phase: next }))
 
   const close = () => setPhase('edge-closing')
+
   const onTransitionEnd = (event: TransitionEvent<HTMLDivElement>) => {
     if (event.target !== event.currentTarget || event.propertyName !== 'translate') return
     if (phase === 'edge-closing') setPhase('edge-hidden')
