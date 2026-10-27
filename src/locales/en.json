@@ -113,6 +113,18 @@
     "desktop": "Desktop",
     "mobile": "Mobile"
   },
+  "player": {
+    "recent": "Recent tracks",
+    "recentError": "Could not load recent tracks",
+    "recentEmpty": "No listening history yet",
+    "retry": "Try again",
+    "title": "Music",
+    "searching": "Finding lyrics",
+    "missing": "Lyrics not found",
+    "error": "Could not load lyrics",
+    "instrumental": "Instrumental",
+    "queue": "Playlist"
+  },
   "search": {
     "title": "Search",
     "placeholder": "Pages, projects, posts…",

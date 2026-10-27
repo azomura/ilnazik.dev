@@ -113,6 +113,18 @@
     "desktop": "Desktop",
     "mobile": "Mobil"
   },
+  "player": {
+    "recent": "Zuletzt gehört",
+    "recentError": "Zuletzt gehörte Titel konnten nicht geladen werden",
+    "recentEmpty": "Noch kein Hörverlauf",
+    "retry": "Erneut versuchen",
+    "title": "Musik",
+    "searching": "Songtext wird gesucht",
+    "missing": "Songtext nicht gefunden",
+    "error": "Songtext konnte nicht geladen werden",
+    "instrumental": "Instrumental",
+    "queue": "Wiedergabeliste"
+  },
   "search": {
     "title": "Suche",
     "placeholder": "Seiten, Projekte, Beiträge…",

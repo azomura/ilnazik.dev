@@ -113,6 +113,18 @@
     "desktop": "Masaüstü",
     "mobile": "Mobil"
   },
+  "player": {
+    "recent": "Son dinlənilənlər",
+    "recentError": "Son dinlənilənləri yükləmək mümkün olmadı",
+    "recentEmpty": "Dinləmə tarixçəsi hələ boşdur",
+    "retry": "Yenidən cəhd et",
+    "title": "Musiqi",
+    "searching": "Mahnı sözləri axtarılır",
+    "missing": "Mahnı sözləri tapılmadı",
+    "error": "Mətn yüklənmədi",
+    "instrumental": "Sözsüz",
+    "queue": "Oxutma siyahısı"
+  },
   "search": {
     "title": "Axtarış",
     "placeholder": "Səhifələr, layihələr, yazılar…",
