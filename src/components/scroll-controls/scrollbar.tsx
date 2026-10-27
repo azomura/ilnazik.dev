@@ -1,3 +1,5 @@
+import { Button } from '@/components/ui/button'
+
 import type { Ref } from 'react'
 
 import { useScrollbarDrag, useScrollbarVisibility } from '@/hooks/scroll'
@@ -50,9 +52,12 @@ export function Scrollbar({ trackRef, visible, enabled, onRelease }: IScrollbarP
           ref={trackRef}
           className='relative w-2 touch-none cursor-pointer rounded-full bg-card/50 dark:bg-secondary/80'
         >
-          <button
+          <Button
+            variant='ghost'
+            size='icon'
             className={cn(
-              'absolute inset-x-0 top-0 h-(--scroll-thumb-size) rounded-full',
+              'absolute inset-x-0 top-0 h-(--scroll-thumb-size) w-full rounded-full p-0',
+              'border-0 active:translate-y-0',
               'page-scroll-thumb bg-muted-foreground/60',
               'transition-colors duration-200 hover:bg-primary',
               dragging ? 'cursor-grabbing bg-primary' : 'cursor-grab'

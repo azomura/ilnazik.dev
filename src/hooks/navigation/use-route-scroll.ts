@@ -6,14 +6,16 @@ export function useRouteScroll() {
 
   useEffect(() => {
     const frame = requestAnimationFrame(() => {
-      if (hash) {
-        const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-        document.getElementById(decodeURIComponent(hash.slice(1)))?.scrollIntoView({
-          behavior: reducedMotion ? 'instant' : 'smooth',
-          block: 'start'
-        })
-      } else window.scrollTo(0, 0)
+      if (!hash) return window.scrollTo(0, 0)
+
+      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
+      document.getElementById(decodeURIComponent(hash.slice(1)))?.scrollIntoView({
+        behavior: reducedMotion ? 'instant' : 'smooth',
+        block: 'start'
+      })
     })
+
     return () => cancelAnimationFrame(frame)
   }, [pathname, hash, key])
 }

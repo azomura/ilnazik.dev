@@ -22,9 +22,9 @@ export function useDragScroll<T extends HTMLElement>(ref: RefObject<T | null>) {
   const onPointerMove = (event: PointerEvent<T>) => {
     const start = drag.current
 
-    if (start?.id === event.pointerId) {
-      event.currentTarget.scrollLeft = start.left + start.x - event.clientX
-    }
+    if (start?.id !== event.pointerId) return
+
+    event.currentTarget.scrollLeft = start.left + start.x - event.clientX
   }
 
   const stopDrag = (event: PointerEvent<T>) => {
@@ -33,9 +33,9 @@ export function useDragScroll<T extends HTMLElement>(ref: RefObject<T | null>) {
     drag.current = null
     setDragging(false)
 
-    if (event.currentTarget.hasPointerCapture(event.pointerId)) {
-      event.currentTarget.releasePointerCapture(event.pointerId)
-    }
+    if (!event.currentTarget.hasPointerCapture(event.pointerId)) return
+
+    event.currentTarget.releasePointerCapture(event.pointerId)
   }
 
   return {

@@ -15,6 +15,7 @@ export function useHorizontalScroll<T extends HTMLElement>(observeEnd = false) {
 
   useEffect(() => {
     const element = ref.current
+
     if (!element) return
 
     const unbindWheel = matchMedia('(any-hover: hover)').matches
@@ -44,6 +45,7 @@ export function useHorizontalScroll<T extends HTMLElement>(observeEnd = false) {
     endVisible,
     scrollBy: (direction: number) => {
       const element = ref.current
+
       if (!element) return
 
       element.scrollBy({
