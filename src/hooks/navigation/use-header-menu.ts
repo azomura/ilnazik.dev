@@ -14,7 +14,10 @@ export function useHeaderMenu() {
   useEffect(() => {
     if (!open) return
 
+    const controller = new AbortController()
+    const options = { signal: controller.signal }
     const desktop = window.matchMedia('(min-width: 640px)')
+
     const onDesktop = () => {
       if (desktop.matches) close()
     }
@@ -32,17 +35,12 @@ export function useHeaderMenu() {
 
     onDesktop()
 
-    desktop.addEventListener('change', onDesktop)
+    desktop.addEventListener('change', onDesktop, options)
 
-    document.addEventListener('keydown', onKeyDown)
-    document.addEventListener('pointerdown', onPointerDown)
+    document.addEventListener('keydown', onKeyDown, options)
+    document.addEventListener('pointerdown', onPointerDown, options)
 
-    return () => {
-      desktop.removeEventListener('change', onDesktop)
-
-      document.removeEventListener('keydown', onKeyDown)
-      document.removeEventListener('pointerdown', onPointerDown)
-    }
+    return () => controller.abort()
   }, [open, close])
 
   return { open, close, toggle, headerRef, toggleRef, menuId }

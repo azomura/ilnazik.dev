@@ -12,46 +12,42 @@ export function usePreview() {
     let timer: ReturnType<typeof setTimeout> | undefined
     let active: HTMLElement | null = null
 
+    const hide = () => {
+      clearTimeout(timer)
+
+      active = null
+      timer = setTimeout(() => setOpen(false), 150)
+    }
+
     const inspect = (event: Event) => {
       if (event instanceof PointerEvent && event.pointerType !== 'mouse') return
+
       const element = event.type === 'focusout' ? (event as FocusEvent).relatedTarget : event.target
-      if (!(element instanceof Element)) {
-        clearTimeout(timer)
 
-        active = null
-        timer = setTimeout(() => setOpen(false), 150)
-
-        return
-      }
+      if (!(element instanceof Element)) return hide()
 
       if (element.closest('[data-preview-popup]')) {
         clearTimeout(timer)
+
         return
       }
 
       const anchor = element.closest<HTMLElement>('[data-preview="developer"], a[href]')
-      if (anchor && active === anchor) return
 
-      clearTimeout(timer)
+      if (anchor && active === anchor) return
 
       const next = getPreviewTarget(anchor)
 
-      if (next) {
-        active = anchor
+      if (!next) return hide()
 
-        setOpen(false)
-        setTarget(next)
+      clearTimeout(timer)
 
-        timer = setTimeout(
-          () => {
-            setOpen(true)
-          },
-          next.developer ? 80 : 120
-        )
-      } else {
-        active = null
-        timer = setTimeout(() => setOpen(false), 150)
-      }
+      active = anchor
+
+      setOpen(false)
+      setTarget(next)
+
+      timer = setTimeout(() => setOpen(true), next.developer ? 80 : 120)
     }
 
     const dismiss = () => {
