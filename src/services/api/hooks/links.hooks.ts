@@ -10,8 +10,6 @@ export function useGetLinkPreview(url: string, enabled: boolean) {
     select: response => response.data,
     enabled: enabled && Boolean(url),
     staleTime: 30 * 60_000,
-    gcTime: 30 * 60_000,
-    retry: false,
-    refetchOnWindowFocus: false
+    gcTime: 30 * 60_000
   })
 }
