@@ -18,7 +18,9 @@ import type {
   MusicLyricsV1MusicLyricsGetParams,
   MusicLyricsV1ResponseDto,
   MusicRecentV1MusicYandexRecentGetParams,
-  MusicRecentV1ResponseDto
+  MusicRecentV1ResponseDto,
+  ProjectRequestV1Dto,
+  ProjectRequestV1ResponseDto
 } from './models';
 
 /**
@@ -106,6 +108,16 @@ export const musicRecentV1MusicYandexRecentGet = (
     );
   }
 
+/**
+ * @summary Project Request
+ */
+export const projectRequestV1RequestsPost = (
+  projectRequestV1Dto: ProjectRequestV1Dto,
+  options?: AxiosRequestConfig
+): Promise<AxiosResponse<ProjectRequestV1ResponseDto>> => {
+  return axios.default.post(`/v1/requests`, projectRequestV1Dto, options)
+}
+
 export type HealthV1HealthGetResult = AxiosResponse<unknown>
 export type LinkPreviewV1LinksPreviewGetResult = AxiosResponse<LinkPreviewV1ResponseDto>
 export type MusicStreamV1MusicYandexTracksTrackIdStreamGetResult = AxiosResponse<void>
@@ -113,3 +125,4 @@ export type MusicCoverV1MusicCoverGetResult = AxiosResponse<MusicCoverV1Response
 export type CoverImageV1MusicCoversFilenameGetResult = AxiosResponse<unknown>
 export type MusicLyricsV1MusicLyricsGetResult = AxiosResponse<MusicLyricsV1ResponseDto>
 export type MusicRecentV1MusicYandexRecentGetResult = AxiosResponse<MusicRecentV1ResponseDto>
+export type ProjectRequestV1RequestsPostResult = AxiosResponse<ProjectRequestV1ResponseDto>

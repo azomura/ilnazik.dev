@@ -20,5 +20,8 @@ export * from './musicLyricsV1ResponseDto';
 export * from './musicRecentTrackV1Dto';
 export * from './musicRecentV1MusicYandexRecentGetParams';
 export * from './musicRecentV1ResponseDto';
+export * from './projectRequestResultV1Dto';
+export * from './projectRequestV1Dto';
+export * from './projectRequestV1ResponseDto';
 export * from './validationError';
 export * from './validationErrorCtx';
