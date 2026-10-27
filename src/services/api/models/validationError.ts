@@ -4,12 +4,12 @@
  * Azomura Portfolio API
  * OpenAPI spec version: 0.1.0
  */
-import type { ValidationErrorCtx } from './validationErrorCtx'
+import type { ValidationErrorCtx } from './validationErrorCtx';
 
 export interface ValidationError {
-  loc: (string | number)[]
-  msg: string
-  type: string
-  input?: unknown
-  ctx?: ValidationErrorCtx
+  loc: (string | number)[];
+  msg: string;
+  type: string;
+  input?: unknown;
+  ctx?: ValidationErrorCtx;
 }

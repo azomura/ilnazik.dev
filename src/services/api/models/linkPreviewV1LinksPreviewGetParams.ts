@@ -6,9 +6,9 @@
  */
 
 export type LinkPreviewV1LinksPreviewGetParams = {
-  /**
-   * @minLength 8
-   * @maxLength 2048
-   */
-  url: string
-}
+/**
+ * @minLength 8
+ * @maxLength 2048
+ */
+url: string;
+};

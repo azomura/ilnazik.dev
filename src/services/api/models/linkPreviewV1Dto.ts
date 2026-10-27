@@ -6,10 +6,10 @@
  */
 
 export interface LinkPreviewV1Dto {
-  url: string
-  hostname: string
-  title: string
-  description?: string
-  siteName: string
-  image?: string | null
+  url: string;
+  hostname: string;
+  title: string;
+  description?: string;
+  siteName: string;
+  image?: string | null;
 }

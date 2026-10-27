@@ -4,8 +4,8 @@
  * Azomura Portfolio API
  * OpenAPI spec version: 0.1.0
  */
-import type { LinkPreviewV1Dto } from './linkPreviewV1Dto'
+import type { LinkPreviewV1Dto } from './linkPreviewV1Dto';
 
 export interface LinkPreviewV1ResponseDto {
-  data: LinkPreviewV1Dto
+  data: LinkPreviewV1Dto;
 }
