@@ -1,0 +1,6 @@
+export * from './music-analyser.service'
+export * from './music-artwork.service'
+export * from './music-metadata.service'
+export * from './music-palette.service'
+export * from './music-wave.service'
+export * from './music.service'
