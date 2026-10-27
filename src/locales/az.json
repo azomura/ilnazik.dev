@@ -112,5 +112,14 @@
     "web": "Veb",
     "desktop": "Masaüstü",
     "mobile": "Mobil"
+  },
+  "search": {
+    "title": "Axtarış",
+    "placeholder": "Səhifələr, layihələr, yazılar…",
+    "results": "Axtarış nəticələri",
+    "empty": "Heç nə tapılmadı. Başqa sorğu sınayın.",
+    "tags": "Teqlər",
+    "recent": "Son yazılar",
+    "noPosts": "Hələ heç bir yazı dərc edilməyib."
   }
 }

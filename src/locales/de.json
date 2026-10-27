@@ -112,5 +112,14 @@
     "web": "Web",
     "desktop": "Desktop",
     "mobile": "Mobil"
+  },
+  "search": {
+    "title": "Suche",
+    "placeholder": "Seiten, Projekte, Beiträge…",
+    "results": "Suchergebnisse",
+    "empty": "Keine Ergebnisse. Versuche einen anderen Suchbegriff.",
+    "tags": "Tags",
+    "recent": "Neueste Beiträge",
+    "noPosts": "Es wurden noch keine Beiträge veröffentlicht."
   }
 }
