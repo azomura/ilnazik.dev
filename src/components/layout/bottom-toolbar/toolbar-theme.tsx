@@ -1,10 +1,9 @@
 import { Sun } from 'lucide-react'
 
+import { Moon } from '@/components/icons'
 import { Button } from '@/components/ui/button'
 
 import { useThemeTransition } from '@/hooks/providers'
-
-import { ToolbarMoon } from './toolbar-icons'
 
 export function ToolbarTheme() {
   const { effectiveTheme, toggleTheme } = useThemeTransition()
@@ -18,7 +17,7 @@ export function ToolbarTheme() {
       }}
       className='h-9 min-w-9 basis-9 grow rounded-[10px]'
     >
-      {effectiveTheme === 'dark' ? <ToolbarMoon /> : <Sun className='size-4' />}
+      {effectiveTheme === 'dark' ? <Moon /> : <Sun className='size-4' />}
     </Button>
   )
 }

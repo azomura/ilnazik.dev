@@ -1,3 +1,4 @@
+import { Palette } from '@/components/icons'
 import { Button } from '@/components/ui/button'
 
 import { accentColors } from '@/config/appearance'
@@ -5,8 +6,6 @@ import { accentColors } from '@/config/appearance'
 import { useAccent } from '@/hooks/providers/use-accent'
 
 import { cn } from '@/lib/utils'
-
-import { ToolbarPalette } from './toolbar-icons'
 
 interface IToolbarPaletteControlProps {
   open: boolean
@@ -30,7 +29,7 @@ export function ToolbarPaletteControl({ open, onToggle }: IToolbarPaletteControl
         onClick={onToggle}
         className={cn('h-9 min-w-9 flex-1 rounded-[10px]', open && 'bg-secondary text-primary')}
       >
-        <ToolbarPalette />
+        <Palette />
       </Button>
 
       <div
@@ -45,12 +44,14 @@ export function ToolbarPaletteControl({ open, onToggle }: IToolbarPaletteControl
       >
         <div className='flex items-center gap-2 overflow-x-auto px-1 py-1.5'>
           {accentColors.map(color => (
-            <button
+            <Button
+              variant='ghost'
+              size='icon'
               key={color}
               onClick={() => setAccent(color)}
               style={{ backgroundColor: color }}
               className={cn(
-                'size-5 shrink-0 cursor-pointer rounded-full transition-[scale,box-shadow]',
+                'size-5 p-0 active:translate-y-0 shrink-0 cursor-pointer rounded-full transition-[scale,box-shadow]',
                 'duration-200 hover:scale-110 motion-reduce:transition-none',
                 selected === color && 'ring-2 ring-foreground/80 ring-offset-2 ring-offset-popover'
               )}
