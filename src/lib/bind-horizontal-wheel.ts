@@ -1,3 +1,10 @@
+function wheelUnit(mode: number, width: number) {
+  if (mode === 1) return 16
+  if (mode === 2) return width
+
+  return 1
+}
+
 export function bindHorizontalWheel(element: HTMLElement, isDragging: () => boolean) {
   let target = element.scrollLeft
   let timer: ReturnType<typeof setTimeout> | undefined
@@ -6,7 +13,7 @@ export function bindHorizontalWheel(element: HTMLElement, isDragging: () => bool
     if (event.ctrlKey || isDragging()) return
 
     const delta = Math.abs(event.deltaX) > Math.abs(event.deltaY) ? event.deltaX : event.deltaY
-    const unit = event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? element.clientWidth : 1
+    const unit = wheelUnit(event.deltaMode, element.clientWidth)
 
     const start = timer ? target : element.scrollLeft
     const next = Math.max(
@@ -14,12 +21,14 @@ export function bindHorizontalWheel(element: HTMLElement, isDragging: () => bool
       Math.min(element.scrollWidth - element.clientWidth, start + delta * unit)
     )
 
-    if (Math.abs(next - start) < 1) {
-      if (Math.abs(element.scrollLeft - next) > 1) event.preventDefault()
-      return
-    }
+    const changed = Math.abs(next - start) >= 1
+
+    if (!changed && Math.abs(element.scrollLeft - next) <= 1) return
 
     event.preventDefault()
+
+    if (!changed) return
+
     target = next
 
     clearTimeout(timer)
