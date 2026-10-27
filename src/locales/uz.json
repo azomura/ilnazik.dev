@@ -113,6 +113,18 @@
     "desktop": "Kompyuter",
     "mobile": "Mobil"
   },
+  "player": {
+    "recent": "Oxirgi tinglanganlar",
+    "recentError": "Oxirgi treklarni yuklab boʻlmadi",
+    "recentEmpty": "Tinglash tarixi hozircha boʻsh",
+    "retry": "Qayta urinish",
+    "title": "Musiqa",
+    "searching": "Qo‘shiq matni qidirilmoqda",
+    "missing": "Qo‘shiq matni topilmadi",
+    "error": "Matnni yuklab bo‘lmadi",
+    "instrumental": "So‘zsiz",
+    "queue": "Ijro roʻyxati"
+  },
   "search": {
     "title": "Qidiruv",
     "placeholder": "Sahifalar, loyihalar, yozuvlar…",

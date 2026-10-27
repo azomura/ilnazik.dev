@@ -113,6 +113,18 @@
     "desktop": "桌面",
     "mobile": "移动"
   },
+  "player": {
+    "recent": "最近播放",
+    "recentError": "无法加载最近播放的歌曲",
+    "recentEmpty": "暂无播放记录",
+    "retry": "重试",
+    "title": "音乐",
+    "searching": "正在查找歌词",
+    "missing": "未找到歌词",
+    "error": "无法加载歌词",
+    "instrumental": "纯音乐",
+    "queue": "播放列表"
+  },
   "search": {
     "title": "搜索",
     "placeholder": "页面、项目、文章…",
