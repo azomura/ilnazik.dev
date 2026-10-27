@@ -5,9 +5,20 @@
  * OpenAPI spec version: 0.1.0
  */
 
-export * from './hTTPValidationError'
-export * from './linkPreviewV1Dto'
-export * from './linkPreviewV1LinksPreviewGetParams'
-export * from './linkPreviewV1ResponseDto'
-export * from './validationError'
-export * from './validationErrorCtx'
+export * from './hTTPValidationError';
+export * from './linkPreviewV1Dto';
+export * from './linkPreviewV1LinksPreviewGetParams';
+export * from './linkPreviewV1ResponseDto';
+export * from './lyricLineV1Dto';
+export * from './lyricWordV1Dto';
+export * from './musicCoverV1Dto';
+export * from './musicCoverV1MusicCoverGetParams';
+export * from './musicCoverV1ResponseDto';
+export * from './musicLyricsV1Dto';
+export * from './musicLyricsV1MusicLyricsGetParams';
+export * from './musicLyricsV1ResponseDto';
+export * from './musicRecentTrackV1Dto';
+export * from './musicRecentV1MusicYandexRecentGetParams';
+export * from './musicRecentV1ResponseDto';
+export * from './validationError';
+export * from './validationErrorCtx';
