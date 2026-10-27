@@ -4,7 +4,7 @@
     "telegram": "Telegram orqali yozish",
     "credit": "Dizayn muallifi",
     "taxId": "STIR:",
-    "description": "— fullstack dasturchi. Saytlar, veb va Telegram ilovalarini yarataman. Bu yerda loyihalarim, texnologiyalarim va xizmatlarim bor."
+    "description": "- fullstack dasturchi. Saytlar, veb va Telegram ilovalarini yarataman. Bu yerda loyihalarim, texnologiyalarim va xizmatlarim bor."
   },
   "profile": {
     "name": "Ilnaz Mingaleyev",
@@ -45,7 +45,7 @@
     "all": "Barcha loyihalar",
     "title": "So‘nggi loyihalar",
     "empty": "Bu turkumdagi loyihalar tez orada paydo bo‘ladi.",
-    "aromaForge": "Aroma Forge — Xushbo‘ylantirgichlar do‘koni"
+    "aromaForge": "Aroma Forge - Xushbo‘ylantirgichlar do‘koni"
   },
   "reviews": {
     "all": "Barcha sharhlar",
@@ -67,7 +67,7 @@
     "backend": "Backend dasturlash",
     "mobile": "Mobil ilovalar",
     "frontendDescription": "Tezkor moslashuvchan interfeyslar, dizayn tizimlari va murakkab foydalanuvchi ssenariylari.",
-    "weeks": "4–5 hafta",
+    "weeks": "4-5 hafta",
     "backendDescription": "Xizmatlar arxitekturasi, integratsiyalar, ma’lumotlar bazalari va xavfsiz API-lar.",
     "appDescription": "Ko‘p platformali ilovalarni tayyor holda ishlab chiqish.",
     "desktop": "Kompyuter ilovalari",
@@ -133,5 +133,37 @@
     "tags": "Teglar",
     "recent": "Soʻnggi yozuvlar",
     "noPosts": "Hozircha yozuvlar chop etilmagan."
+  },
+  "projectRequest": {
+    "label": "yangi loyiha",
+    "title": "Gʻoyangiz bormi? Keling, muhokama qilamiz.",
+    "name": "Ismingiz",
+    "namePlaceholder": "Sizga qanday murojaat qilay?",
+    "contact": "Aloqa",
+    "contactPlaceholder": "Telegram yoki e-mail",
+    "description": "Loyiha haqida",
+    "descriptionPlaceholder": "Vazifani qisqacha tavsiflang…",
+    "budget": "Byudjet",
+    "budgetPlaceholder": "Summani kiriting…",
+    "design": "Dizayn",
+    "yes": "Ha",
+    "no": "Yoʻq",
+    "submit": "Soʻrov yuborish",
+    "telegram": "Telegram orqali yozish",
+    "sending": "Yuborilmoqda…",
+    "success": "Soʻrovingiz yuborildi. Siz bilan bogʻlanaman.",
+    "error": "Soʻrovni yuborib boʻlmadi. Qayta urining yoki Telegram orqali yozing.",
+    "rateLimit": "Qayta yuborishdan oldin biroz kuting.",
+    "nameError": "Ism: 2-80 ta belgi.",
+    "contactError": "Aloqa: 3-190 ta belgi.",
+    "descriptionError": "Tavsif: 10-2500 ta belgi.",
+    "budgetError": "Budjet: 0-1 000 000 000.",
+    "email": "Pochta",
+    "username": "Foydalanuvchi nomi yoki havola",
+    "emailError": "To‘g‘ri elektron pochta manzilini kiriting.",
+    "responseTime": "Javobni 1-5 soat ichida kuting.",
+    "telegramGreeting": "Assalomu alaykum! Siz bilan bir loyihani muhokama qilmoqchiman. Quyida vazifa haqida asosiy ma’lumotlar keltirilgan.",
+    "designHelpTitle": "Dizayn kerakmi?",
+    "designHelp": "Sayt yoki ilova maketi kerak bo‘lsa, “Ha”ni tanlang - dizaynerimiz uni talablaringizga muvofiq yaratadi. Dizayn kerak bo‘lmasa yoki tayyor maketingiz bo‘lsa, “Yo‘q”ni tanlang - maketingizdan foydalanishimiz mumkin."
   }
 }

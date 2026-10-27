@@ -4,7 +4,7 @@
     "telegram": "在 Telegram 联系我",
     "credit": "设计者",
     "taxId": "税号：",
-    "description": "— 全栈开发者。我创建网站、Web 应用和 Telegram 应用。这里展示我的项目、技术栈和服务。"
+    "description": "- 全栈开发者。我创建网站、Web 应用和 Telegram 应用。这里展示我的项目、技术栈和服务。"
   },
   "profile": {
     "name": "伊尔纳兹·明加列耶夫",
@@ -45,7 +45,7 @@
     "all": "所有项目",
     "title": "近期项目",
     "empty": "此类别的项目即将上线。",
-    "aromaForge": "Aroma Forge — 香料商店"
+    "aromaForge": "Aroma Forge - 香料商店"
   },
   "reviews": {
     "all": "所有评价",
@@ -67,7 +67,7 @@
     "backend": "后端开发",
     "mobile": "移动应用",
     "frontendDescription": "快速响应式界面、设计系统和复杂用户流程。",
-    "weeks": "4–5 周",
+    "weeks": "4-5 周",
     "backendDescription": "服务架构、系统集成、数据库及安全 API。",
     "appDescription": "跨平台应用的一站式开发。",
     "desktop": "桌面应用",
@@ -133,5 +133,37 @@
     "tags": "标签",
     "recent": "最新文章",
     "noPosts": "暂无已发布的文章。"
+  },
+  "projectRequest": {
+    "label": "新项目",
+    "title": "有想法？一起聊聊吧。",
+    "name": "您的姓名",
+    "namePlaceholder": "请问怎么称呼您？",
+    "contact": "联系方式",
+    "contactPlaceholder": "Telegram 或电子邮箱",
+    "description": "项目介绍",
+    "descriptionPlaceholder": "请简要描述您的需求…",
+    "budget": "预算",
+    "budgetPlaceholder": "请输入金额…",
+    "design": "设计稿",
+    "yes": "有",
+    "no": "无",
+    "submit": "提交需求",
+    "telegram": "通过 Telegram 联系",
+    "sending": "正在发送…",
+    "success": "需求已发送，我会与您联系。",
+    "error": "发送失败，请重试或通过 Telegram 联系我。",
+    "rateLimit": "请稍候再提交。",
+    "nameError": "姓名须为2至80个字符。",
+    "contactError": "联系方式须为3至190个字符。",
+    "descriptionError": "描述须为10至2500个字符。",
+    "budgetError": "预算须介于0和1,000,000,000之间。",
+    "email": "邮箱",
+    "username": "用户名或个人资料链接",
+    "emailError": "请输入有效的电子邮箱地址。",
+    "responseTime": "请等待回复，预计需要1至5小时。",
+    "telegramGreeting": "您好！希望与您沟通一个项目。以下是项目的基本信息。",
+    "designHelpTitle": "您需要设计服务吗？",
+    "designHelp": "如果需要网站或应用设计稿，请选择“是”，我们的设计师将根据您的要求制作。如果不需要或已有设计稿，请选择“否”，我们可以使用您的设计稿。"
   }
 }
