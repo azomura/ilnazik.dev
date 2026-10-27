@@ -14,9 +14,11 @@ interface IScrollbarProps {
 }
 
 export function Scrollbar({ trackRef, visible, enabled, onRelease }: IScrollbarProps) {
-  const { phase, close, edgeProps, onTransitionEnd } = useScrollbarVisibility(visible)
-  const { dragging, dragProps } = useScrollbarDrag(() => {
-    close()
+  const { phase, show, close, edgeProps, onTransitionEnd } = useScrollbarVisibility(visible)
+  const { dragging, dragProps } = useScrollbarDrag(hovered => {
+    const finish = hovered ? show : close
+
+    finish()
     onRelease()
   })
   const open = visible || dragging || phase === 'edge-open'
@@ -53,14 +55,17 @@ export function Scrollbar({ trackRef, visible, enabled, onRelease }: IScrollbarP
           className='relative w-2 touch-none cursor-pointer rounded-full bg-card/50 dark:bg-secondary/80'
         >
           <Button
-            variant='ghost'
+            variant='default'
             size='icon'
+            data-dragging={dragging}
             className={cn(
               'absolute inset-x-0 top-0 h-(--scroll-thumb-size) w-full rounded-full p-0',
-              'border-0 active:translate-y-0',
+              'border-0 active:translate-y-(--scroll-thumb-offset)',
               'page-scroll-thumb bg-muted-foreground/60',
-              'transition-colors duration-200 hover:bg-primary',
-              dragging ? 'cursor-grabbing bg-primary' : 'cursor-grab'
+              'transition-colors duration-200 hover:bg-primary data-[dragging=true]:bg-primary',
+              'data-[dragging=true]:animate-none',
+              'data-[dragging=true]:translate-y-(--scroll-thumb-offset)',
+              dragging ? 'cursor-grabbing' : 'cursor-grab'
             )}
             onKeyDown={event => {
               const steps: Record<string, number> = {

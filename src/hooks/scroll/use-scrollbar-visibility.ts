@@ -3,14 +3,20 @@ import { useState, type TransitionEvent } from 'react'
 type ScrollbarPhase = 'scroll' | 'edge-open' | 'edge-closing' | 'edge-hidden'
 
 export function useScrollbarVisibility(scrolling: boolean) {
-  const [state, setState] = useState({ phase: 'scroll' as ScrollbarPhase, scrolling })
-  const phase = scrolling && !state.scrolling ? 'scroll' : state.phase
+  const [state, setState] = useState({
+    phase: 'scroll' as ScrollbarPhase,
+    scrolling,
+    hovered: false
+  })
 
-  if (scrolling !== state.scrolling) setState({ phase, scrolling })
+  const phase = scrolling && !state.scrolling && !state.hovered ? 'scroll' : state.phase
+
+  if (scrolling !== state.scrolling) setState({ ...state, phase, scrolling })
 
   const setPhase = (next: ScrollbarPhase) => setState(previous => ({ ...previous, phase: next }))
 
-  const close = () => setPhase('edge-closing')
+  const show = () => setState(previous => ({ ...previous, phase: 'edge-open', hovered: true }))
+  const close = () => setState(previous => ({ ...previous, phase: 'edge-closing', hovered: false }))
 
   const onTransitionEnd = (event: TransitionEvent<HTMLDivElement>) => {
     if (event.target !== event.currentTarget || event.propertyName !== 'translate') return
@@ -19,11 +25,12 @@ export function useScrollbarVisibility(scrolling: boolean) {
 
   return {
     phase,
+    show,
     close,
     onTransitionEnd,
     edgeProps: {
-      onPointerEnter: () => setPhase('edge-open'),
-      onPointerLeave: () => setPhase(phase === 'edge-open' ? 'edge-closing' : phase)
+      onPointerEnter: show,
+      onPointerLeave: close
     }
   }
 }

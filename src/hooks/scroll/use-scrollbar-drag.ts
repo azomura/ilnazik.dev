@@ -2,8 +2,14 @@ import { useRef, useState, type PointerEvent } from 'react'
 
 import { scrollTo } from '@/lib/scroll-to'
 
-export function useScrollbarDrag(onRelease: () => void) {
-  const drag = useRef<{ id: number; offset: number; top: number; travel: number } | null>(null)
+export function useScrollbarDrag(onRelease: (hovered: boolean) => void) {
+  const drag = useRef<{
+    id: number
+    offset: number
+    top: number
+    travel: number
+    track: HTMLDivElement
+  } | null>(null)
 
   const [dragging, setDragging] = useState(false)
 
@@ -15,6 +21,8 @@ export function useScrollbarDrag(onRelease: () => void) {
       1,
       Math.max(0, (clientY - current.top - current.offset) / current.travel)
     )
+
+    current.track.style.setProperty('--scroll-thumb-offset', `${progress * current.travel}px`)
 
     scrollTo(progress * (document.documentElement.scrollHeight - window.innerHeight), false)
   }
@@ -29,6 +37,7 @@ export function useScrollbarDrag(onRelease: () => void) {
 
     drag.current = {
       id: event.pointerId,
+      track,
       offset: thumb.contains(event.target as Node)
         ? event.clientY - thumbBounds.top
         : thumbBounds.height / 2,
@@ -46,10 +55,18 @@ export function useScrollbarDrag(onRelease: () => void) {
   const stop = (event: PointerEvent<HTMLDivElement>) => {
     if (drag.current?.id !== event.pointerId) return
 
+    const bounds = event.currentTarget.getBoundingClientRect()
+    const hovered =
+      event.type !== 'pointercancel' &&
+      event.clientX >= bounds.left &&
+      event.clientX <= bounds.right &&
+      event.clientY >= bounds.top &&
+      event.clientY <= bounds.bottom
+
     drag.current = null
 
     setDragging(false)
-    onRelease()
+    onRelease(hovered)
 
     if (!event.currentTarget.hasPointerCapture(event.pointerId)) return
 
