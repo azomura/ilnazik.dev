@@ -12,7 +12,13 @@ import type {
 
 import type {
   LinkPreviewV1LinksPreviewGetParams,
-  LinkPreviewV1ResponseDto
+  LinkPreviewV1ResponseDto,
+  MusicCoverV1MusicCoverGetParams,
+  MusicCoverV1ResponseDto,
+  MusicLyricsV1MusicLyricsGetParams,
+  MusicLyricsV1ResponseDto,
+  MusicRecentV1MusicYandexRecentGetParams,
+  MusicRecentV1ResponseDto
 } from './models';
 
 /**
@@ -39,5 +45,71 @@ export const linkPreviewV1LinksPreviewGet = (
     );
   }
 
+/**
+ * @summary Music Stream
+ */
+export const musicStreamV1MusicYandexTracksTrackIdStreamGet = (
+    trackId: string, options?: AxiosRequestConfig
+ ): Promise<AxiosResponse<void>> => {
+    return axios.default.get(
+      `/v1/music/yandex/tracks/${trackId}/stream`,options
+    );
+  }
+
+/**
+ * @summary Music Cover
+ */
+export const musicCoverV1MusicCoverGet = (
+    params: MusicCoverV1MusicCoverGetParams, options?: AxiosRequestConfig
+ ): Promise<AxiosResponse<MusicCoverV1ResponseDto>> => {
+    return axios.default.get(
+      `/v1/music/cover`,{
+    ...options,
+        params: {...params, ...options?.params},}
+    );
+  }
+
+/**
+ * @summary Cover Image
+ */
+export const coverImageV1MusicCoversFilenameGet = (
+    filename: string, options?: AxiosRequestConfig
+ ): Promise<AxiosResponse<unknown>> => {
+    return axios.default.get(
+      `/v1/music/covers/${filename}`,options
+    );
+  }
+
+/**
+ * @summary Music Lyrics
+ */
+export const musicLyricsV1MusicLyricsGet = (
+    params: MusicLyricsV1MusicLyricsGetParams, options?: AxiosRequestConfig
+ ): Promise<AxiosResponse<MusicLyricsV1ResponseDto>> => {
+    return axios.default.get(
+      `/v1/music/lyrics`,{
+    ...options,
+        params: {...params, ...options?.params},}
+    );
+  }
+
+/**
+ * @summary Music Recent
+ */
+export const musicRecentV1MusicYandexRecentGet = (
+    params?: MusicRecentV1MusicYandexRecentGetParams, options?: AxiosRequestConfig
+ ): Promise<AxiosResponse<MusicRecentV1ResponseDto>> => {
+    return axios.default.get(
+      `/v1/music/yandex/recent`,{
+    ...options,
+        params: {...params, ...options?.params},}
+    );
+  }
+
 export type HealthV1HealthGetResult = AxiosResponse<unknown>
 export type LinkPreviewV1LinksPreviewGetResult = AxiosResponse<LinkPreviewV1ResponseDto>
+export type MusicStreamV1MusicYandexTracksTrackIdStreamGetResult = AxiosResponse<void>
+export type MusicCoverV1MusicCoverGetResult = AxiosResponse<MusicCoverV1ResponseDto>
+export type CoverImageV1MusicCoversFilenameGetResult = AxiosResponse<unknown>
+export type MusicLyricsV1MusicLyricsGetResult = AxiosResponse<MusicLyricsV1ResponseDto>
+export type MusicRecentV1MusicYandexRecentGetResult = AxiosResponse<MusicRecentV1ResponseDto>
